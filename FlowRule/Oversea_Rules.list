@@ -2937,43 +2937,6 @@ IP-CIDR,96.23.20.78/32,海外服务
 IP-CIDR,96.4.63.99/32,海外服务
 
 
-
-#【海外服务—美国优选】
-
-# > viki
-
-HOST-SUFFIX,kalhlspd-a.akamaihd.net,美国优选
-HOST-SUFFIX,m-content-viki.s.llnwi.net,美国优选
-HOST-SUFFIX,twemoji.maxcdn.com,美国优选
-HOST-SUFFIX,viki.com,美国优选
-HOST-SUFFIX,viki.io,美国优选
-HOST-SUFFIX,viki.net,美国优选
-HOST-SUFFIX,vikidash.akamaized.net,美国优选
-HOST-SUFFIX,vikiplatform.com,美国优选
-HOST-SUFFIX,www.viki.com,美国优选
-
-# > kocowacon
-
-HOST-SUFFIX,launches.appsflyer.com,美国优选
-HOST-SUFFIX,crashlyticsreports-pa.googleapis.com,美国优选
-HOST-SUFFIX,middleware.record.kocowacon.com,美国优选
-HOST-SUFFIX,api.da.kcpglob.com,美国优选
-HOST-SUFFIX,prod. fims.kocowacon.com,美国优选
-HOST-SUFFIX,playback.brightcovecdn.com,美国优选
-HOST-SUFFIX,metrics.brightcove.com,美国优选
-HOST-SUFFIX,prod-geo.kocowacon.com,美国优选
-HOST-SUFFIX,prod-Sgw.kocowacon.com,美国优选
-HOST-SUFFIX,smp-device-content.apple.com,美国优选
-HOST-SUFFIX,manifest.prod.boltdns.net,美国优选
-HOST-SUFFIX,prod.sgw kocowa.com,美国优选
-HOST-SUFFIX,api.ipify.org,美国优选
-
-# > Google Voice
-HOST,voice.telephony.google,美国优选
-
-#【海外服务—自选节点】
-
-
 #【海外服务—机场】
 HOST-SUFFIX,gs1024.com,海外服务
 HOST-SUFFIX,fenda.cloud,海外服务
