@@ -1,1 +1,27 @@
-
+#【广告专区】
+###🈲️🤔🔞
+###
+HOST-KEYWORD,wyav,广告屏蔽
+###
+HOST-SUFFIX,phncdn.com,广告屏蔽
+HOST-SUFFIX,phprcdn.com,广告屏蔽
+HOST-SUFFIX,pornhub.com,广告屏蔽
+HOST-SUFFIX,pornhubpremium.com,广告屏蔽
+###
+host,roi.soulapp.cn,广告屏蔽
+host,gdfp.gifshow.com,广告屏蔽
+host,api.gz1hua.com,广告屏蔽
+HOST-KEYWORD,googleads,广告屏蔽
+HOST-KEYWORD,googleadservices,广告屏蔽
+HOST-KEYWORD,googlesyndication,广告屏蔽
+host,36.158.146.65/8080,广告屏蔽
+host,hm.baidu.com,广告屏蔽
+#堆糖
+HOST-KEYWORD,pangolin-sdk-toutiao,广告屏蔽
+HOST-KEYWORD,pangolin-sdk-toutiao-b,广告屏蔽
+HOST-KEYWORD,pglstatp-toutiao,广告屏蔽
+HOST-SUFFIX,ug.snssdk.com,广告屏蔽
+host-suffix, mi.gdt.qq.com, 广告屏蔽
+host-suffix, adsmind.ugdtimg.com, 广告屏蔽
+host-suffix, ulogs.umeng.com, 广告屏蔽
+host, sdk.e.qq.com, 广告屏蔽
