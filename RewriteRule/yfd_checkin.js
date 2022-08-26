@@ -18,12 +18,12 @@ update:20220209
 【Quantumult X配置】
 [rewrite_local]
 #重写规则，点击健康打卡时，自动获取accessToken和User-Agent
-https://yfd.ly-sky.com/ly-pd-mb/form/api/healthCheckIn/client/stu/index url script-request-header https://raw.githubusercontent.com/Geekey101/-X-Public/main/SourceParser/yfd_checkin.js
+https://yfd.ly-sky.com/ly-pd-mb/form/api/healthCheckIn/client/stu/index url script-request-header https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/yfd_checkin.js
 [mitm]
 hostname = yfd.ly-sky.com
 #task_local规则，每天定时自动执行脚本
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/Geekey101/-X-Public/main/SourceParser/yfd_checkin.js, tag=奕辅导, enabled=true
+5 0 * * * https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/yfd_checkin.js, tag=奕辅导, enabled=true
 ******************/
 
 //###########	Config		####################
