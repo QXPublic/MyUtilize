@@ -26,9 +26,9 @@
 #5 0 * * * https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/yfd_checkin.js, tag=奕辅导, enabled=true
 #******************/
 
-//###########	Config		####################
+#//###########	Config		####################
 
-const clear_data = false; //当为true时，清除已保存的打卡数据，重新获取。默认值应为false
+const clear_data = false; #//当为true时，清除已保存的打卡数据，重新获取。默认值应为false
 
 //###########	手动设置数据并持久化，如无需要请勿改动。(方便调试,或无rewrite和mitm)
 const user_token = ''; //accessToken
