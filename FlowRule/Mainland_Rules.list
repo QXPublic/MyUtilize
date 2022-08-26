@@ -1,4 +1,4 @@
-# 【大陆地区—直连】
+# 【大陆地区—直连-默认】
 
 USER-AGENT,hide*,大陆服务
 USER-AGENT,MicroMessenger*,大陆服务
@@ -537,7 +537,7 @@ HOST-SUFFIX,cn,大陆服务
 IP-CIDR,1.255.62.0/24,大陆服务
 
 
-#【大陆服务-补充】
+#【大陆服务-直连-补充】
 HOST-SUFFIX,www.ptwxz.com,大陆服务
 HOST-SUFFIX,m.mayiwxw.com,大陆服务
 
