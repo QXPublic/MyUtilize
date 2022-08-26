@@ -1,30 +1,30 @@
-/******************
-奕辅导健康打卡QauntumultX脚本
-理论上支持Surge, Loon, 未测试
-update:20220209
-原作者@ NanFuDao
-免责声明：
-本脚本仅供交流学习，
-瞒报疫情属于违法犯罪！！！可按刑法判处危害公共安全罪，请勿瞒报疫情、危害社会和他人。
-本脚本没有修改打卡的数据，而是根据用户手动打卡的数据进行自动打卡。
-因使用此脚本而出现的问题，由使用者自行承担，用作者无关。
-使用方法：
-1、事先在小程序上手动完成一次打卡（无需使用脚本，无需开启Quantumult X）。
-2、启用rewrite和mitm功能，并设置好规则。开启QuantumultX，打开小程序健康打卡，脚本自动获取accessToken和UA。
-3、手动运行脚本，脚本会自动获取已打卡的数据并保存。
-4、配置Quantumult X的task功能或者ios的自动化快捷指令，实现每天自动打卡。
-（5、脚本正常运行后，可关闭rewrite，避免使用正常小程序时，脚本反复运行。）
-*******************
-【Quantumult X配置】
-[rewrite_local]
+#/******************
+#奕辅导健康打卡QauntumultX脚本
+#理论上支持Surge, Loon, 未测试
+#update:20220209
+#原作者@ NanFuDao
+#免责声明：
+#本脚本仅供交流学习，
+#瞒报疫情属于违法犯罪！！！可按刑法判处危害公共安全罪，请勿瞒报疫情、危害社会和他人。
+#本脚本没有修改打卡的数据，而是根据用户手动打卡的数据进行自动打卡。
+#因使用此脚本而出现的问题，由使用者自行承担，用作者无关。
+#使用方法：
+#1、事先在小程序上手动完成一次打卡（无需使用脚本，无需开启Quantumult X）。
+#2、启用rewrite和mitm功能，并设置好规则。开启QuantumultX，打开小程序健康打卡，脚本自动获取accessToken和UA。
+#3、手动运行脚本，脚本会自动获取已打卡的数据并保存。
+#4、配置Quantumult X的task功能或者ios的自动化快捷指令，实现每天自动打卡。
+#（5、脚本正常运行后，可关闭rewrite，避免使用正常小程序时，脚本反复运行。）
+#*******************
+#【Quantumult X配置】
+#[rewrite_local]
 #重写规则，点击健康打卡时，自动获取accessToken和User-Agent
-https://yfd.ly-sky.com/ly-pd-mb/form/api/healthCheckIn/client/stu/index url script-request-header https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/yfd_checkin.js
-[mitm]
-hostname = yfd.ly-sky.com
+#https://yfd.ly-sky.com/ly-pd-mb/form/api/healthCheckIn/client/stu/index url script-request-header https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/yfd_checkin.js
+#[mitm]
+#hostname = yfd.ly-sky.com
 #task_local规则，每天定时自动执行脚本
-[task_local]
-5 0 * * * https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/yfd_checkin.js, tag=奕辅导, enabled=true
-******************/
+#[task_local]
+#5 0 * * * https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/yfd_checkin.js, tag=奕辅导, enabled=true
+#******************/
 
 //###########	Config		####################
 
