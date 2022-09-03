@@ -4,4 +4,4 @@
 
 [script]
 generic script-path=https://raw.githubusercontent.com/Loon0x00/LoonExampleConfig/master/Script/generic_example.js,tag= IP地址检测,timeout=10,img-url=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/Domestic.png
-generic script-path=https://raw.githubusercontent.com/Loon0x00/LoonExampleConfig/master/Script/generic_example.js,tag=流媒体-解锁查询,timeout=10,img-url=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/ForeignMedia.png
+generic script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/streaming-ui-check.js,tag=流媒体-解锁查询,timeout=10,img-url=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/ForeignMedia.png
