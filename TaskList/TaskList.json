@@ -5,5 +5,6 @@
         "5 0 * * * https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/XiaoMi_Sept.js, tag=小米运动, "
        ,"7 0 * * * https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/yfd_checkin.js, tag=奕辅导, enabled=true"
        ,"event-interaction https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=circle.dotted.system, enabled=true"
- ]
+       ,"event-interaction https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Geo_location.js,tag=IP地址查询,enabled=true"
+    ]
 }
