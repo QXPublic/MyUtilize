@@ -1,7 +1,7 @@
 #!name=Node Detection Tool
 #!desc=适用于Loon的节点检测工具，可进行IP查询、多媒体检测等
 #!icon=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/KKBOX.png
-
+#
 [script]
-generic script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Geo_location.js,tag= IP地址检测,timeout=10,img-url=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/Domestic.png
+generic script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Geo_locationLoon.js,tag= IP地址检测,timeout=10,img-url=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/Domestic.png
 generic script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/streaming-ui-check.js,tag=流媒体-解锁查询,timeout=10,img-url=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/ForeignMedia.png
