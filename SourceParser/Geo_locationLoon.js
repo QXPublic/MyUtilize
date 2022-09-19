@@ -1,4 +1,4 @@
-**
+/**
  * generic script example
  * Reference: https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js
  * 
