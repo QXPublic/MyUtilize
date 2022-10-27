@@ -1,6 +1,9 @@
 
 #【海外服务—优选节点】
 
+#>Google翻译分流
+host-suffix,fonts.gstatic.com,海外服务
+
 # > Emby
 HOST-SUFFIX,emby-cf.plusmedia.site,海外服务
 HOST-SUFFIX,tv.emby.media,海外服务
