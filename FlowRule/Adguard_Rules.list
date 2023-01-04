@@ -27,3 +27,6 @@ host-suffix, ulogs.umeng.com, 广告屏蔽
 host, sdk.e.qq.com, 广告屏蔽
 #拦截100屏蔽
 host-suffix,ntb.lanjie100.com,reject
+###
+host-suffix,w.anygate.vip,reject
+host-suffix,ppt.flyv.tv,reject
