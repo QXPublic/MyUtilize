@@ -2938,7 +2938,13 @@ IP-CIDR,96.23.20.70/32,海外服务
 IP-CIDR,96.23.20.74/32,海外服务
 IP-CIDR,96.23.20.78/32,海外服务
 IP-CIDR,96.4.63.99/32,海外服务
-
+#海外自选视频
+host-suffix,kdianv.com
+host-suffix,hoho.tv
+host-suffix,iyf.tv
+host-suffix,rysp.tv
+host-suffix,duonaovod.com
+host-suffix,tangrenjie.tv
 
 #【海外服务—机场】
 HOST-SUFFIX,gs1024.com,海外服务
