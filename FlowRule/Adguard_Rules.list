@@ -30,3 +30,5 @@ host-suffix,ntb.lanjie100.com,reject
 ###
 host-suffix,w.anygate.vip,reject
 host-suffix,ppt.flyv.tv,reject
+host-keyword,kc.bxemln.com,reject
+host-keyword,rps.lebo.cn,reject
