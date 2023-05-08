@@ -1112,3 +1112,12 @@ HOST-SUFFIX,rawgithub.com,GitHub
 HOST-SUFFIX,repo.new,GitHub
 HOST-SUFFIX,thegithubshop.com,GitHub
 HOST-KEYWORD,github,GitHub
+###
+host-suffix,offgamers.com
+host-keyword,grab
+host-keyword,hepsiburada.com
+host-keyword,zelenka.guru
+host-keyword,duboku.tv,台湾优选
+host-keyword,nivod4,海外服务
+host-keyword,taiav,海外服务
+host-suffix,m.nivod4.tv,海外服务
