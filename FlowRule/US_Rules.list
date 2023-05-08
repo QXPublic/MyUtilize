@@ -32,3 +32,7 @@ HOST-SUFFIX,api.ipify.org,美国优选
 # > Google Voice
 HOST,voice.telephony.google,美国优选
 
+# >openai-chatgpt
+host-suffix, openai.com,海外服务
+
+
