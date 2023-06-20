@@ -1121,3 +1121,8 @@ host-keyword,duboku.tv,台湾优选
 host-keyword,nivod4,海外服务
 host-keyword,taiav,海外服务
 host-suffix,m.nivod4.tv,海外服务
+
+# ChatGPT
+host-keyword, openai, OpenAI
+host-suffix , identrust.com, OpenAI
+host-suffix , auth0.com, OpenAI
