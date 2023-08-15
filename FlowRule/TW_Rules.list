@@ -1,3 +1,5 @@
+
+
 # TikTok
 HOST,p16-tiktokcdn-com.akamaized.net,TikTok
 HOST-SUFFIX,byteoversea.com,TikTok
@@ -1126,3 +1128,13 @@ host-suffix,m.nivod4.tv,海外服务
 host-keyword, openai, OpenAI
 host-suffix , identrust.com, OpenAI
 host-suffix , auth0.com, OpenAI
+
+# Pikpak
+HOST-SUFFIX,dlandroid.rcv.sandai.net,PikPak
+HOST-SUFFIX,hub5idx.v6.shub.sandai.net,PikPak
+HOST-SUFFIX,hub5pn.wap.sandai.net,PikPak
+HOST-SUFFIX,hub5pnc.sandai.net,PikPak
+HOST-SUFFIX,hub5pr.v6.phub.sandai.net,PikPak
+HOST-SUFFIX,hubciddata.sandai.net,PikPak
+HOST-SUFFIX,mypikpak.com,PikPak
+HOST-KEYWORD,mypikpak,PikPak
