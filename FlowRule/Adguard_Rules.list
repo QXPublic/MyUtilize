@@ -59,7 +59,7 @@ host, sdk.ad.smaato.net, reject
 host, adx-tk.rayjump.com, reject
 host, www.google-analytics.com, reject
 #host, tr-asia.adsmoloco.com,reject
-host, cdn-f.adsmoloco.com,reject
+#host, cdn-f.adsmoloco.com,reject
 host, adxinspidsp.com,reject
 
 
