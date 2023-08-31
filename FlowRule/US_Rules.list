@@ -35,4 +35,10 @@ HOST,voice.telephony.google,美国优选
 # >openai-chatgpt
 host-suffix, openai.com,海外服务
 
+#talkatone
+host-keyword, talkatone, 美国优选
+host-keyword, tktn, 美国优选
+
+
+
 
