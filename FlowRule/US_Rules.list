@@ -36,6 +36,22 @@ HOST,voice.google.com
 #talkatone
 host-keyword, talkatone, 美国优选
 host-keyword, tktn, 美国优选
+host, z.moatads.com, 美国优选
+host, sdk-events.inner-active.mobi, 美国优选
+host-suffix, impression.appsflyer.com, 美国优选
+host-suffix, content.inhousedsp.com, 美国优选
+host-suffix, event.inner-active.mobi, 美国优选
+host-suffix, ssp.api.tappx.com, 美国优选
+host-suffix, sdk-files.smaato.net, 美国优选
+ip-cidr, 205.164.56.27/24, 美国优选
+host-suffix, wv.inner-active.mobi, 美国优选
+host-suffix, ssp.api.tappx.com, 美国优选
+host-suffix, cdn2.inner-active.mobi, 美国优选
+host-suffix, mfx.mobilefuse.com, 美国优选
+host-suffix, gum.criteo.com, 美国优选
+host-suffix, cdn2.inner-active.mobi, 美国优选
+host-suffix, sdk-hb-cfg.smaato.net, 美国优选
+host-suffix, bidder.criteo.com, 美国优选
 
 
 
