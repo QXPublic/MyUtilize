@@ -32,7 +32,8 @@ host-suffix,w.anygate.vip,reject
 host-suffix,ppt.flyv.tv,reject
 host-keyword,kc.bxemln.com,reject
 host-keyword,rps.lebo.cn,reject
-#talkatone
+
+###talkatone
 host, imp.track.tappx.com, reject
 host, live.chartboost.com, reject
 host, ocsp.digicert.com, reject
@@ -61,6 +62,23 @@ host, www.google-analytics.com, reject
 #host, tr-asia.adsmoloco.com,reject
 #host, cdn-f.adsmoloco.com,reject
 host, adxinspidsp.com,reject
+host-suffix, js.ad-score.com, reject
+host-suffix, data.ad-score.com, reject
+host, creatives.smadex.com, reject
+host-suffix, adservice.google.com.hk, reject
+host-suffix, js.moatads.com, reject
+host-suffix, l.betrad.com, reject
+host-suffix, static-content-1.smadex.com, reject
+host, mb.moatads.com, reject
+host-suffix, px.moatads.com, reject
+host-suffix, trckr.contextualadv.com, reject
+host-suffix, st.pubmatic.com, reject
+host-suffix, s3.amazonaws.com, reject
+host-keyword,adsmoloco.com, reject
+host-suffix, i.l-dsp.inmobicdn.net, reject
+host-suffix, bassets.bigabidserv.com, reject
+
+
 
 
 
