@@ -52,7 +52,8 @@ host-suffix, gum.criteo.com, 美国优选
 host-suffix, cdn2.inner-active.mobi, 美国优选
 host-suffix, sdk-hb-cfg.smaato.net, 美国优选
 host-suffix, bidder.criteo.com, 美国优选
-
+host-suffix, telemetry.sdk.inmobi.com, 美国优选
+host-suffix,ad.doubleclick.net,reject
 
 
 
