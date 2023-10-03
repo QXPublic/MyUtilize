@@ -77,9 +77,9 @@ host-suffix, s3.amazonaws.com, reject
 host-keyword,adsmoloco.com, reject
 host-suffix, i.l-dsp.inmobicdn.net, reject
 host-suffix, bassets.bigabidserv.com, reject
-
-
-
+host-suffix,adimpression.startappservice.com,reject
+host-suffix,lyr.pubmatic.com,reject
+host-suffix,assets.mintegral.com,reject
 
 
 
