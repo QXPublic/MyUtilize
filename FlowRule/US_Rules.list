@@ -36,7 +36,7 @@ HOST,voice.google.com
 #talkatone
 host-keyword, talkatone, 美国优选
 host-keyword, tktn, 美国优选
-host, z.moatads.com, 美国优选
+#host, z.moatads.com, 美国优选
 host, sdk-events.inner-active.mobi, 美国优选
 host-suffix, impression.appsflyer.com, 美国优选
 host-suffix, content.inhousedsp.com, 美国优选
@@ -53,7 +53,8 @@ host-suffix, cdn2.inner-active.mobi, 美国优选
 host-suffix, sdk-hb-cfg.smaato.net, 美国优选
 host-suffix, bidder.criteo.com, 美国优选
 host-suffix, telemetry.sdk.inmobi.com, 美国优选
-host-suffix,ad.doubleclick.net,reject
+#host-suffix,ad.doubleclick.net,reject
+host-keyword, inmobi, 美国优选
 
 
 
