@@ -31,4 +31,25 @@ DOMAIN,voice.telephony.google
 DOMAIN,voice.google.com
 DOMAIN,lens.l.google.com
 
+#talkatone
+DOMAIN-keyword, talkatone
+DOMAIN-keyword, tktn
+#DOMAIN, z.moatads.com
+DOMAIN, sdk-events.inner-active.mobi
+DOMAIN-suffix, impression.appsflyer.com
+DOMAIN-suffix, content.inhousedsp.com
+DOMAIN-suffix, event.inner-active.mobi
+DOMAIN-suffix, ssp.api.tappx.com
+DOMAIN-suffix, sdk-files.smaato.net
+DOMAIN-suffix, wv.inner-active.mobi
+DOMAIN-suffix, ssp.api.tappx.com
+DOMAIN-suffix, cdn2.inner-active.mobi
+DOMAIN-suffix, mfx.mobilefuse.com
+DOMAIN-suffix, gum.criteo.com
+DOMAIN-suffix, cdn2.inner-active.mobi
+DOMAIN-suffix, sdk-hb-cfg.smaato.net
+DOMAIN-suffix, bidder.criteo.com
+DOMAIN-suffix, telemetry.sdk.inmobi.com
+DOMAIN-keyword, inmobi
+
 
