@@ -1,39 +1,4 @@
 #【广告专区】
-###
-###
-DOMAIN-KEYWORD,wyav
-###
-DOMAIN-SUFFIX,phncdn.com
-DOMAIN-SUFFIX,phprcdn.com
-DOMAIN-SUFFIX,pornhub.com
-DOMAIN-SUFFIX,pornhubpremium.com
-###
-DOMAIN,roi.soulapp.cn
-DOMAIN,gdfp.gifshow.com
-DOMAIN,api.gz1hua.com
-DOMAIN-KEYWORD,googleads
-DOMAIN-KEYWORD,googleadservices
-DOMAIN-KEYWORD,googlesyndication
-DOMAIN,36.158.146.65
-DOMAIN,hm.baidu.com
-#堆糖
-DOMAIN-KEYWORD,pangolin-sdk-toutiao
-DOMAIN-KEYWORD,pangolin-sdk-toutiao-b
-DOMAIN-KEYWORD,pglstatp-toutiao
-DOMAIN-SUFFIX,ug.snssdk.com
-DOMAIN-suffix, mi.gdt.qq.com
-DOMAIN-suffix, adsmind.ugdtimg.com
-DOMAIN-suffix, ulogs.umeng.com
-DOMAIN, sdk.e.qq.com
-#拦截100屏蔽
-DOMAIN-suffix,ntb.lanjie100.com
-###
-DOMAIN-suffix,w.anygate.vip
-DOMAIN-suffix,ppt.flyv.tv
-DOMAIN-keyword,kc.bxemln.com
-DOMAIN-keyword,rps.lebo.cn
-
-#【去广告】
 DOMAIN-KEYWORD,admarvel
 DOMAIN-KEYWORD,admaster
 DOMAIN-KEYWORD,adsage
