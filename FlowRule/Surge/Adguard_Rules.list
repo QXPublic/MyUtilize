@@ -1,82 +1,82 @@
 #【广告专区】
 ###
 ###
-DOMAIN-KEYWORD,wyav,广告屏蔽
+DOMAIN-KEYWORD,wyav
 ###
-DOMAIN-SUFFIX,phncdn.com,广告屏蔽
-DOMAIN-SUFFIX,phprcdn.com,广告屏蔽
-DOMAIN-SUFFIX,pornhub.com,广告屏蔽
-DOMAIN-SUFFIX,pornhubpremium.com,广告屏蔽
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,phprcdn.com
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,pornhubpremium.com
 ###
-DOMAIN,roi.soulapp.cn,广告屏蔽
-DOMAIN,gdfp.gifshow.com,广告屏蔽
-DOMAIN,api.gz1hua.com,广告屏蔽
-DOMAIN-KEYWORD,googleads,广告屏蔽
-DOMAIN-KEYWORD,googleadservices,广告屏蔽
-DOMAIN-KEYWORD,googlesyndication,广告屏蔽
-DOMAIN,36.158.146.65,广告屏蔽
-DOMAIN,hm.baidu.com,广告屏蔽
+DOMAIN,roi.soulapp.cn
+DOMAIN,gdfp.gifshow.com
+DOMAIN,api.gz1hua.com
+DOMAIN-KEYWORD,googleads
+DOMAIN-KEYWORD,googleadservices
+DOMAIN-KEYWORD,googlesyndication
+DOMAIN,36.158.146.65
+DOMAIN,hm.baidu.com
 #堆糖
-DOMAIN-KEYWORD,pangolin-sdk-toutiao,广告屏蔽
-DOMAIN-KEYWORD,pangolin-sdk-toutiao-b,广告屏蔽
-DOMAIN-KEYWORD,pglstatp-toutiao,广告屏蔽
-DOMAIN-SUFFIX,ug.snssdk.com,广告屏蔽
-DOMAIN-suffix, mi.gdt.qq.com, 广告屏蔽
-DOMAIN-suffix, adsmind.ugdtimg.com, 广告屏蔽
-DOMAIN-suffix, ulogs.umeng.com, 广告屏蔽
-DOMAIN, sdk.e.qq.com, 广告屏蔽
+DOMAIN-KEYWORD,pangolin-sdk-toutiao
+DOMAIN-KEYWORD,pangolin-sdk-toutiao-b
+DOMAIN-KEYWORD,pglstatp-toutiao
+DOMAIN-SUFFIX,ug.snssdk.com
+DOMAIN-suffix, mi.gdt.qq.com
+DOMAIN-suffix, adsmind.ugdtimg.com
+DOMAIN-suffix, ulogs.umeng.com
+DOMAIN, sdk.e.qq.com
 #拦截100屏蔽
-DOMAIN-suffix,ntb.lanjie100.com,reject
+DOMAIN-suffix,ntb.lanjie100.com
 ###
-DOMAIN-suffix,w.anygate.vip,reject
-DOMAIN-suffix,ppt.flyv.tv,reject
-DOMAIN-keyword,kc.bxemln.com,reject
-DOMAIN-keyword,rps.lebo.cn,reject
+DOMAIN-suffix,w.anygate.vip
+DOMAIN-suffix,ppt.flyv.tv
+DOMAIN-keyword,kc.bxemln.com
+DOMAIN-keyword,rps.lebo.cn
 
 ###talkatone
-DOMAIN, imp.track.tappx.com, reject
-DOMAIN, live.chartboost.com, reject
-DOMAIN, ocsp.digicert.com, reject
-DOMAIN, play.rayjump.com, reject
-DOMAIN, playable.mintegral.com, reject
-DOMAIN, playable-stats.mindworks-creative.com, reject
-DOMAIN, api2.branch.io, reject
-DOMAIN, us01.rayjump.com, reject
-DOMAIN, us01.rayjump.com, reject
-DOMAIN-suffix, adservice.google.com, reject
-DOMAIN, newplayable.mintegral.com, reject
-DOMAIN-suffix, adrta.com, reject
-DOMAIN-suffix, ace-event-ts6.admarvel.com, reject
-DOMAIN-suffix,ads.inmobi.com,reject
-DOMAIN-suffix,c.amazon-adsystem.com,reject
-DOMAIN-suffix,ad.appier.net,reject
-DOMAIN-suffix,ads.pubmatic.com,reject
-DOMAIN-suffix,ow.pubmatic.com,reject
-DOMAIN-suffix,cdn-adn-https-new.rayjump.com,reject
-DOMAIN-suffix,view.adjust.com,reject
-DOMAIN-suffix,ace-event-prod.admarvel.com,reject
-DOMAIN-suffix, ipds.adrta.com, reject
-DOMAIN, sdk.ad.smaato.net, reject
-DOMAIN, adx-tk.rayjump.com, reject
-DOMAIN, www.google-analytics.com, reject
-#DOMAIN, tr-asia.adsmoloco.com,reject
-#DOMAIN, cdn-f.adsmoloco.com,reject
-DOMAIN, adxinspidsp.com,reject
-DOMAIN-suffix, js.ad-score.com, reject
-DOMAIN-suffix, data.ad-score.com, reject
-DOMAIN, creatives.smadex.com, reject
-DOMAIN-suffix, adservice.google.com.hk, reject
-DOMAIN-suffix, js.moatads.com, reject
-DOMAIN-suffix, l.betrad.com, reject
-DOMAIN-suffix, static-content-1.smadex.com, reject
-DOMAIN, mb.moatads.com, reject
-DOMAIN-suffix, px.moatads.com, reject
-DOMAIN-suffix, trckr.contextualadv.com, reject
-DOMAIN-suffix, st.pubmatic.com, reject
-DOMAIN-suffix, s3.amazonaws.com, reject
-DOMAIN-keyword,adsmoloco.com, reject
-DOMAIN-suffix, i.l-dsp.inmobicdn.net, reject
-DOMAIN-suffix, bassets.bigabidserv.com, reject
-DOMAIN-suffix,adimpression.startappservice.com,reject
-DOMAIN-suffix,lyr.pubmatic.com,reject
-DOMAIN-suffix,assets.mintegral.com,reject
+DOMAIN, imp.track.tappx.com
+DOMAIN, live.chartboost.com
+DOMAIN, ocsp.digicert.com
+DOMAIN, play.rayjump.com
+DOMAIN, playable.mintegral.com
+DOMAIN, playable-stats.mindworks-creative.com
+DOMAIN, api2.branch.io
+DOMAIN, us01.rayjump.com
+DOMAIN, us01.rayjump.com
+DOMAIN-suffix, adservice.google.com
+DOMAIN, newplayable.mintegral.com
+DOMAIN-suffix, adrta.com
+DOMAIN-suffix, ace-event-ts6.admarvel.com
+DOMAIN-suffix,ads.inmobi.com
+DOMAIN-suffix,c.amazon-adsystem.com
+DOMAIN-suffix,ad.appier.net
+DOMAIN-suffix,ads.pubmatic.com
+DOMAIN-suffix,ow.pubmatic.com
+DOMAIN-suffix,cdn-adn-https-new.rayjump.com
+DOMAIN-suffix,view.adjust.com
+DOMAIN-suffix,ace-event-prod.admarvel.com
+DOMAIN-suffix, ipds.adrta.com
+DOMAIN, sdk.ad.smaato.net
+DOMAIN, adx-tk.rayjump.com
+DOMAIN, www.google-analytics.com
+#DOMAIN, tr-asia.adsmoloco.com
+#DOMAIN, cdn-f.adsmoloco.com
+DOMAIN, adxinspidsp.com
+DOMAIN-suffix, js.ad-score.com
+DOMAIN-suffix, data.ad-score.com
+DOMAIN, creatives.smadex.com
+DOMAIN-suffix, adservice.google.com.hk
+DOMAIN-suffix, js.moatads.com
+DOMAIN-suffix, l.betrad.com
+DOMAIN-suffix, static-content-1.smadex.com
+DOMAIN, mb.moatads.com
+DOMAIN-suffix, px.moatads.com
+DOMAIN-suffix, trckr.contextualadv.com
+DOMAIN-suffix, st.pubmatic.com
+DOMAIN-suffix, s3.amazonaws.com
+DOMAIN-keyword,adsmoloco.com
+DOMAIN-suffix, i.l-dsp.inmobicdn.net
+DOMAIN-suffix, bassets.bigabidserv.com
+DOMAIN-suffix,adimpression.startappservice.com
+DOMAIN-suffix,lyr.pubmatic.com
+DOMAIN-suffix,assets.mintegral.com
