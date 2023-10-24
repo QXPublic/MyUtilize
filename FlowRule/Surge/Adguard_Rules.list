@@ -488,5 +488,4 @@ URL-REGEX,^https?:\/\/www\.shihuo\.cn\/app\d\/saveAppInfo
 URL-REGEX,^https?:\/\/www\.zybang\.com\/adx\/
 URL-REGEX,^https?:\/\/xyst\.yuanfudao\.com\/iphone\/splashesV\d
 URL-REGEX,^https?:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$
-URL-REGEX,^https?:\/\/yxyapi\d\.drcuiyutao\.com\/yxy-api-gateway\/api\/json\/advert\/
-AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29))
+
