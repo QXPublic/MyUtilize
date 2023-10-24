@@ -41,7 +41,6 @@ DOMAIN-suffix, content.inhousedsp.com
 DOMAIN-suffix, event.inner-active.mobi
 DOMAIN-suffix, ssp.api.tappx.com
 DOMAIN-suffix, sdk-files.smaato.net
-ip-cidr, 205.164.56.27/24
 DOMAIN-suffix, wv.inner-active.mobi
 DOMAIN-suffix, ssp.api.tappx.com
 DOMAIN-suffix, cdn2.inner-active.mobi
