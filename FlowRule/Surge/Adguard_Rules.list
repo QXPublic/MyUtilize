@@ -488,4 +488,11 @@ URL-REGEX,^https?:\/\/www\.shihuo\.cn\/app\d\/saveAppInfo
 URL-REGEX,^https?:\/\/www\.zybang\.com\/adx\/
 URL-REGEX,^https?:\/\/xyst\.yuanfudao\.com\/iphone\/splashesV\d
 URL-REGEX,^https?:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$
-
+# 绕过企业证书过期
+DOMAIN, ocsp.apple.com
+# 屏蔽系统更新
+DOMAIN, ns.itunes.apple.com
+DOMAIN, appldnld.apple.com
+DOMAIN, mesu.apple.com
+DOMAIN, xp.apple.com
+DOMAIN, gdmf.apple.com
