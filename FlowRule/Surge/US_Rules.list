@@ -1,0 +1,54 @@
+#【海外服务—美国优选】
+
+# > viki
+
+DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
+DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
+DOMAIN-SUFFIX,twemoji.maxcdn.com
+DOMAIN-SUFFIX,viki.com
+DOMAIN-SUFFIX,viki.io
+DOMAIN-SUFFIX,viki.net
+DOMAIN-SUFFIX,vikidash.akamaized.net
+DOMAIN-SUFFIX,vikiplatform.com
+DOMAIN-SUFFIX,www.viki.com
+
+# > kocowacon
+
+DOMAIN-SUFFIX,launches.appsflyer.com
+DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
+DOMAIN-SUFFIX,middleware.record.kocowacon.com
+DOMAIN-SUFFIX,api.da.kcpglob.com
+DOMAIN-SUFFIX,prod.fims.kocowacon.com
+DOMAIN-SUFFIX,playback.brightcovecdn.com
+DOMAIN-SUFFIX,metrics.brightcove.com
+DOMAIN-SUFFIX,prod-geo.kocowacon.com
+DOMAIN-SUFFIX,prod-Sgw.kocowacon.com
+DOMAIN-SUFFIX,smp-device-content.apple.com
+DOMAIN-SUFFIX,manifest.prod.boltdns.net
+DOMAIN-SUFFIX,api.ipify.org
+
+# > Google Voice
+DOMAIN,voice.telephony.google
+DOMAIN,voice.google.com
+
+#talkatone
+DOMAIN-keyword, talkatone
+DOMAIN-keyword, tktn
+#DOMAIN, z.moatads.com
+DOMAIN, sdk-events.inner-active.mobi
+DOMAIN-suffix, impression.appsflyer.com
+DOMAIN-suffix, content.inhousedsp.com
+DOMAIN-suffix, event.inner-active.mobi
+DOMAIN-suffix, ssp.api.tappx.com
+DOMAIN-suffix, sdk-files.smaato.net
+ip-cidr, 205.164.56.27/24
+DOMAIN-suffix, wv.inner-active.mobi
+DOMAIN-suffix, ssp.api.tappx.com
+DOMAIN-suffix, cdn2.inner-active.mobi
+DOMAIN-suffix, mfx.mobilefuse.com
+DOMAIN-suffix, gum.criteo.com
+DOMAIN-suffix, cdn2.inner-active.mobi
+DOMAIN-suffix, sdk-hb-cfg.smaato.net
+DOMAIN-suffix, bidder.criteo.com
+DOMAIN-suffix, telemetry.sdk.inmobi.com
+DOMAIN-keyword, inmobi
