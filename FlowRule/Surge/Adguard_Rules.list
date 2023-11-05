@@ -1,4 +1,85 @@
 ################################################################################################
+#【广告专区】
+#####
+DOMAIN-KEYWORD,wyav
+###
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,phprcdn.com
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,pornhubpremium.com
+###
+DOMAIN,roi.soulapp.cn
+DOMAIN,gdfp.gifshow.com
+DOMAIN,api.gz1hua.com
+DOMAIN-KEYWORD,googleads
+DOMAIN-KEYWORD,googleadservices
+DOMAIN-KEYWORD,googlesyndication
+DOMAIN,hm.baidu.com
+#堆糖
+DOMAIN-KEYWORD,pangolin-sdk-toutiao
+DOMAIN-KEYWORD,pangolin-sdk-toutiao-b
+DOMAIN-KEYWORD,pglstatp-toutiao
+DOMAIN-SUFFIX,ug.snssdk.com
+DOMAIN-SUFFIX, mi.gdt.qq.com
+DOMAIN-SUFFIX, adsmind.ugdtimg.com
+DOMAIN-SUFFIX, ulogs.umeng.com
+DOMAIN, sdk.e.qq.com
+#拦截100屏蔽
+DOMAIN-SUFFIX,ntb.lanjie100.com
+###
+DOMAIN-SUFFIX,w.anygate.vip
+DOMAIN-SUFFIX,ppt.flyv.tv
+DOMAIN-KEYWORD,kc.bxemln.com
+DOMAIN-KEYWORD,rps.lebo.cn
+
+###talkatone
+DOMAIN, imp.track.tappx.com
+DOMAIN, live.chartboost.com
+DOMAIN, ocsp.digicert.com
+DOMAIN, play.rayjump.com
+DOMAIN, playable.mintegral.com
+DOMAIN, playable-stats.mindworks-creative.com
+DOMAIN, api2.branch.io
+DOMAIN, us01.rayjump.com
+DOMAIN, us01.rayjump.com
+DOMAIN-SUFFIX, adservice.google.com
+DOMAIN, newplayable.mintegral.com
+DOMAIN-SUFFIX, adrta.com
+DOMAIN-SUFFIX, ace-event-ts6.admarvel.com
+DOMAIN-SUFFIX,ads.inmobi.com
+DOMAIN-SUFFIX,c.amazon-adsystem.com
+DOMAIN-SUFFIX,ad.appier.net
+DOMAIN-SUFFIX,ads.pubmatic.com
+DOMAIN-SUFFIX,ow.pubmatic.com
+DOMAIN-SUFFIX,cdn-adn-https-new.rayjump.com
+DOMAIN-SUFFIX,view.adjust.com
+DOMAIN-SUFFIX,ace-event-prod.admarvel.com
+DOMAIN-SUFFIX, ipds.adrta.com
+DOMAIN, sdk.ad.smaato.net
+DOMAIN, adx-tk.rayjump.com
+DOMAIN, www.google-analytics.com
+DOMAIN, tr-asia.adsmoloco.com
+DOMAIN, cdn-f.adsmoloco.com
+DOMAIN, adxinspidsp.com
+DOMAIN-SUFFIX, js.ad-score.com
+DOMAIN-SUFFIX, data.ad-score.com
+DOMAIN, creatives.smadex.com
+DOMAIN-SUFFIX, adservice.google.com.hk
+DOMAIN-SUFFIX, js.moatads.com
+DOMAIN-SUFFIX, l.betrad.com
+DOMAIN-SUFFIX, static-content-1.smadex.com
+DOMAIN, mb.moatads.com
+DOMAIN-SUFFIX, px.moatads.com
+DOMAIN-SUFFIX, trckr.contextualadv.com
+DOMAIN-SUFFIX, st.pubmatic.com
+DOMAIN-SUFFIX, s3.amazonaws.com
+DOMAIN-KEYWORD,adsmoloco.com
+DOMAIN-SUFFIX, i.l-dsp.inmobicdn.net
+DOMAIN-SUFFIX, bassets.bigabidserv.com
+DOMAIN-SUFFIX,adimpression.startappservice.com
+DOMAIN-SUFFIX,lyr.pubmatic.com
+DOMAIN-SUFFIX,assets.mintegral.com
+################################################################################################
 #### 毒奶去广告计划
 ## 原文参阅 https://limbopro.com/archives/12904.html
 
