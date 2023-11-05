@@ -31,6 +31,10 @@ DOMAIN,voice.telephony.google
 DOMAIN,voice.google.com
 DOMAIN,lens.l.google.com
 
+# > chatgpt
+DOMAIN,us-central1-chatgpt-a61db.cloudfunctions.net
+
+
 
 
 
