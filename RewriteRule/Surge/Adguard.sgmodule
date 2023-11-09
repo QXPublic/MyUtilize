@@ -1,6 +1,7 @@
 ########################小红书#######################################
-
+[Mitm]
 hostname = edith.xiaohongshu.com, www.xiaohongshu.com, pages.xiaohongshu.com, referee.xiaohongshu.com
+[Script]
 # > 小红书_视频播放页商品推广@ddgksf2013
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/redbook_json.js
 # > 小红书_短视频流去水印+强制开启保存功能@ddgksf2013
