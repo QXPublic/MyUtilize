@@ -8,16 +8,8 @@ hostname = sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-ds
 member.alipan.com
 
 
-[Script]
+[rewrite]
 #埋堆堆去广告
-^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList url reject-dict
-^https?:\/\/t-dsp\.pinduoduo\.com url reject-200
-^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/preload\.php url reject-200
-^http?:\/\/sfo\.mddcloud\.com\.cn\/api\/v2\/sfo\/popup_displays? url reject-dict
-^https?:\/\/tower\.ubixioe\.com\/mob\/mediation url reject
-^https?:\/\/toblog\.ctobsnssdk\.com url reject-200
-^https?:\/\/conf-darwin\.xycdn\.com url reject-dict
-^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com url reject
 
 #去阿里云盘 首页上方广告 让你看电影更加巴适
 ^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info url reject-dict
