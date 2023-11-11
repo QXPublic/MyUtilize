@@ -1,10 +1,11 @@
 ########################埋堆堆#######################################
 [Mitm]
-hostname = sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-dsp.pinduoduo.com, mobads-pre-config.cdn.bcebos.com, sdk1xyajs.data.kuiniuca.com,conf-darwin.xycdn.com,*.ubixioe.com
-
+hostname = sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-dsp.pinduoduo.com, mobads-pre-config.cdn.bcebos.com, sdk1xyajs.data.kuiniuca.com,conf-darwin.xycdn.com,*.ubixioe.com,
+member.alipan.com
 
 
 [Script]
+#埋堆堆去广告
 ^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList url reject-dict
 ^https?:\/\/t-dsp\.pinduoduo\.com url reject-200
 ^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/preload\.php url reject-200
@@ -13,3 +14,9 @@ hostname = sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-ds
 ^https?:\/\/toblog\.ctobsnssdk\.com url reject-200
 ^https?:\/\/conf-darwin\.xycdn\.com url reject-dict
 ^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com url reject
+
+#去阿里云盘 首页上方广告 让你看电影更加巴适
+^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info url reject-dict
+
+
+
