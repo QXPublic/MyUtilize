@@ -1,4 +1,8 @@
 ########################去广告🪧#######################################
+#!name=自用去广告合集📖
+#!desc=埋堆堆、阿里云盘
+
+
 [Mitm]
 hostname = sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-dsp.pinduoduo.com, mobads-pre-config.cdn.bcebos.com, sdk1xyajs.data.kuiniuca.com,conf-darwin.xycdn.com,*.ubixioe.com,
 member.alipan.com
