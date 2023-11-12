@@ -1,4 +1,4 @@
-#【海外服务—美国优选】
+###  viki\kocowacon\Google Voice\openai
 
 # > viki
 
@@ -31,8 +31,22 @@ DOMAIN,voice.telephony.google
 DOMAIN,voice.google.com
 DOMAIN,lens.l.google.com
 
-# > chatgpt
+# > openai
 DOMAIN,us-central1-chatgpt-a61db.cloudfunctions.net
+DOMAIN,ai.cn
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-KEYWORD,openai
 
 
 
