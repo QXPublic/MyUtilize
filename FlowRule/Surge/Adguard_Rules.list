@@ -1,5 +1,7 @@
 ################################################################################################
 #【广告专区】
+
+
 #####
 DOMAIN-KEYWORD,wyav
 ###
@@ -79,6 +81,11 @@ DOMAIN-SUFFIX, bassets.bigabidserv.com
 DOMAIN-SUFFIX,adimpression.startappservice.com
 DOMAIN-SUFFIX,lyr.pubmatic.com
 DOMAIN-SUFFIX,assets.mintegral.com
+
+###电信(首页净化，消息框不可用)
+DOMAIN-SUFFIX,appgoad.189.cn
+
+
 ################################################################################################
 #### 毒奶去广告计划
 ## 原文参阅 https://limbopro.com/archives/12904.html
