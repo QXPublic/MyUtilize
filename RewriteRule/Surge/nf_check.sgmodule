@@ -6,4 +6,4 @@
 nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
 
 [Script]
-nf_check = type=generic, script-path=?version=1671420166, argument=title=Netflix 解锁检测
+nf_check = type=generic, script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Netflix_check/nf_check.js?version=1671420166, argument=title=Netflix 解锁检测
