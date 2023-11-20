@@ -1,0 +1,6 @@
+#!name=ChatGPT检测
+#!desc=ChatGPT检测
+[Panel]
+ChatGPT检测 = script-name=ChatGPT检测
+[Script]
+ChatGPT检测 = type=generic,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/ChatGPT/ChatGPT_Check.js,argument=icon=ellipses.bubble.fill&icon-color=#008000
