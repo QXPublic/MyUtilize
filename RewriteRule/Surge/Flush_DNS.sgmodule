@@ -1,0 +1,8 @@
+#!name=Flush DNS
+#!desc=快速清除Surge的DNS缓存
+
+[Panel]
+FlushDNS = script-name=FlushDNS,update-interval=600
+
+[Script]
+FlushDNS = type=generic,timeout=10,script-path=,argument=title=DNS FLush&icon=cube&color=#afe59a&server=false
