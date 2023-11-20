@@ -5,4 +5,4 @@
 FlushDNS = script-name=FlushDNS,update-interval=600
 
 [Script]
-FlushDNS = type=generic,timeout=10,script-path=,argument=title=DNS FLush&icon=cube&color=#afe59a&server=false
+FlushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/FlushDNS/FlushDNS.js,argument=title=DNS FLush&icon=cube&color=#afe59a&server=false
