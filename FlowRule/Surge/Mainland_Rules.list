@@ -95,8 +95,6 @@ DOMAIN-SUFFIX,pingan.com.cn
 # > Beplay
 DOMAIN-KEYWORD,beplay
 
-# bilibili
-DOMAIN-SUFFIX,api.live.bilibili.com
 
 # > Blizzard
 USER-AGENT,hearthstone*
