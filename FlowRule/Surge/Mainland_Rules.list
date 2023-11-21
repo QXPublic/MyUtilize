@@ -546,7 +546,7 @@ IP-CIDR,1.255.62.0/24
 
 #【ASN大陆直连】
 # 🌐 ASN for Mainland China
-IP-ASN,4134 // 金融街31号
+#IP-ASN,4134 // 金融街31号#####################
 IP-ASN,4538 // 中国教育科研网络中心
 IP-ASN,4611 // CNNIC会员
 IP-ASN,4789 // NAP1 at CERNET
