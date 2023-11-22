@@ -83,7 +83,7 @@ DOMAIN-SUFFIX, bassets.bigabidserv.com
 DOMAIN-SUFFIX,adimpression.startappservice.com
 DOMAIN-SUFFIX,lyr.pubmatic.com
 DOMAIN-SUFFIX,assets.mintegral.com
-DOMAIN,ssp.api.tappx.com
+
 
 ###电信(首页净化，消息框不可用)
 DOMAIN-SUFFIX,appgoad.189.cn
