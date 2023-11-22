@@ -1,9 +1,8 @@
 ################################################################################################
-
+### 堆糖\#拦截100屏蔽\talkatone\电信(首页净化，消息框不可用)\
 
 ################################################################################################
 #【广告专区】
-
 
 #####
 DOMAIN-KEYWORD,wyav
@@ -84,6 +83,7 @@ DOMAIN-SUFFIX, bassets.bigabidserv.com
 DOMAIN-SUFFIX,adimpression.startappservice.com
 DOMAIN-SUFFIX,lyr.pubmatic.com
 DOMAIN-SUFFIX,assets.mintegral.com
+DOMAIN,ssp.api.tappx.com
 
 ###电信(首页净化，消息框不可用)
 DOMAIN-SUFFIX,appgoad.189.cn
