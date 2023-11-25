@@ -367,7 +367,7 @@ DOMAIN-SUFFIX,ifeng.com
 DOMAIN-SUFFIX,ifengimg.com
 DOMAIN-SUFFIX,images-amazon.com
 DOMAIN-SUFFIX,img4me.com
-DOMAIN-SUFFIX,ipify.org
+########DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,ithome.com
 DOMAIN-SUFFIX,ixdzs.com
