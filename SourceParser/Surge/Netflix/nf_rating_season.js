@@ -1,5 +1,5 @@
 /**
- * nf_rating_season.js 
+ *  nf_rating_season.js = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=66
  */
 
 const $tool = new Tool()
