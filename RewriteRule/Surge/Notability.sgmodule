@@ -1,0 +1,12 @@
+#!name=Notability Plus
+
+#!desc=Notability解锁
+
+
+[MITM]
+
+hostname = %APPEND% notability.com
+
+[Script]
+
+Notability=type=http-response,pattern=^https://notability.com/subscriptions,requires-body=1,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Notability/notability.js
