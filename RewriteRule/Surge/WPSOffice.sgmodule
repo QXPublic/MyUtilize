@@ -4,7 +4,7 @@
 
 [Script]
 
-WPSOffice_2 = type=http-response, pattern=^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview), requires-body=true, max-size=3145728, script-path= , timeout=60, script-update-interval=0
+WPSOffice_2 = type=http-response, pattern=^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Wps/Wps.js, timeout=60, script-update-interval=0
 
 [MITM]
 
