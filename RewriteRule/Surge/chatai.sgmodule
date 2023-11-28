@@ -3,7 +3,7 @@
 
 [Script]
 
-chatai_6 = type=http-response, pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*, requires-body=true, max-size=3145728, script-path=888, timeout=60, script-update-interval=0
+chatai_6 = type=http-response, pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Chatai/chatai.js, timeout=60, script-update-interval=0
 
 [MITM]
 
