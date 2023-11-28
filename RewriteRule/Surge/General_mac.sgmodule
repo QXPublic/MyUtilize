@@ -1,5 +1,6 @@
 #!name=🌐 MAC通用增强
 #!desc=(🖥️ macOS版) 1.覆盖跳过代理部分段内容 2.添加返回真实IP段内容 3.添加不可MitM的域名，防止打断连接
+#!system=mac
 
 [General]
 # > 跳过代理
