@@ -1,0 +1,10 @@
+#!name=chatAI
+#!desc=chatai解锁🔓
+
+[Script]
+
+chatai_6 = type=http-response, pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*, requires-body=true, max-size=3145728, script-path=888, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% api.revenuecat.com
