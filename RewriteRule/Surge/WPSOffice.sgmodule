@@ -1,0 +1,11 @@
+#!name=WPSOffice
+#!desc=WPSOffice部分svip解锁
+
+
+[Script]
+
+WPSOffice_2 = type=http-response, pattern=^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview), requires-body=true, max-size=3145728, script-path= , timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% vas.wps.cn,account.wps.cn
