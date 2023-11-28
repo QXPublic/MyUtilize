@@ -1,0 +1,14 @@
+#!name=Goodnote6
+#!desc=Goodnote6永久解锁版
+
+
+
+[Script]
+
+gg_6 = type=http-response, pattern=^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Goodnote/Goodnote.js, timeout=60, script-update-interval=0
+
+gg_7 = type=http-request, pattern=^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Goodnote/Goodnote.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% isi.*.g*.com*
