@@ -1,0 +1,12 @@
+#!name= Netflix
+#!desc= netflix双字幕，豆瓣评分
+#!system=ios
+
+[Script]
+奈菲迪士尼评分=type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=66666, requires-body=true, timeout=10
+奈菲迪士尼评分1=type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,requires-body=1,script-path=6666, requires-body=true, timeout=10
+奈菲迪士尼评分2=type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,script-path=6666, requires-body=true, timeout=10
+Netflix-Dualsub= type=http-response,pattern=https:\/\/.+nflxvideo.net\/\?o=\d+&v=\d+&e=.+,requires-body=1,max-size=0,timeout=30,script-path=666
+Netflix-Dualsub-Setting= type=http-request,pattern=https:\/\/setting.nflxvideo.net\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=666
+[MITM]
+hostname= %APPEND% ios.prod.ftl.netflix.com,*.nflxvideo.net
