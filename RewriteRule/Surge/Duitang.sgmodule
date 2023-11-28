@@ -1,0 +1,10 @@
+#!name=堆糖🍬
+#!desc=堆糖🍬svip
+
+[Script]
+
+duitang_8 = type=http-response, pattern=^http[s]?:\/\/.*\.duitang\.com\/napi, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Duitang/Duitang.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% *.duitang.com
