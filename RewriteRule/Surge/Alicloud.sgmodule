@@ -1,0 +1,30 @@
+#!name=阿里云盘svip
+#!desc=阿里云盘视频解锁等
+
+
+[URL Rewrite]
+
+^https?:\/\/member\.(aliyundrive|alipan)\.com\/v1\/users\/onboard_list - reject
+^https?:\/\/api\.(aliyundrive|alipan)\.com\/adrive\/v2\/backup\/device - reject
+
+[Script]
+
+alicloud_11 = type=http-response, pattern=^https?:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1\.1\/users\/me\/vip\/info, requires-body=true, max-size=3145728, script-path=666, timeout=60, script-update-interval=0
+
+alicloud_12 = type=http-response, pattern=^https?:\/\/member\.(aliyundrive|alipan)\.com\/v1\/users\/tools, requires-body=true, max-size=3145728, script-path=888, timeout=60, script-update-interval=0
+
+alicloud_13 = type=http-response, pattern=^https?:\/\/member\.(aliyundrive|alipan)\.com\/v1\/users\/me, requires-body=true, max-size=3145728, script-path=9999, timeout=60, script-update-interval=0
+
+alicloud_14 = type=http-response, pattern=^https?:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1\.0\/users\/vip\/info, requires-body=true, max-size=3145728, script-path=7777, timeout=60, script-update-interval=0
+
+alicloud_15 = type=http-response, pattern=^https?:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1\.0\/users\/feature\/list, requires-body=true, max-size=3145728, script-path=8888, timeout=60, script-update-interval=0
+
+alicloud_16 = type=http-response, pattern=^https?:\/\/api\.(aliyundrive|alipan)\.com\/apps\/v2\/users\/home\/widgets, requires-body=true, max-size=3145728, script-path=0000, timeout=60, script-update-interval=0
+
+alicloud_18 = type=http-response, pattern=^https?:\/\/user\.(aliyundrive|alipan)\.com\/v2\/user\/get, requires-body=true, max-size=3145728, script-path=9999, timeout=60, script-update-interval=0
+
+alicloud_20 = type=http-response, pattern=^https?:\/\/member\.(aliyundrive|alipan)\.com\/v2\/activity\/sign_in_info, requires-body=true, max-size=3145728, script-path=7777, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% api.alipan.com,member.aliyundrive.com,member.alipan.com,api.aliyundrive.com
