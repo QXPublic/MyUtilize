@@ -1,5 +1,6 @@
 #!name=ChatGPT检测
 #!desc=ChatGPT检测
+#!system=ios
 [Panel]
 ChatGPT检测 = script-name=ChatGPT检测
 [Script]
