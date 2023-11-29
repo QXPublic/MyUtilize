@@ -13,5 +13,7 @@ compatibility-mode = 1
 # > 增强版 Wi-Fi 助理
 # (在 Wi-Fi 网络不佳时尝试使用数据网络建立连接，请仅当使用不限量的数据流量时开启)
 wifi-assist = true
+# > 混合网络(wifi和数据并发)
+all-hybrid = false
 # > Network framwork
 network-framework = false
