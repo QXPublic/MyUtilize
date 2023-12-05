@@ -4,10 +4,13 @@
 [Panel]
 
 #IP地址
-IPcheck = script-name=IPtcheck
+IPcheck = script-name=fetch_content.js
 
 [Script]
+http-request ^http://ip234\.in/ip\.json script=fetch_content
 
-#流量统计 点击以切换网络界面
-IPtcheck = type=generic,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/IP_check.js,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
+[Script]
+fetch_content.js = type=http-request,pattern=^http://ip234\.in/ip\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/IP_check.js
 
+[MITM]
+hostname = ip234.in
