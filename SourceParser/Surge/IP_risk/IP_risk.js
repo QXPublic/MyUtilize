@@ -10,7 +10,8 @@ let url = "http://ip234.in/f.json"
 
 $httpClient.get(url, function(error, response, data){
     let jsonData = JSON.parse(data)
-    let risk = jsonData.risk
+    let data1 = jsonData.data
+    let risk = data1.risk
     
   body = {
     title: "节点信息",
