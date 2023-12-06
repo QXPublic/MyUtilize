@@ -15,7 +15,7 @@ $httpClient.get(url, function(error, response, data){
     let score = data1.score
     
   body = {
-    title: "节点信息",
+    title: "节点风险信息",
     content: `IP风险：${risk}\n风险指数：${score}`,
     icon: "globe.asia.australia.fill"
   }
