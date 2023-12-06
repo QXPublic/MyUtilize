@@ -9,4 +9,4 @@
 Group-Panel = script-name=Group-Panel,update-interval=1
 
 [Script]
-Group-Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Group-Panel/Group-Panel.js,argument=icon=network&color=#86abee&group=TW🇹🇼
+Group-Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Group-Panel/Group-Panel.js,argument=icon=network&color=#86abee&group=🌍
