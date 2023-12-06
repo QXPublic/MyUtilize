@@ -1,16 +1,12 @@
-#!name=Panels
-#!desc=信息面板
+#!name=Group-Panel
+#!desc=快速切换节点
+#!system=ios
+# 对应参数：icon：图标，color：图标颜色，group：策略组名称
+# 更新日期：2022.08.24
+# 版本：2.0
 
 [Panel]
-
-#IP地址
-IPcheck = script-name=fetch_content.js
+Group-Panel = script-name=Group-Panel,update-interval=1
 
 [Script]
-http-request ^http://ip234\.in/ip\.json script=fetch_content
-
-[Script]
-fetch_content.js = type=http-request,pattern=^http://ip234\.in/ip\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/IP_check.js
-
-[MITM]
-hostname = ip234.in
+Group-Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Group-Panel/Group-Panel.js,argument=icon=network&color=#86abee&group=TW🇹🇼
