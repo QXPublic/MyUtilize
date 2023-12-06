@@ -12,10 +12,11 @@ $httpClient.get(url, function(error, response, data){
     let jsonData = JSON.parse(data)
     let data1 = jsonData.data
     let risk = data1.risk
+    let score = data1.score
     
   body = {
     title: "节点信息",
-    content: `IP风险：${risk}`,
+    content: `IP风险：${risk} 指数：${score}`,
     icon: "globe.asia.australia.fill"
   }
   $done(body);
