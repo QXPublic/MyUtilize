@@ -16,7 +16,7 @@ $httpClient.get(url, function(error, response, data){
     
   body = {
     title: "节点信息",
-    content: `IP风险：${risk} 指数：${score}`,
+    content: `IP风险：${risk}\n风险指数：${score}`,
     icon: "globe.asia.australia.fill"
   }
   $done(body);
