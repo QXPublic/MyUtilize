@@ -10,7 +10,7 @@ let url = "http://ip234.in/f.json"
 
 $httpClient.get(url, function(error, response, data){
     let jsonData = JSON.parse(data)
-    let risk = jsonData.country
+    let risk = jsonData.risk
     #let emoji = getFlagEmoji(jsonData.countryCode)
     #let city = jsonData.city
     #let isp = jsonData.isp
