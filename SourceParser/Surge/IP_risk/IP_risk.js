@@ -6,18 +6,18 @@
  * 版本：1.5
  */
 
-let url = "http://ip-api.com/json"
+let url = "http://ip234.in/f.json"
 
 $httpClient.get(url, function(error, response, data){
     let jsonData = JSON.parse(data)
-    let country = jsonData.country
-    let emoji = getFlagEmoji(jsonData.countryCode)
-    let city = jsonData.city
-    let isp = jsonData.isp
-    let ip = jsonData.query
+    let risk = jsonData.country
+    #let emoji = getFlagEmoji(jsonData.countryCode)
+    #let city = jsonData.city
+    #let isp = jsonData.isp
+    #let ip = jsonData.query
   body = {
     title: "节点信息",
-    content: `IP信息：${ip}\n运营商：${isp}\n所在地：${emoji}${country} - ${city}`,
+    content: `IP风险：${risk}`,
     icon: "globe.asia.australia.fill"
   }
   $done(body);
