@@ -1,0 +1,177 @@
+#!name=GroupAutoAll（慎重启动）
+#!desc=优选节点: 根据 httpApi 返回的 (速度:持久化缓存) (平均延时:持久化缓存) 优选
+
+# 作用: 
+#  如果策略组 节点变更 会重新缓存结果 重新取值
+#  如果有节点偶尔ping不通 那么大概率不会选中他 
+#  如果某个节点虽然延迟低 但是速度很差 也不会选他
+# 策略: 
+#  根据 api 返回的节点 速度, 延时 (持久化缓存) 对节点进行优选
+
+# 面板说明:
+#  继承: Tokyo: 40C 6.54M 61   [Tokyo]代表优选的节点, [40C]代表次数, [6.54M]代表最高速度, [61]表示综合评分按速度和延时非线性改变
+#  GroupAuto VPS'4   17:41    [VPS]代表优选的策略组名  ['4]代表策略组中有4个节点
+# ♳,♴,♵,♶,♷,♸,♹,代表清理过超过30个数量的缓存
+
+# 必选参数:
+# group=          你的策略组名(需要填写手动选择的策略组select)
+
+# 可选参数:
+# avgnumber=30    缓存节点测试次数， 超过会清理
+# tolerance=10    容差10ms 小于10ms则不切换节点
+# timecache=18    缓存到期时间(小时) 或 超过40个数据会清理旧的数据
+# push            加参数为开启通知, 不加参数则不通知
+
+[Panel]
+#HK🇭🇰
+GroupAutoHK = script-name=GroupAutoHK,update-interval=6
+#GroupAutoHKPLUS = script-name=GroupAutoHKPLUS,update-interval=6
+#TW🇹🇼
+GroupAutoTW = script-name=GroupAutoTW,update-interval=6
+#GroupAutoTWPLUS = script-name=GroupAutoTWPLUS,update-interval=6
+#JP🇯🇵
+GroupAutoJP = script-name=GroupAutoJP,update-interval=6
+#GroupAutoJPPLUS = script-name=GroupAutoJPPLUS,update-interval=6
+#KR🇰🇷
+#GroupAutoKR = script-name=GroupAutoKR,update-interval=6
+#GroupAutoKRPLUS = script-name=GroupAutoKRPLUS,update-interval=6
+#SG🇸🇬
+GroupAutoSG = script-name=GroupAutoSG,update-interval=6
+#GroupAutoSGPLUS = script-name=GroupAutoSGPLUS,update-interval=6
+#TH🇹🇭
+#GroupAutoTH = script-name=GroupAutoTH,update-interval=6
+#GroupAutoTHPLUS = script-name=GroupAutoTHPLUS,update-interval=6
+#PH🇵🇭
+#GroupAutoPH = script-name=GroupAutoPH,update-interval=6
+#GroupAutoPHPLUS = script-name=GroupAutoPHPLUS,update-interval=6
+#IN🇮🇳
+#GroupAutoIN = script-name=GroupAutoIN,update-interval=6
+#GroupAutoINPLUS = script-name=GroupAutoINPLUS,update-interval=6
+#MY🇲🇾
+#GroupAutoMY = script-name=GroupAutoMY,update-interval=6
+#GroupAutoMYPLUS = script-name=GroupAutoMYPLUS,update-interval=6
+##PK🇵🇰
+#GroupAutoPK = script-name=GroupAutoPK,update-interval=6
+#GroupAutoPKPLUS = script-name=GroupAutoPKPLUS,update-interval=6
+#TR🇹🇷
+#GroupAutoTR = script-name=GroupAutoTR,update-interval=6
+#GroupAutoTRPLUS = script-name=GroupAutoTRPLUS,update-interval=6
+#AU🇦🇺
+#GroupAutoAU = script-name=GroupAutoAU,update-interval=6
+#GroupAutoAUPLUS = script-name=GroupAutoAUPLUS,update-interval=6
+#DE🇩🇪
+#GroupAutoDE = script-name=GroupAutoDE,update-interval=6
+#GroupAutoDEPLUS = script-name=GroupAutoDEPLUS,update-interval=6
+#UK🇬🇧
+#GroupAutoUK = script-name=GroupAutoUK,update-interval=6
+#GroupAutoUKPLUS = script-name=GroupAutoUKPLUS,update-interval=6
+#AR🇦🇷
+#GroupAutoAR = script-name=GroupAutoAR,update-interval=6
+#GroupAutoARPLUS = script-name=GroupAutoARPLUS,update-interval=6
+#US🇺🇸
+#GroupAutoUS = script-name=GroupAutoUS,update-interval=6
+#GroupAutoUSPLUS = script-name=GroupAutoUSPLUS,update-interval=6
+
+
+
+[Script]
+# 面板 运行 (面板与定时任务可同时存在)
+#HK🇭🇰
+GroupAutoHK = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=0.1&color=#6699FF&icon=speedometer&group=HK🇭🇰
+GroupAutoHKPLUS = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=0.1&color=#6699FF&icon=speedometer&group=HK🇭🇰PLUS
+#TW🇹🇼
+GroupAutoTW = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=0.1&color=#6699FF&icon=speedometer&group=TW🇹🇼
+GroupAutoTWPLUS = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=0.1&color=#6699FF&icon=speedometer&group=TW🇹🇼PLUS
+#JP🇯🇵
+GroupAutoJP = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=0.1&color=#6699FF&icon=speedometer&group=JP🇯🇵
+GroupAutoJPPLUS = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=0.1&color=#6699FF&icon=speedometer&group=JP🇯🇵PLUS
+#KR🇰🇷
+GroupAutoKR = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=KR🇰🇷
+GroupAutoKRPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=KR🇰🇷PLUS
+#SG🇸🇬
+GroupAutoSG = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=SG🇸🇬
+GroupAutoSGPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=SG🇸🇬PLUS
+#TH🇹🇭
+GroupAutoTH = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=TH🇹🇭
+GroupAutoTHPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=TH🇹🇭PLUS
+#PH🇵🇭
+GroupAutoPH = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=PH🇵🇭
+GroupAutoPHPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=PH🇵🇭PLUS
+#IN🇮🇳
+GroupAutoIN = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=IN🇮🇳
+GroupAutoINPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=IN🇮🇳PLUS
+#MY🇲🇾
+GroupAutoMY = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=MY🇲🇾
+GroupAutoMYPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=MY🇲🇾PLUS
+#PK🇵🇰
+GroupAutoPK = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=PK🇵🇰
+GroupAutoPKPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=PK🇵🇰PLUS
+#TR🇹🇷
+GroupAutoTR = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=TR🇹🇷
+GroupAutoTRPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=TR🇹🇷PLUS
+#AU🇦🇺
+GroupAutoAU = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=AU🇦🇺
+GroupAutoAUPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=AU🇦🇺PLUS
+#DE🇩🇪
+GroupAutoDE = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=DE🇩🇪
+GroupAutoDEPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=DE🇩🇪PLUS
+#UK🇬🇧
+GroupAutoUK = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=UK🇬🇧
+GroupAutoUKPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=UK🇬🇧PLUS
+#AR🇦🇷
+GroupAutoAR = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=AR🇦🇷
+GroupAutoARPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=AR🇦🇷PLUS
+#US🇺🇸
+GroupAutoUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=US🇺🇸
+GroupAutoUSPLUS = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&color=#6699FF&icon=speedometer&group=US🇺🇸PLUS
+
+
+# 定时自动运行(可选需取消#注释) 120分钟一次,每天2到7点不运行
+#HK🇭🇰
+Cron_GroupAutoHK = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=HK🇭🇰
+Cron_GroupAutoHKPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=HK🇭🇰PLUS
+#TW🇹🇼
+Cron_GroupAutoTW = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=TW🇹🇼
+Cron_GroupAutoTWPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=TW🇹🇼PLUS
+#JP🇯🇵
+Cron_GroupAutoJP = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=JP🇯🇵
+Cron_GroupAutoJPPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=JP🇯🇵PLUS
+#KR🇰🇷
+Cron_GroupAutoKR = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=KR🇰🇷
+Cron_GroupAutoKRPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=KR🇰🇷PLUS
+#SG🇸🇬
+Cron_GroupAutoSG = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=SG🇸🇬
+Cron_GroupAutoSGPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=SG🇸🇬PLUS
+#TH🇹🇭
+Cron_GroupAutoTH = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=TH🇹🇭
+Cron_GroupAutoTHPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=TH🇹🇭PLUS
+#PH🇵🇭
+Cron_GroupAutoPH = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=PH🇵🇭
+Cron_GroupAutoPHPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=PH🇵🇭PLUS
+#IN🇮🇳
+Cron_GroupAutoIN= type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=IN🇮🇳
+Cron_GroupAutoINPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=IN🇮🇳PLUS
+#MY🇲🇾
+Cron_GroupAutoMY = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=MY🇲🇾
+Cron_GroupAutoMYPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=MY🇲🇾PLUS
+#PK🇵🇰
+Cron_GroupAutoPK = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=PK🇵🇰
+Cron_GroupAutoPKPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=PK🇵🇰PLUS
+#TR🇹🇷
+Cron_GroupAutoTR = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=TR🇹🇷
+Cron_GroupAutoTRPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=TR🇹🇷PLUS
+#AU🇦🇺
+Cron_GroupAutoAU = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=AU🇦🇺
+Cron_GroupAutoAUPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=AU🇦🇺PLUS
+#DE🇩🇪
+Cron_GroupAutoDE = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=DE🇩🇪
+Cron_GroupAutoDEPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=DE🇩🇪PLUS
+#UK🇬🇧
+Cron_GroupAutoUK = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=UK🇬🇧
+Cron_GroupAutoUKPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=UK🇬🇧PLUS
+#AR🇦🇷
+Cron_GroupAutoAR = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=AR🇦🇷
+Cron_GroupAutoARPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=AR🇦🇷PLUS
+#US🇺🇸
+Cron_GroupAutoUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=US🇺🇸
+Cron_GroupAutoUSPLUS = type=cron, cronexp="*/120 0,1,7-23 * * *", timeout=15,wake-system=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/GroupAuto/ProGroup.js, argument=tolerance=25&timecache=2&group=US🇺🇸PLUS
