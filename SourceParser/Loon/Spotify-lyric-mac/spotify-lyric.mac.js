@@ -17,19 +17,19 @@
 [MITM]
 hostname = %APPEND% spclient.wg.spotify.com
 [Script]
-spotify歌词翻译 = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Loon/spotify-lyric.mac.js
+spotify歌词翻译 = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/,requires-body=1,binary-body-mode=1,max-size=0,script-path=6666
 
 2.Loon:
 [Mitm]
 hostname =spclient.wg.spotify.com
 [Script]
-http-response ^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Loon/spotify-lyric.mac.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify歌词翻译
+http-response ^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ script-path=66666, requires-body=true, binary-body-mode=true, timeout=10, tag=Spotify歌词翻译
 
 3.qx:
 [mitm]
 hostname = spclient.wg.spotify.com
 [rewrite_local]
-^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Loon/spotify-lyric.mac.js
+^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ url script-response-body 6666
 
 */
 // 注意: QX用户需要手动填入appid和securityKey密钥, Surge和Loon用户无需填入!!!!
