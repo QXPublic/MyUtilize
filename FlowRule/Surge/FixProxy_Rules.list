@@ -1,4 +1,6 @@
 #代理规则补充#
-
+#
 DOMAIN-SUFFIX,ip123.in
+DOMAIN-SUFFIX,travel-eye.org
+#
 
