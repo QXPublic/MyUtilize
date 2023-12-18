@@ -1,9 +1,13 @@
-###  viki\kocowacon\Google Voice\openai
+###  Claude\talkatone\viki\kocowacon\Google Voice\openai
+# > Claude
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
 
 # > talkatone
 DOMAIN-KEYWORD,tktn
-# > viki
 
+# > viki
 DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
 DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
 DOMAIN-SUFFIX,twemoji.maxcdn.com
