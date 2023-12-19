@@ -1,8 +1,8 @@
-#!name=chatAI（ScriptHub）
-#!desc=chatai解锁🔓
+#!name=Chat-Ai(ScriptHub)
+#!desc=屏蔽更新3.6版本(gpt4可用)
 #!system=ios
-#update= 2023.12.12
-#抓包旧版3.6屏蔽更新
+
+
 
 [MITM]
 
@@ -14,7 +14,7 @@ hostname = %APPEND% api.revenuecat.com,firestore.googleapis.com
 
 [Script]
 
-chatai = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Chatai/chatai.js, requires-body=true, max-size=-1, timeout=60
+Chat-Ai = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Chatai/chatai.js, requires-body=true, max-size=-1, timeout=60
 
-chatai = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Chatai/chatai.js, timeout=60
+Chat-Ai = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Chatai/chatai.js, timeout=60
 
