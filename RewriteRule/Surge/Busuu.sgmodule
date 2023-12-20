@@ -1,0 +1,6 @@
+#!name=busuu解锁订阅
+#!desc=bu 博树解锁订阅
+[Script]
+Busuu = type=http-response,requires-body=1,pattern=^https?://api.busuu.com/users/me,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Busuu/Busuu.js
+[MITM]
+hostname= %APPEND% api.busuu.com
