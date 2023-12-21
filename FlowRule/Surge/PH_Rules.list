@@ -1,4 +1,5 @@
 ### maya\smart\unobank\globe
+
 ##maya
 DOMAIN-SUFFIX,mayabank.ph
 DOMAIN-SUFFIX,paymaya.com
@@ -7,9 +8,12 @@ DOMAIN-SUFFIX,csftr.com
 DOMAIN-SUFFIX,voyagerapis.com
 DOMAIN-SUFFIX,clevertap-prod.com
 DOMAIN-SUFFIX,voyagerinnovation.com
+
 ###smart
 DOMAIN-SUFFIX,smart.com.ph
+
 ###unobank
 DOMAIN-KEYWORD,unobank
+
 ###globe
 DOMAIN-KEYWORD,globe
