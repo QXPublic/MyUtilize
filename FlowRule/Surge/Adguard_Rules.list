@@ -1,5 +1,5 @@
 ################################################################################################
-###堆糖\拦截100屏蔽\talkatone\电信(首页净化，消息框不可用)###
+### apple\堆糖\拦截100屏蔽\talkatone\电信(首页净化，消息框不可用)###
 
 ################################################################################################
 ###广告专区###
@@ -64,7 +64,6 @@ DOMAIN-SUFFIX,w.anygate.vip
 DOMAIN-SUFFIX,ppt.flyv.tv
 DOMAIN-KEYWORD,kc.bxemln.com
 DOMAIN-KEYWORD,rps.lebo.cn
-
 # > talkatone
 DOMAIN, imp.track.tappx.com
 DOMAIN, live.chartboost.com
@@ -112,11 +111,8 @@ DOMAIN-SUFFIX, bassets.bigabidserv.com
 DOMAIN-SUFFIX,adimpression.startappservice.com
 DOMAIN-SUFFIX,lyr.pubmatic.com
 DOMAIN-SUFFIX,assets.mintegral.com
-
-
 # > 电信(首页净化，消息框不可用)
 DOMAIN-SUFFIX,appgoad.189.cn
-
 ################################################################################################
 ###本碎片只包含常见广告关键字、广告联盟###
 ################################################################################################
@@ -148,7 +144,6 @@ DOMAIN-KEYWORD,supersonicads
 DOMAIN-KEYWORD,usage
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,zjtoolbar
-
 # 广告联盟-国内
 DOMAIN-SUFFIX,09mk.cn
 DOMAIN-SUFFIX,100peng.com
@@ -546,7 +541,6 @@ DOMAIN-SUFFIX,zhiziyun.com
 DOMAIN-SUFFIX,zhjfad.com
 DOMAIN-SUFFIX,zqzxz.com
 DOMAIN-SUFFIX,zzsx8.com
-
 # > 广告联盟-国外
 DOMAIN-SUFFIX,acuityplatform.com
 DOMAIN-SUFFIX,ad-stir.com
@@ -701,7 +695,6 @@ DOMAIN-SUFFIX,yadro.ru
 DOMAIN-SUFFIX,yengo.com
 DOMAIN-SUFFIX,zedo.com
 DOMAIN-SUFFIX,zemanta.com
-
 # > 垃圾站点
 DOMAIN-SUFFIX,11h5.com
 DOMAIN-SUFFIX,1kxun.mobi
@@ -718,7 +711,6 @@ DOMAIN-SUFFIX,wanfeng1.com
 DOMAIN-SUFFIX,wep016.top
 DOMAIN-SUFFIX,win-stock.com.cn
 DOMAIN-SUFFIX,zantainet.com
-
 DOMAIN-SUFFIX,dh54wf.xyz
 DOMAIN-SUFFIX,g2q3e.cn
 # > 运营商广告
