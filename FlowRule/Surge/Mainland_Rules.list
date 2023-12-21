@@ -619,7 +619,7 @@ DOMAIN,idmsa.apple.com
 # > AppleMail
 DOMAIN-SUFFIX,mail.icloud.com.cn
 DOMAIN-SUFFIX,mail.me.com
-# > 
+
 
 # > Mainland
 DOMAIN-SUFFIX,10010.com
