@@ -4,6 +4,7 @@
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,huluim.com
 DOMAIN-SUFFIX,hulustream.com
+
 # > Amazon Prime Video
 USER-AGENT,InstantVideo.US*
 USER-AGENT,Prime%20Video*
@@ -24,6 +25,7 @@ DOMAIN,d1v5ir2lpwr8os.cloudfront.net
 DOMAIN,d27xxe7juh1us6.cloudfront.net
 DOMAIN,www.amazon.com
 DOMAIN-KEYWORD,avoddashs
+
 # > HBO NOW & Max
 USER-AGENT,HBO%20NOW*
 DOMAIN-SUFFIX,hbo.com
@@ -32,6 +34,7 @@ DOMAIN-SUFFIX,hbonow.com
 USER-AGENT,HBOMAX*
 DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbomaxcdn.com
+
 # > Paramount+
 USER-AGENT,PPlus*
 DOMAIN-SUFFIX,cbsi.com
@@ -43,6 +46,7 @@ DOMAIN,cbsi.live.ott.irdeto.com
 DOMAIN,cbsplaylistserver.aws.syncbak.com
 DOMAIN,cbsservice.aws.syncbak.com
 DOMAIN,link.theplatform.com
+
 # > HBO Asia
 USER-AGENT,HBO%20GO%20PROD*
 DOMAIN-SUFFIX,hbogoasia.com
@@ -63,6 +67,7 @@ DOMAIN,hbolb.onwardsmg.com
 DOMAIN,hbounify-prod.evergent.com
 DOMAIN,players.brightcove.net
 DOMAIN,s3-ap-southeast-1.amazonaws.com
+
 # > Netflix
 USER-AGENT,Argo*
 DOMAIN-SUFFIX,netflix.com
@@ -75,6 +80,7 @@ DOMAIN-SUFFIX,nflxvideo.net
 DOMAIN-KEYWORD,netflixdnstest
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,dualstack.apiproxy-
+
 # > Disney+
 USER-AGENT,Disney+*
 DOMAIN-SUFFIX,bamgrid.com
