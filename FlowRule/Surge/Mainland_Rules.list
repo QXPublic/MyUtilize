@@ -1,7 +1,4 @@
 
-
-
-
 # 【大陆地区—直连-默认】
 
 USER-AGENT,hide*
@@ -28,7 +25,6 @@ DOMAIN-SUFFIX,mini.eastday.com
 DOMAIN-SUFFIX,aliyundrive.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,lianmengapi5-core-lf.ecombdapi.com
-
 
 # > Bank of China
 DOMAIN-SUFFIX,boc.cn
