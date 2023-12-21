@@ -1,6 +1,8 @@
 
 # 【大陆地区—直连-默认】
 
+
+DOMAIN,wspeed.qq.com
 USER-AGENT,hide*
 USER-AGENT,MicroMessenger*
 USER-AGENT,TeamViewer*
