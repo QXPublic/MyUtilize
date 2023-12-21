@@ -4,4 +4,4 @@ DOMAIN-SUFFIX,ip123.in
 DOMAIN-SUFFIX,travel-eye.org
 #google
 DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,*google-analytics.com
