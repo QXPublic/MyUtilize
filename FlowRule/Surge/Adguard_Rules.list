@@ -3,6 +3,14 @@
 
 ################################################################################################
 ###广告专区###
+
+#x.星球
+USER-AGENT,sf?-fe-tos.pglstatp-toutiao.com
+USER-AGENT,p?-be-pack-sign.pglstatp-toutiao.com
+DOMAIN,open.e.kuaishou.com
+DOMAIN,p1-lm.adukwai.com
+USER-AGENT,api-access.pangolin-sdk-toutiao*.com
+
 # > apple
 # > macOS updates
 DOMAIN,configuration.apple.com // Rosetta 2 updates
