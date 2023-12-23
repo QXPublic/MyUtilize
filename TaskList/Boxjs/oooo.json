@@ -1,0 +1,172 @@
+{
+  "id": "alt",
+  "name": "oooo",
+  "author": "@Alt_Option",
+  "icon": "https://raw.githubusercontent.com/LitPrompt/Module/main/Asset/Cat.png",
+  "repo": "https://github.com/ChinaTelecomOperators/ChinaTelecom",
+  "apps": [
+    {
+      "id": "Tele_AutoCheck",
+      "name": "电信余量查询（自动版）",
+      "descs_html": [
+        "<b>使用方法：</b>",
+        "1.输入账号",
+        "2.输入密码",
+        "3.保存！！！"
+      ],
+      "keys": [
+        "KeyBrond",
+        "LoginName",
+        "LoginPw",
+        "Threshold",
+        "LimitStore",
+        "NoticeBody",
+        "UnlimitStore",
+        "BarkIcon",
+        "BarkKey",
+        "BarkAdd",
+        "PackgeDetail",
+        "QueryBody"
+      ],
+      "settings": [ 
+        {
+          "id": "isNotice",
+          "name": "是否关闭通知",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认开启通知，当单独使用Scriptable时可关闭脚本通知"
+        }, 
+        {
+          "id": "LoginName",
+          "name": "电信营业厅登录账号",
+          "val": "",
+          "type": "text",
+          "placeholder": "手机号",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入电信手机号"
+        }, 
+        {
+          "id": "LoginPw",
+          "name": "电信营业厅登录密码",
+          "val": "",
+          "type": "text",
+          "placeholder": "登录密码",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入电信登录密码"
+        },
+        {
+          "id": "KeyBrond",
+          "name": "流量卡名",
+          "val": "",
+          "type": "text",
+          "placeholder": "可以自动获取，也可以手动填写",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": ""
+        },
+        {
+          "id": "Threshold",
+          "name": "通知提醒阈值",
+          "val": "",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "number",
+          "desc": "默认阈值为空。需要变化通知请填入数值，单位为KB"
+        },
+        {
+          "id": "OnlyLimit",
+          "name": "是否仅通用变化通知",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认通用和定向，任意一个超过阈值即会通知"
+        }, 
+        {
+          "id": "NoticeBody",
+          "name": "通知格式",
+          "val": "[套] 耗时:[时]\n免[免] 跳[跳]\n定向[定用] 剩余[通剩]",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "textarea",
+          "desc": "第一行为标题，后面为通知体，自行回车换行，可自行修改[关键字]位置，最终都会替换成数据"
+        },
+        {
+          "id": "BarkIcon",
+          "name": "Bark通知图标(非必要)",
+          "val": "",
+          "placeholder": "输入图标地址,默认为空既不修改图标",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "text",
+          "desc": ""
+        },
+        {
+          "id": "BarkKey",
+          "name": "Bark服务器地址(Bark通知需要设置,否则不必设置）",
+          "val": "",
+          "placeholder": "例如:https://api.day.app/key(默认为空既不使用Bark通知)",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "text",
+          "desc": "在Bark主页面右上角小云朵里，点击里面的复制地址与key填入"
+        },
+        {
+          "id": "BarkAdd",
+          "name": "Bark附加属性(非必要)",
+          "val": "",
+          "placeholder": "1. level=timeSensitive/active/passive,分别表示即时通知，默认值，仅在通知栏中显示  2. url=www.xxx.com 点击通知打开网页  3. isArchive=1/0 1表示保存此通知 0不保存  4. sound=铃声名 可在bark中查看名字",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "textarea",
+              "desc": "一定要用&隔开! 例如:level=timeSensitive&isArchive=0表示即时通知且bark不保存"
+          },
+        {
+          "id": "SetVal",
+          "name": "数据包修正(小抖卡推荐设置)",
+          "placeholder": "如若数据没问题，请不要填写",
+          "val": "",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "number",
+          "desc": "如果数据有问题，请输入[通用]总量，单位GB"
+        },
+        {
+          "id": "PackgeDetail",
+          "name": "流量包数据",
+          "val": "",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "text",
+          "desc": ""
+        },
+        {
+          "id": "QueryBody",
+          "name": "请求体数据",
+          "val": "",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "text",
+          "desc": ""
+        },
+        {
+          "id": "PackgeDetail",
+          "name": "流量信息",
+          "val": "",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "type": "text",
+          "desc": ""
+        }
+    ],
+      "author": "@Alt_Option",
+      "repo": "https://github.com/ChinaTelecomOperators/ChinaTelecom",
+      "script": "https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Tele_Cellular/Tele_Cellular_Auto.js",
+      "icons": ["https://raw.githubusercontent.com/LitPrompt/Module/main/Asset/Telecom.png","https://raw.githubusercontent.com/LitPrompt/Module/main/Asset/Telecom.png"]
+    }
+  ]
+}
