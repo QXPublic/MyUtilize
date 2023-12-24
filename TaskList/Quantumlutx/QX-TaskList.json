@@ -4,4 +4,4 @@
     "task":[
        "event-interaction https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Quantumlutx/QX-TaskList/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/ForeignMedia.png, enabled=true"
        ,"event-interaction https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Quantumlutx/QX-TaskList/Geo_location.js,tag=IP地址查询,img-url=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Pictures/Domestic.png,enabled=true"
-       ,{"config":"*/5 * * * * https:\/\/github.com\/ChinaTelecomOperators\/ChinaTelecom\/releases\/download\/Prerelease-Alpha\/Tele_Cellular_Auto.js, img-url=https:\/\/raw.githubusercontent.com\/LikeGEM\/TuBiao\/main\/Icons\/zhongguodianxin.png, tag=电信余量, enabled=true","addons":"https:\/\/raw.githubusercontent.com\/ChinaTelecomOperators\/ChinaTelecom\/main\/README.md"}]}
+       ,{"config":"*/5 * * * * https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Quantumlutx/Tele_Cellular/Tele_Cellular_Auto.js, img-url=https:\/\/raw.githubusercontent.com\/LikeGEM\/TuBiao\/main\/Icons\/zhongguodianxin.png, tag=电信余量, enabled=true"}]}
