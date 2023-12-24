@@ -4,6 +4,9 @@
 ################################################################################################
 ###广告专区###
 
+#chat-ai屏蔽更新
+DOMAIN,firestore.googleapis.com
+
 #x.星球
 USER-AGENT,sf?-fe-tos.pglstatp-toutiao.com
 USER-AGENT,p?-be-pack-sign.pglstatp-toutiao.com
