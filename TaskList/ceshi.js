@@ -1,10 +1,4 @@
-/****************
-[rewrite_local]
-^https?:\/\/api\.novaapp\.ai\/api\/v1\/users\/\w+ url script-response-body 
 
-[mitm]
-hostname = api.novaapp.ai
-*****************/
 var Echo = JSON.parse($response.body);
 Echo = {
   "success" : true,
