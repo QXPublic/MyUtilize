@@ -6,13 +6,13 @@
 [Rule]
 
 #cloudflare
-DOMAIN, in.appcenter.ms
+DOMAIN, in.appcenter.ms,REJECT
 
 #Downie 4
-DOMAIN, software.charliemonroe.net
+DOMAIN, software.charliemonroe.net,REJECT
 
 #App Cleaner & Uninstaller
-DOMAIN, download.nektony.com
+DOMAIN, download.nektony.com,REJECT
 
 #Parallels
 DOMAIN,update.parallels.com,REJECT
