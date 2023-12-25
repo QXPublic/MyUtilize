@@ -1,0 +1,34 @@
+#!name=Blocker-Update
+#!desc=屏蔽mac应用更新
+#!system=mac
+
+
+[Rule]
+
+#cloudflare
+DOMAIN, in.appcenter.ms
+
+#Downie 4
+DOMAIN, software.charliemonroe.net
+
+#App Cleaner & Uninstaller
+DOMAIN, download.nektony.com
+
+#Parallels
+DOMAIN,update.parallels.com,REJECT
+DOMAIN,reportus.parallels.com,REJECT
+
+[URL Rewrite]
+
+#imazing
+^https?:\/\/downloads\.imazing\.com\/mac\/iMazing\/[0-9]\.[1-9][0-9]*\.[1-9][0-9]*\.\d+\/release-notes\.html - reject
+
+#阿里云盘
+^https?:\/\/g\.alicdn\.com\/aliyun-drive-fe\/aliyun-drive-desktop-version\/[0-9]\.[0-9]*\.[0-9]\/updateLog\.json - reject
+^https?:\/\/g\.alicdn\.com\/aliyun-drive-fe\/aliyun-drive-desktop-version\/[0-9]\.[1-9][0-9]*\.[0-9]\/darwin\/x[0-9]{1,2}\/latest-mac.yml\?noCache=\w+ - reject
+
+[MITM]
+
+hostname = %APPEND% downloads.imazing.com,g.alicdn.com
+
+
