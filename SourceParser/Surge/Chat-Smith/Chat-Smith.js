@@ -1,11 +1,4 @@
 
-
-[rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Chat-Smith/Chat-Smith.js
-
-[mitm]
-hostname = buy.itunes.apple.com
-
 var anni = {};
 var anni01 = JSON.parse(typeof $response != "undefined" && $response.body || null);
 var headers = {};
