@@ -42,7 +42,7 @@ if (typeof $response == "undefined") {
         "grace_period_expires_date" : null,
         "purchase_date" : "2023-12-24T10:45:38Z",
         "product_identifier" : "gpt_year",
-        "expires_date" : "2023-12-27T10:45:38Z"
+        "expires_date" : "2099-12-27T10:45:38Z"
       };
       
   chxm1024.subscriber.entitlements[(Unlimited)] = (data1);
