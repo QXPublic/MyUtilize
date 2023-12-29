@@ -1,6 +1,10 @@
 
 # 【大陆地区—直连-默认】
 
+#apple
+IP-CIDR,17.56.138.10/32
+IP-CIDR,23.47.4.27/32
+
 #美团
 DOMAIN-SUFFIX,meituan.net
 
