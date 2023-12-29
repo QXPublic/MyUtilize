@@ -1,6 +1,9 @@
 
 # 【大陆地区—直连-默认】
 
+#美团
+DOMAIN-SUFFIX,meituan.net
+
 USER-AGENT,hide*
 USER-AGENT,MicroMessenger*
 USER-AGENT,TeamViewer*
