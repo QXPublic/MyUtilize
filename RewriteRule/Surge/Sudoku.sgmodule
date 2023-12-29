@@ -1,9 +1,13 @@
-#!name=数独解锁
-#!desc= Sudoku解锁
+#!name=数独(sudoku)
+#!desc=sudoku订阅解锁
+#!system=ios
 
 
 [MITM]
+
 hostname = %APPEND% buy.itunes.apple.com
 
 [Script]
+
 shudu = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Sudoku/Sudoku.js, requires-body=true, max-size=-1, timeout=60
+
