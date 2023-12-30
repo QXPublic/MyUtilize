@@ -6,18 +6,18 @@
  * 版本：1.5
  */
 
-let url = "https://api.ipdata.co/?api-key=64e914705286ef6ac7ee40f52ad2ab69d90401cbbacfdace0948cbca"
+let url = "http://ip-api.com/json"
 
 $httpClient.get(url, function(error, response, data){
     let jsonData = JSON.parse(data)
-    let country = jsonData.country_name
+    let country = jsonData.country
     let emoji = getFlagEmoji(jsonData.countryCode)
     let city = jsonData.city
-    let isp = jsonData.asn.name
-    let type = jsonData.asn.name
+    let isp = jsonData.isp
+    let ip = jsonData.query
   body = {
     title: "节点信息",
-    content: `IP信息：${type}\n运营商：${isp}\n所在地：${emoji}${country} - ${city}`,
+    content: `IP信息：${ip}\n运营商：${isp}\n所在地：${emoji}${country} - ${city}`,
     icon: "globe.asia.australia.fill"
   }
   $done(body);
