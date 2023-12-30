@@ -10,7 +10,7 @@ let url = "https://api.ipdata.co/?api-key=64e914705286ef6ac7ee40f52ad2ab69d90401
 
 $httpClient.get(url, function(error, response, data){
     let jsonData = JSON.parse(data)
-
+    let country = jsonData.country_name
     let emoji = getFlagEmoji(jsonData.countryCode)
     let city = jsonData.city
     let isp = jsonData.asn.name
