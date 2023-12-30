@@ -14,7 +14,7 @@ $httpClient.get(url, function(error, response, data){
     let emoji = getFlagEmoji(jsonData.countryCode)
     let city = jsonData.city
     let isp = jsonData.asn.name
-    let type = jsonData.asn.type
+    let type = jsonData.asn.name
   body = {
     title: "节点信息",
     content: `IP信息：${type}\n运营商：${isp}\n所在地：${emoji}${country} - ${city}`,
