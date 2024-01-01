@@ -6,7 +6,7 @@
  * 版本：1.5
  */
 
-let url = "http://ip-api.com/json"
+let url = "https://api.ipdata.co/?api-key=64e914705286ef6ac7ee40f52ad2ab69d90401cbbacfdace0948cbca"
 
 $httpClient.get(url, function(error, response, data){
     let jsonData = JSON.parse(data)
