@@ -35,7 +35,7 @@ yolo = {
       "totalUltraCreditSpent" : 100,
       "appleId" : "",
       "package" : "",
-      "credits" : 10”,
+      "credits" : 100”,
       "isEmailVerified" : false
     }
   }
