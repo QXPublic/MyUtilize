@@ -2,7 +2,7 @@
 
 [rewrite_local]
 
-^https?:\\//api\.sparrow\.arafas\.com\/verify-subscription url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/TaskList/add.js 
+^https?:\/\/api\.sparrow\.arafas\.com\/verify-subscription url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/TaskList/add.js 
 
 [MITM]
 hostname = api.sparrow.arafas.com
