@@ -1022,6 +1022,4 @@ IP-ASN,59930,no-resolve
 IP-ASN,44907,no-resolve
 # DC3-ASN
 IP-ASN,211157,no-resolve
-PROCESS-NAME,nekox.messenger
-PROCESS-NAME,org.telegram.messenger
-PROCESS-NAME,telegram-desktop
+IP-CIDR,5.28.195.80/32
