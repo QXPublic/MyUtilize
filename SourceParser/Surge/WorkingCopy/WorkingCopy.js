@@ -8,7 +8,6 @@ Working Copy使用方法：
 [rewrite_local]
 ^https?:\/\/education\.github\.com\/api\/user url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/WorkingCopy/WorkingCopy.js
 
-
 [MitM]
 hostname = education.github.com
 
