@@ -2,6 +2,9 @@
 ### apple\堆糖\拦截100屏蔽\talkatone\电信(首页净化，消息框不可用)###
 
 ################################################################################################
+###
+DOMAIN,h-adashx.ut.lazada.com,REJECT // Added for: h-adashx.ut.lazada.com:443
+DOMAIN,adashx.ut.lazada.com,REJECT // Added for: adashx.ut.lazada.com:443
 ###myblokads
 DOMAIN,ossgw.alicdn.com
 DOMAIN,ems.youku.com
