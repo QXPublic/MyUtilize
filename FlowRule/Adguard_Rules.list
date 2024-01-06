@@ -4,10 +4,10 @@
 ################################################################################################
 
 ###
-DOMAIN,adashx.ut.lazada.com,REJECT // Added for: adashx.ut.lazada.com:443
-DOMAIN,bootpreload.uve.weibo.com,REJECT // Added for: bootpreload.uve.weibo.com:443
-DOMAIN,h-adashx.ut.lazada.com,REJECT // Added for: h-adashx.ut.lazada.com:443
-DOMAIN,adashx.ut.lazada.com,REJECT // Added for: adashx.ut.lazada.com:443
+DOMAIN,adashx.ut.lazada.com // Added for: adashx.ut.lazada.com:443
+DOMAIN,bootpreload.uve.weibo.com // Added for: bootpreload.uve.weibo.com:443
+DOMAIN,h-adashx.ut.lazada.com // Added for: h-adashx.ut.lazada.com:443
+DOMAIN,adashx.ut.lazada.com // Added for: adashx.ut.lazada.com:443
 ###myblokads
 DOMAIN,ossgw.alicdn.com
 DOMAIN,ems.youku.com
