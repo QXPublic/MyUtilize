@@ -7,3 +7,4 @@ DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,cloud.cupronickel.goog
+DOMAIN-SUFFIX,dpdfsd.com,extended-matching // Added for: speedtest1.dpdfsd.com:8080
