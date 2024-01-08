@@ -244,6 +244,7 @@ DOMAIN, sdk.e.qq.com
 DOMAIN-SUFFIX,ntb.lanjie100.com
 
 # > talkatone
+DOMAIN,ssp.api.tappx.com
 DOMAIN, imp.track.tappx.com
 DOMAIN, live.chartboost.com
 DOMAIN, ocsp.digicert.com
