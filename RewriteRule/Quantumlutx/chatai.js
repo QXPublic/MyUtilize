@@ -26,7 +26,7 @@ const chxm1024 = JSON.parse(typeof $response != "undefined" && $response.body ||
 const name = "Advanced";
 const name1 = "Unlimited";
 const name2 = "echo_pro";
-const name21 = "2007";
+const name21 = "2365";
 const appid = "com.palligroup.gpt3.yearlyyy";
 
 if (typeof $response == "undefined") {
