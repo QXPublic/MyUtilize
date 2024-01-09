@@ -59,8 +59,8 @@ if (typeof $response == "undefined") {
   chxm1024.subscriber.entitlements[(name1)] = (data1);
   chxm1024.subscriber.entitlements[(name)] = (data);
   chxm1024.subscriber.subscriptions[(appid)] = {  ...data,	"Author": "chxm1023",	"Telegram": "https://t.me/chxm1023",	"warning": "仅供学习，禁止转载或售卖",	"original_purchase_date": "2022-09-09T09:09:09Z",	"store": "app_store",	"ownership_type": "PURCHASED"};
-  chxm1024.subscriber.subscriptions.expires_date ="2099-01-12T18:36:05Z"
-  chxm1024.subscriber.subscriptions.period_type = "annual"
+  chxm1024.subscriber.subscriptions.expires_date ="2099-01-12T18:36:05Z";
+  chxm1024.subscriber.subscriptions.period_type = "annual";
   
   chxm1023.body = JSON.stringify(chxm1024);
 }
