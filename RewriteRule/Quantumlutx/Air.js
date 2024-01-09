@@ -1,3 +1,5 @@
+/*
+
 [rewrite_local]
 
 ^https?:\/\/askthisai-app-service\.pixelcell\.com\/api\/v3\/(user\/initialise|vip\/vip_card) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/Quantumlutx/Air.js
