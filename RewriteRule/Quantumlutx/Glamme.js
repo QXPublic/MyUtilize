@@ -10,7 +10,7 @@ hostname = glammeai-app-service.pixelcell.com
 var body = $response.body;
 var url = $request.url;
 //会员
-if (url.indexOf('user/initialise') != -1) {
+if (url.indexOf('user/initialisee') != -1) {
     var obj = JSON.parse(body);
     obj.response.user.vip = true;
     body = JSON.stringify(obj);
