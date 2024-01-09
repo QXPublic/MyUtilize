@@ -36,7 +36,7 @@ if (typeof $response == "undefined") {
   const data1 = {
         "grace_period_expires_date" : null,
         "purchase_date" : "2023-12-24T10:45:38Z",
-        "product_identifier" : "gpt_year",
+        "product_identifier" : "chaterva_2400inr_1yr",
         "expires_date" : "2099-12-27T10:45:38Z"
       };
    
