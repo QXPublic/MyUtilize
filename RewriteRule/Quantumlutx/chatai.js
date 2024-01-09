@@ -46,7 +46,7 @@ if (typeof $response == "undefined") {
         "product_identifier" : "gpt_year",
         "expires_date" : "2099-12-27T10:45:38Z"
       };
-  const dara2 = {
+  const data2 = {
         "grace_period_expires_date" : null,
         "purchase_date" : "2024-01-09T18:36:05Z",
         "product_identifier" : "2007",
@@ -58,8 +58,9 @@ if (typeof $response == "undefined") {
   
   chxm1024.subscriber.entitlements[(name1)] = (data1);
   chxm1024.subscriber.entitlements[(name)] = (data);
-  chxm1024.subscriber.subscriptions[(appid)] = {  ...data,	"Author": "chxm1023",	"Telegram": "https://t.me/chxm1023",	"warning": "仅供学习，禁止转载或售卖",	"original_purchase_date": "2022-09-09T09:09:09Z",	"store": "app_store",	"ownership_type": "PURCHASED"};
-
+  chxm1024.subscriber.subscriptions[(appid)] = {  ...data,	"original_purchase_date": "2022-09-09T09:09:09Z",	"store": "app_store",	"ownership_type": "PURCHASED"};
+  chxm1024.subscriber.subscriptions.expires_date = "2099-09-09T09:09:09Z";
+  chxm1024.subscriber.subscriptions.period_type = "annual";
   
   chxm1023.body = JSON.stringify(chxm1024);
 }
