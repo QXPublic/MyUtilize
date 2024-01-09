@@ -19,7 +19,7 @@ if (url.indexOf('user/initialise') != -1) {
     obj.response.vip_info.is_vip = true;
     obj.response.vip_info.is_auto_renew = true;
     obj.response.vip_info.start_at = 1704806188.7748761;
-    obj.response.vip_info.expired_at = 1784806188.7748761;
+    obj.response.vip_info.expired_at = 4100731932.7748761;
     obj.response.vip_info.vip_level = 1;
     body = JSON.stringify(obj);
 
