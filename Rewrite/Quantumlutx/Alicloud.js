@@ -2,7 +2,7 @@
 项目名称：阿里云sivp解锁部分功能：视频倍速、清晰度等
 
 [rewrite_local]
-^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rwrite/Quantumlutx/Alicloud.js
+^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Alicloud.js
 
 [mitm]
 hostname = *.aliyundrive.com, *.alipan.com
