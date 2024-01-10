@@ -5,7 +5,7 @@
 ^https?:\/\/api\.chataiassistant\.com\/api(\/ai\/get-active-subscription-data|\/users\/login-register-user) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/ChatAI.js
 
 [mitm]
-hostname = askthisai-app-service.pixelcell.com
+hostname = api.chataiassistant.com
 */
 var body = $response.body;
 var url = $request.url;
