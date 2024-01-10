@@ -70,7 +70,7 @@ if (typeof $response == "undefined") {
       };
   
   chxm1024.subscriber.entitlements[(name2)] = (data2);
-  chxm1024.subscriber.entitlements[(name21)] = (data21);
+  chxm1024.subscriber.subscriptions[(name21)] = (data21);
   chxm1024.subscriber.entitlements[(name1)] = (data1);
   chxm1024.subscriber.entitlements[(name)] = (data);
   chxm1024.subscriber.subscriptions[(appid)] = {  ...data,	"original_purchase_date": "2022-09-09T09:09:09Z",	"store": "app_store",	"ownership_type": "PURCHASED"};
