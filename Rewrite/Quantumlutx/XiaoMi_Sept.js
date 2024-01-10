@@ -9,7 +9,7 @@ hostname = account.huami.com
 
 [rewrite_local]
 # 小米运动获取Token
-^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/XiaoMi_Sept.js
+^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/XiaoMi_Sept.js
 */
 
 const $ = new Env('小米运动');
