@@ -1,13 +1,11 @@
 /*************************************
 
 项目名称：美图秀秀 解锁SVIP
-下载地址：https://t.cn/AiN3YLHl
-脚本作者：chxm1023
 
 **************************************
 
 [rewrite_local]
-^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/RewriteRule/Quantumlutx/meitu.js
+^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Meitu.js
 
 [mitm]
 hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com
