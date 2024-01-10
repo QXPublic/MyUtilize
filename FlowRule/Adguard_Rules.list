@@ -4,6 +4,7 @@
 ################################################################################################
 
 ###
+URL-REGEX,^https:\/\/member\.aliyundrive\.com\/v2\/activity\/sign_in_luckyBottle\?_rx-s=mobile$
 DOMAIN,ocsp.pki.goog 
 DOMAIN,adm.10jqka.com.cn 
 DOMAIN,ad.12306.cn 
