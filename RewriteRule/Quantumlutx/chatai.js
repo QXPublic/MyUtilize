@@ -1,12 +1,6 @@
 /****************************************
 
 项目名称：Chat AI：中文-人工智能聊天
-下载工具：https://t.cn/A6p1ANqR
-更新日期：2023-12-12
-脚本作者：chxm1023
-电报频道：https://t.me/chxm1023
-使用声明：⚠️仅供参考，🈲转载与售卖！
-
 *****************************************
 
 [rewrite_local]
@@ -27,6 +21,9 @@ const name = "Advanced";
 const name1 = "Unlimited";
 const name2 = "echo_pro";
 const name21 = "2365";
+const name3 = "Premium";
+const name31 = "annual";
+
 const appid = "com.palligroup.gpt3.yearlyyy";
 
 if (typeof $response == "undefined") {
@@ -68,7 +65,31 @@ if (typeof $response == "undefined") {
         "store": "app_store",
         "auto_resume_date": null
       };
+    const data3 = {
+        "grace_period_expires_date" : null,
+        "purchase_date" : "2024-01-10T07:33:56Z",
+        "product_identifier" : "annual",
+        "expires_date" : "2099-09-09T09:09:09Z"
+      };
+    
+    const data31 = {
+        "original_purchase_date" : "2024-01-10T07:33:57Z",
+        "expires_date" : "2099-09-09T09:09:09Z",
+        "is_sandbox" : false,
+        "refunded_at" : null,
+        "store_transaction_id" : "480001770307364",
+        "unsubscribe_detected_at" : null,
+        "grace_period_expires_date" : null,
+        "period_type" : "trial",
+        "purchase_date" : "2024-01-10T07:33:56Z",
+        "billing_issues_detected_at" : null,
+        "ownership_type" : "PURCHASED",
+        "store" : "app_store",
+        "auto_resume_date" : null
+      };
   
+  chxm1024.subscriber.entitlements[(name3)] = (data3);
+  chxm1024.subscriber.subscriptions[(name31)] = (data31);
   chxm1024.subscriber.entitlements[(name2)] = (data2);
   chxm1024.subscriber.subscriptions[(name21)] = (data21);
   chxm1024.subscriber.entitlements[(name1)] = (data1);
