@@ -47,7 +47,7 @@ if (typeof $response == "undefined") {
   const data2 = {
         "grace_period_expires_date" : null,
         "purchase_date" : "2024-01-09T18:36:05Z",
-        "product_identifier" : "2007",
+        "product_identifier" : "2365",
         "expires_date" : "2099-01-12T18:36:05Z"
       };
    const data21 =  {
