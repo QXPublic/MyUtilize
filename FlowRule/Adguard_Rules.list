@@ -4,6 +4,11 @@
 ################################################################################################
 
 ###
+DOMAIN,ocsp.pki.goog 
+DOMAIN,adm.10jqka.com.cn 
+DOMAIN,ad.12306.cn 
+DOMAIN,wbapp.uve.weibo.com 
+DOMAIN,ad.us.sinaimg.cn 
 DOMAIN-SUFFIX,applvn.com
 DOMAIN,adashx.ut.lazada.com // Added for: adashx.ut.lazada.com:443
 DOMAIN,bootpreload.uve.weibo.com // Added for: bootpreload.uve.weibo.com:443
