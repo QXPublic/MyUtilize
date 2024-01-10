@@ -64,7 +64,7 @@ if (typeof $response == "undefined") {
         "store_transaction_id" : "480001770307364",
         "unsubscribe_detected_at" : null,
         "grace_period_expires_date" : null,
-        "period_type" : "trial",
+        "period_type" : "annual",
         "purchase_date" : "2024-01-10T07:33:56Z",
         "billing_issues_detected_at" : null,
         "ownership_type" : "PURCHASED",
