@@ -21,7 +21,7 @@ if (url.indexOf('ai/get-active-subscription-data') != -1) {
     "free_expired_time" : ""
   };
     body = JSON.stringify(obj);
-} else if (url.indexOf('users\/login-register-user') != -1) {
+} else if (url.indexOf('users/login-register-user') != -1) {
     var obj = JSON.parse(body);
     obj.data.ai_subscription_active = 1;
     obj.data.ai_subscription_end_time = "4100731932000";
