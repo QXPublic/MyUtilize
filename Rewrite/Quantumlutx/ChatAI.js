@@ -10,14 +10,6 @@ hostname = api.chataiassistant.com
 var body = $response.body;
 var url = $request.url;
 //会员
-if (url.indexOf('ai/get-active-subscription-data') != -1) {
-    var obj = JSON.parse(body);
-    obj.data.free_type = 3;
-    obj.data.ai_subscription_end_time = "4100731932000";
-    obj.data.ai_subscription_active = 1;
-    body = JSON.stringify(obj);
-} else if (url.indexOf('users/login-register-user') != -1) {
-
   var obj = JSON.parse(body);
     obj.data.ai_subscription_active = 1;
     obj.data.ai_subscription_end_time = "4100731932000";
