@@ -2,7 +2,7 @@
 
 [rewrite_local]
 
-^https?:\/\/api\.gchatapp\.net\/api\/(init|v1\/premium-users\/\w+-\w+-\w+-\w+-\w+\/check) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/ChatAI.js
+^https?:\/\/api\.gchatapp\.net\/api\/(init|v1\/premium-users\/\w+-\w+-\w+-\w+-\w+\/check) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Gchat.js
 
 [mitm]
 hostname = api.gchatapp.net
