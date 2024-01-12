@@ -24,13 +24,13 @@ if (typeof $response == "undefined") {
 	};
   const data_appleid = {
         "original_purchase_date": "2023-12-06T07:26:53Z",
-        "expires_date": "2023-12-09T07:26:52Z",
+        "expires_date": "2099-09-09T09:09:09Z",
         "is_sandbox": false,
         "refunded_at": null,
         "store_transaction_id": "570001382367046",
-        "unsubscribe_detected_at": "2023-12-07T10:04:31Z",
+        "unsubscribe_detected_at": null,
         "grace_period_expires_date": null,
-        "period_type": "trial",
+        "period_type": "annual",
         "purchase_date": "2023-12-06T07:26:52Z",
         "billing_issues_detected_at": null,
         "ownership_type": "PURCHASED",
