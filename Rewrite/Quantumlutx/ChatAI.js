@@ -17,11 +17,18 @@ if (url.indexOf('ai/get-active-subscription-data') != -1) {
     obj.data.ai_subscription_active = 1;
     body = JSON.stringify(obj);
 } else if (url.indexOf('users/login-register-user') != -1) {
-    var obj = JSON.parse(body);
+if ($response.status === 304) {
+  $done({status: 200});
+  var obj = JSON.parse(body);
     obj.data.ai_subscription_active = 1;
     obj.data.ai_subscription_end_time = "4100731932000";
     obj.data.free_type = 3 ;
     body = JSON.stringify(obj);
+} else {
+  $done({});
+}
+
+    
 
 }
 $done({ body });
