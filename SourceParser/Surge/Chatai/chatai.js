@@ -22,6 +22,21 @@ if (typeof $response == "undefined") {
 	"expires_date": "2099-09-09T09:09:09Z",
 	"purchase_date": "2022-09-09T09:09:09Z"
 	};
+  const data_appleid = {
+        "original_purchase_date": "2023-12-06T07:26:53Z",
+        "expires_date": "2023-12-09T07:26:52Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "store_transaction_id": "570001382367046",
+        "unsubscribe_detected_at": "2023-12-07T10:04:31Z",
+        "grace_period_expires_date": null,
+        "period_type": "trial",
+        "purchase_date": "2023-12-06T07:26:52Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "auto_resume_date": null
+      };
   const data1 = {
         "grace_period_expires_date" : null,
         "purchase_date" : "2023-12-24T10:45:38Z",
@@ -78,8 +93,7 @@ if (typeof $response == "undefined") {
   chxm1024.subscriber.subscriptions[(name21)] = (data21);
   chxm1024.subscriber.entitlements[(name1)] = (data1);
   chxm1024.subscriber.entitlements[(name)] = (data);
-  chxm1024.subscriber.subscriptions[(appid)] = {  ...data,	"original_purchase_date": "2022-09-09T09:09:09Z",	"store": "app_store",	"ownership_type": "PURCHASED"};
-  
+  chxm1024.subscriber.subscriptions[(appid)] = (data_appleid);
   
   chxm1023.body = JSON.stringify(chxm1024);
 }
