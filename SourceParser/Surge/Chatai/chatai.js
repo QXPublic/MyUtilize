@@ -94,7 +94,7 @@ if (typeof $response == "undefined") {
   chxm1024.subscriber.entitlements[(name1)] = (data1);
   chxm1024.subscriber.entitlements[(name)] = (data);
   chxm1024.subscriber.subscriptions[(appid)] = (data_appleid);
-  delete chxm1024.subscriber.subscriptions.com.palligroup.gpt3.weeklyyy;
+  delete chxm1024.subscriber.subscriptions[("com.palligroup.gpt3.weeklyyy")];
   
   chxm1023.body = JSON.stringify(chxm1024);
 }
