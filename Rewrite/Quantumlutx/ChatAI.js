@@ -11,8 +11,6 @@ var body = $response.body;
 var url = $request.url;
 //会员
 if (url.indexOf('ai/get-active-subscription-data') != -1) {
-    if ($response.status === 304) {
-    $response.status = 200;
     var obj = JSON.parse(body);
     obj.data.free_type = 3;
     obj.data.ai_subscription_end_time = "4100731932000";
