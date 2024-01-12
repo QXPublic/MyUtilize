@@ -12,7 +12,7 @@ var url = $request.url;
 //会员
 if (url.indexOf('init') != -1) {
     var obj = JSON.parse(body);
-    obj.default_package_name =  ;
+    obj.default_package_name = "yearly" ;
     body = JSON.stringify(obj);
 } else if (url.indexOf('v1/premium-users/\w+-\w+-\w+-\w+-\w+/check') != -1) {
     var obj = JSON.parse(body);
