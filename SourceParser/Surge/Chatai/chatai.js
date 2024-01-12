@@ -7,6 +7,8 @@ const name2 = "echo_pro";
 const name21 = "2365";
 const name3 = "Premium";
 const name31 = "annual";
+const name4 = "yearly";
+const name41 = "unlimited_chats";
 
 const appid = "com.palligroup.gpt3.yearlyyy";
 
@@ -86,7 +88,33 @@ if (typeof $response == "undefined") {
         "store" : "app_store",
         "auto_resume_date" : null
       };
-  
+    const data4 = {
+        "original_purchase_date": "2024-01-12T05:48:02Z",
+        "expires_date": "2099-09-09T09:09:09Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "store_transaction_id": "570001416479837",
+        "unsubscribe_detected_at": null,
+        "grace_period_expires_date": null,
+        "period_type": "annual",
+        "purchase_date": "2024-01-12T05:48:01Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "auto_resume_date": null
+      };
+    const data41 = {
+        "grace_period_expires_date": null,
+        "purchase_date": "2024-01-12T05:48:01Z",
+        "product_identifier": "annual",
+        "expires_date": "2099-09-09T09:09:09Z"
+      };
+      
+  delete chxm1024.subscriber.subscriptions[("com.palligroup.gpt3.weeklyyy")];
+  delete chxm1024.subscriber.subscriptions[("weeklyIncludesTrial")];
+
+  chxm1024.subscriber.entitlements[(name41)] = (data41);
+  chxm1024.subscriber.subscriptions[(name4)] = (data4);
   chxm1024.subscriber.entitlements[(name3)] = (data3);
   chxm1024.subscriber.subscriptions[(name31)] = (data31);
   chxm1024.subscriber.entitlements[(name2)] = (data2);
@@ -94,7 +122,7 @@ if (typeof $response == "undefined") {
   chxm1024.subscriber.entitlements[(name1)] = (data1);
   chxm1024.subscriber.entitlements[(name)] = (data);
   chxm1024.subscriber.subscriptions[(appid)] = (data_appleid);
-  delete chxm1024.subscriber.subscriptions[("com.palligroup.gpt3.weeklyyy")];
+  
   
   chxm1023.body = JSON.stringify(chxm1024);
 }
