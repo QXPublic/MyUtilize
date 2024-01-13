@@ -1,14 +1,19 @@
 #!name=Troubleshoot
-#!desc=故障排除 访问 http://trouble.shoot 查看
-#!author=@xream
+#!desc=故障排除 访问 http://trouble.shoot  http://surge.tool 查看
+#!author=@xream @key
+//@xream https://raw.githubusercontent.com/xream/scripts/main/surge/modules/troubleshoot/troubleshoot.js
 
-[General]
-force-http-engine-hosts = %APPEND% trouble.shoot
+[Panel]
+troubleshootPanpel = script-name=troubleshootPanpel,update-interval=-1
 
 [MITM]
-hostname = %APPEND% trouble.shoot, *.trouble.shoot
+hostname = %APPEND% trouble.shoot, *.trouble.shoot, surge.tool
 
 [Script]
-troubleshoot = type=http-request, pattern=^https?:\/\/trouble\.shoot, script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/troubleshoot.js, timeout=300
+troubleshoot = type=http-request, pattern=^https?:\/\/(trouble\.shoot|surge\.tool), timeout=300, script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/TroubleShoot/troubleshoot.js
 
+// type 各类型数
+// list 各远程规则数
+// argument=icon="heart.text.square"&color="#6699FF"&type&list
+troubleshootPanpel = type=generic,timeout=60,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/TroubleShoot/troubleshoot.js,argument=type
 
