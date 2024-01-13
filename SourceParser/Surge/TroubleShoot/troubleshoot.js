@@ -245,10 +245,9 @@ if (typeof $argument !== "undefined" && $argument !== "") {
       result = {
         title: "Surge Tool Rule: " + ALL_NUM,
         content:
-          text +
-          `MitM${hostnameNUM} ${mitm ? "☑" : "☒"}\nScript${ScriptNUM} ${
+          `MitM${hostnameNUM} ${mitm ? "☑" : "☒"} Script${ScriptNUM} ${
             scripting ? "☑" : "☒"
-          }\nRewrite${RewriteNUM} ${rewrite ? "☑" : "☒"}`,
+          } Rewrite${RewriteNUM} ${rewrite ? "☑" : "☒"}`,
         icon: icons,
         "icon-color": icolor,
       };
