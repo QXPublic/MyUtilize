@@ -14,7 +14,7 @@ var body = $response.body;
     var obj = JSON.parse(body);
    obj.result.userTier = "Premium";
    obj.result.maxDailyCap = 300;
-   obj.dailyCap = 300;
+   obj.result.dailyCap = 300;
    body = JSON.stringify(obj);
 
    
