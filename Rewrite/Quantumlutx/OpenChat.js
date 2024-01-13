@@ -49,8 +49,8 @@ var body = $response.body;
         "renew_state" : 1
       }
     ];
-    obj.data["user_products"] =(data1) ;
-    obj.data["permissions"] = (data11);
+    obj.data[("user_products")] =(data1) ;
+    obj.data[("permissions")] = (data11);
     
     body = JSON.stringify(obj);
 
