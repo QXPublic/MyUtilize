@@ -136,6 +136,7 @@ if (typeof $response == "undefined") {
       
   delete chxm1024.subscriber.subscriptions[("com.palligroup.gpt3.weeklyyy")];
   delete chxm1024.subscriber.subscriptions[("weeklyIncludesTrial")];
+  delete chxm1024.subscriber.subscriptions[("com.curiouscreatorsco.ChatLLM.pro.1year.3daytrial.49_99")];
   
   chxm1024.subscriber.entitlements[(name51)] = (data51);
   chxm1024.subscriber.subscriptions[(name5)] = (data5);
