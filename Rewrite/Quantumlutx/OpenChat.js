@@ -10,11 +10,21 @@ hostname = api.qonversion.io
 */
 var body = $response.body;
 //var url = $request.url;
+/*
+let userProducts = {
+  "user_products" : []
+};
+let Permissions = {
+  "permissions" : []
+};
+*/
+
+
 
 //会员
     var obj = JSON.parse(body);
     delete obj.data[("user_products")];
-    delete obj.data.[("permissions")];
+    delete obj.data[("permissions")];
     const data1 = [
       {
         "id" : "chat.yearly.null.v1.0423",
