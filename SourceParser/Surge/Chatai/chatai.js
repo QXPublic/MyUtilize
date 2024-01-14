@@ -32,7 +32,6 @@ if (typeof $response == "undefined") {
         "expires_date": "2099-12-27T10:45:38Z"
       };
   const data_appleid = {
-      "com.palligroup.gpt3.yearlyyy": {
         "original_purchase_date": "2024-01-14T18:59:06Z",
         "expires_date": "2099-12-27T10:45:38Z",
         "is_sandbox": false,
