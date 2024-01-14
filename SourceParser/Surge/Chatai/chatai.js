@@ -13,6 +13,8 @@ const name5 = "com.curiouscreatorsco.ChatLLM.pro.1year.notrial.49_99";
 const name51 = "Pro";
 const name6 = "com.aichatbot.askmeall.lifetime";
 const name61 = "pro";
+const name7 = "impact.69.99.1y";
+const name71 = "full_access";
 
 const appid = "com.palligroup.gpt3.yearlyyy";
 
@@ -155,7 +157,31 @@ if (typeof $response == "undefined") {
         "product_identifier": "com.aichatbot.askmeall.lifetime",
         "expires_date": "2099-09-09T09:09:09Z"
       };
-  
+    const data7 = {
+        "original_purchase_date": "2023-12-26T19:35:38Z",
+        "expires_date": "2099-09-09T09:09:09Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "store_transaction_id": "2000000500102462",
+        "unsubscribe_detected_at": null,
+        "grace_period_expires_date": null,
+        "period_type": "normal",
+        "purchase_date": "2024-01-14T18:34:03Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "auto_resume_date": null
+      };
+    const data71 = {
+        "grace_period_expires_date": null,
+        "purchase_date": "2024-01-14T18:34:03Z",
+        "product_identifier": "impact.69.99.1y",
+        "expires_date": "2099-09-09T09:09:09Z"
+      };
+    
+  delete chxm1024.subscriber.subscriptions[("impact.69.99.1w")];
+  delete chxm1024.subscriber.subscriptions[("impact.69.99.1y")];
+  delete chxm1024.subscriber.entitlements[("full_access")];
   delete chxm1024.subscriber.subscriptions[("com.aichatbot.askmeall.oneweek")];
   delete chxm1024.subscriber.entitlements[("pro")];
   delete chxm1024.subscriber.subscriptions[("com.palligroup.gpt3.weeklyyy")];
