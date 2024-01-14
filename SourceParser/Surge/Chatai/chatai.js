@@ -188,6 +188,8 @@ if (typeof $response == "undefined") {
   delete chxm1024.subscriber.subscriptions[("weeklyIncludesTrial")];
   delete chxm1024.subscriber.subscriptions[("com.curiouscreatorsco.ChatLLM.pro.1year.3daytrial.49_99")];
   
+  chxm1024.subscriber.entitlements[(name71)] = (data71);
+  chxm1024.subscriber.subscriptions[(name7)] = (data7);
   chxm1024.subscriber.entitlements[(name61)] = (data61);
   chxm1024.subscriber.subscriptions[(name6)] = (data6);
   chxm1024.subscriber.entitlements[(name51)] = (data51);
