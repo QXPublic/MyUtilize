@@ -1,6 +1,6 @@
 
 /****************************************
-项目名称：Chat AI：中文-人工智能聊天
+Chat AI
 *****************************************
 [rewrite_local]
 ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Chat-ai.js
@@ -23,7 +23,10 @@ const name4 = "yearly";
 const name41 = "unlimited_chats";
 const name5 = "com.curiouscreatorsco.ChatLLM.pro.1year.notrial.49_99";
 const name51 = "Pro";
-
+const name6 = "com.aichatbot.askmeall.lifetime";
+const name61 = "pro";
+const name7 = "impact.69.99.1y";
+const name71 = "full_access";
 
 const appid = "com.palligroup.gpt3.yearlyyy";
 
@@ -35,24 +38,27 @@ if (typeof $response == "undefined") {
   chxm1024.subscriber.subscriptions = chxm1024.subscriber.subscriptions || {};
   chxm1024.subscriber.entitlements = chxm1024.subscriber.entitlements || {};
   const data = {
-	"product_identifier": (appid),
-	"expires_date": "2099-09-09T09:09:09Z",
-	"purchase_date": "2022-09-09T09:09:09Z"
+        "grace_period_expires_date": null,
+        "purchase_date": "2024-01-14T18:59:05Z",
+        "product_identifier": "com.palligroup.gpt3.yearlyyy",
+        "expires_date": "2099-12-27T10:45:38Z"
+      };
 	};
   const data_appleid = {
-        "original_purchase_date": "2023-12-06T07:26:53Z",
-        "expires_date": "2099-09-09T09:09:09Z",
+      "com.palligroup.gpt3.yearlyyy": {
+        "original_purchase_date": "2024-01-14T18:59:06Z",
+        "expires_date": "2099-12-27T10:45:38Z",
         "is_sandbox": false,
         "refunded_at": null,
-        "store_transaction_id": "570001382367046",
+        "auto_resume_date": null,
         "unsubscribe_detected_at": null,
         "grace_period_expires_date": null,
         "period_type": "annual",
-        "purchase_date": "2023-12-06T07:26:52Z",
+        "purchase_date": "2024-01-14T18:59:05Z",
         "billing_issues_detected_at": null,
         "ownership_type": "PURCHASED",
         "store": "app_store",
-        "auto_resume_date": null
+        "store_transaction_id": "280001733195584"
       };
   const data1 = {
         "grace_period_expires_date" : null,
@@ -145,11 +151,64 @@ if (typeof $response == "undefined") {
         "product_identifier" : "com.curiouscreatorsco.ChatLLM.pro.1year.notrial.49_99",
         "expires_date" : "2099-09-09T09:09:09Z"
       };
-      
+    const data6 = {
+        "original_purchase_date": "2024-01-14T17:33:20Z",
+        "expires_date": "2099-09-09T09:09:09Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "store_transaction_id": "570001418864092",
+        "unsubscribe_detected_at": null,
+        "grace_period_expires_date": null,
+        "period_type": "lifetime",
+        "purchase_date": "2024-01-14T17:33:19Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "auto_resume_date": null
+      }
+    const data61 = {
+        "grace_period_expires_date": null,
+        "purchase_date": "2024-01-14T17:33:19Z",
+        "product_identifier": "com.aichatbot.askmeall.lifetime",
+        "expires_date": "2099-09-09T09:09:09Z"
+      };
+    const data7 = {
+        "original_purchase_date": "2023-12-26T19:35:38Z",
+        "expires_date": "2099-09-09T09:09:09Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "store_transaction_id": "2000000500102462",
+        "unsubscribe_detected_at": null,
+        "grace_period_expires_date": null,
+        "period_type": "normal",
+        "purchase_date": "2024-01-14T18:34:03Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "auto_resume_date": null
+      };
+    const data71 = {
+        "grace_period_expires_date": null,
+        "purchase_date": "2024-01-14T18:34:03Z",
+        "product_identifier": "impact.69.99.1y",
+        "expires_date": "2099-09-09T09:09:09Z"
+      };
+  
+  //delete chxm1024.subscriber.subscriptions[("impact.69.99.1y")];
+  //delete chxm1024.subscriber.entitlements[("full_access")];
+  delete chxm1024.subscriber.subscriptions[("impact.69.99.1w")];
+  delete chxm1024.subscriber.subscriptions[("impact.69.99.1y")];
+  delete chxm1024.subscriber.entitlements[("full_access")];
+  delete chxm1024.subscriber.subscriptions[("com.aichatbot.askmeall.oneweek")];
+  delete chxm1024.subscriber.entitlements[("pro")];
   delete chxm1024.subscriber.subscriptions[("com.palligroup.gpt3.weeklyyy")];
   delete chxm1024.subscriber.subscriptions[("weeklyIncludesTrial")];
   delete chxm1024.subscriber.subscriptions[("com.curiouscreatorsco.ChatLLM.pro.1year.3daytrial.49_99")];
   
+  chxm1024.subscriber.entitlements[(name71)] = (data71);
+  chxm1024.subscriber.subscriptions[(name7)] = (data7);
+  chxm1024.subscriber.entitlements[(name61)] = (data61);
+  chxm1024.subscriber.subscriptions[(name6)] = (data6);
   chxm1024.subscriber.entitlements[(name51)] = (data51);
   chxm1024.subscriber.subscriptions[(name5)] = (data5);
   chxm1024.subscriber.entitlements[(name41)] = (data41);
