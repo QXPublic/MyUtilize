@@ -26,24 +26,27 @@ if (typeof $response == "undefined") {
   chxm1024.subscriber.subscriptions = chxm1024.subscriber.subscriptions || {};
   chxm1024.subscriber.entitlements = chxm1024.subscriber.entitlements || {};
   const data = {
-	"product_identifier": (appid),
-	"expires_date": "2099-09-09T09:09:09Z",
-	"purchase_date": "2022-09-09T09:09:09Z"
+        "grace_period_expires_date": null,
+        "purchase_date": "2024-01-14T18:59:05Z",
+        "product_identifier": "com.palligroup.gpt3.yearlyyy",
+        "expires_date": "2099-12-27T10:45:38Z"
+      };
 	};
   const data_appleid = {
-        "original_purchase_date": "2023-12-06T07:26:53Z",
-        "expires_date": "2099-09-09T09:09:09Z",
+      "com.palligroup.gpt3.yearlyyy": {
+        "original_purchase_date": "2024-01-14T18:59:06Z",
+        "expires_date": "2099-12-27T10:45:38Z",
         "is_sandbox": false,
         "refunded_at": null,
-        "store_transaction_id": "570001382367046",
+        "auto_resume_date": null,
         "unsubscribe_detected_at": null,
         "grace_period_expires_date": null,
         "period_type": "annual",
-        "purchase_date": "2023-12-06T07:26:52Z",
+        "purchase_date": "2024-01-14T18:59:05Z",
         "billing_issues_detected_at": null,
         "ownership_type": "PURCHASED",
         "store": "app_store",
-        "auto_resume_date": null
+        "store_transaction_id": "280001733195584"
       };
   const data1 = {
         "grace_period_expires_date" : null,
@@ -178,7 +181,9 @@ if (typeof $response == "undefined") {
         "product_identifier": "impact.69.99.1y",
         "expires_date": "2099-09-09T09:09:09Z"
       };
-    
+  
+  //delete chxm1024.subscriber.subscriptions[("impact.69.99.1y")];
+  //delete chxm1024.subscriber.entitlements[("full_access")];
   delete chxm1024.subscriber.subscriptions[("impact.69.99.1w")];
   delete chxm1024.subscriber.subscriptions[("impact.69.99.1y")];
   delete chxm1024.subscriber.entitlements[("full_access")];
