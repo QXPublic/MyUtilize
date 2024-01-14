@@ -174,7 +174,7 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 ###广告专区###
 
 #chat-ai屏蔽更新
-DOMAIN,firestore.googleapis.com
+#DOMAIN,firestore.googleapis.com
 
 #x.星球
 USER-AGENT,sf?-fe-tos.pglstatp-toutiao.com
