@@ -2,7 +2,7 @@
 
 [rewrite_local]
 
-^https?:\/\/monica\.im\/api\/vip\/get_vip_status url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Monica-Ai.js
+^https?:\/\/monica\.im\/api\/vip\/get\wvip\wstatus url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Monica-Ai.js
 
 [mitm]
 hostname = monica.im
