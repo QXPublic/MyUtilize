@@ -16,8 +16,8 @@ const name61 = "pro";
 const name7 = "impact.69.99.1y";
 const name71 = "full_access";
 const name8 = "monthly";
-//const name81 = "full_access";
-
+const name9 = "full_access";
+//const name9 = "chatbot.ai.lifetime";
 const appid = "com.palligroup.gpt3.yearlyyy";
 
 if (typeof $response == "undefined") {
@@ -196,6 +196,21 @@ if (typeof $response == "undefined") {
         "store": "app_store",
         "auto_resume_date": null
       };
+    const data9 = {
+        "original_purchase_date": "2024-01-16T18:34:01Z",
+        "expires_date": "2099-09-09T09:09:09Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "store_transaction_id": "570001420787808",
+        "unsubscribe_detected_at": null,
+        "grace_period_expires_date": null,
+        "period_type": "lifetime",
+        "purchase_date": "2024-01-16T18:34:00Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "auto_resume_date": null
+      };
   
   //delete chxm1024.subscriber.subscriptions[("impact.69.99.1y")];
   delete chxm1024.subscriber.subscriptions[("weekly")];
@@ -208,6 +223,7 @@ if (typeof $response == "undefined") {
   delete chxm1024.subscriber.subscriptions[("weeklyIncludesTrial")];
   delete chxm1024.subscriber.subscriptions[("com.curiouscreatorsco.ChatLLM.pro.1year.3daytrial.49_99")];
   
+  chxm1024.subscriber.subscriptions[(name9)] = (data9);
   chxm1024.subscriber.subscriptions[(name8)] = (data8);
   chxm1024.subscriber.entitlements[(name71)] = (data71);
   chxm1024.subscriber.subscriptions[(name7)] = (data7);
