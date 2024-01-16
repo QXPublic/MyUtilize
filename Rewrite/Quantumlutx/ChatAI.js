@@ -7,6 +7,7 @@
 [mitm]
 hostname = api.chataiassistant.com
 */
+
 var body = $response.body;
 //var url = $request.url;
 //会员
@@ -15,6 +16,6 @@ var body = $response.body;
     obj.data.ai_subscription_end_time = "4100731932000";
     obj.data.free_type = 3 ;
     body = JSON.stringify(obj);
-$done({ body });
+$done({ body, status: 'HTTP/1.1 200 OK' });
 
 
