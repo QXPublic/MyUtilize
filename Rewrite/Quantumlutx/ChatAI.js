@@ -8,7 +8,7 @@
 hostname = api.chataiassistant.com
 */
 var body = $response.body;
-var url = $request.url;
+//var url = $request.url;
 //会员
   var obj = JSON.parse(body);
     obj.data.ai_subscription_active = 1;
