@@ -16,7 +16,7 @@ const name61 = "pro";
 const name7 = "impact.69.99.1y";
 const name71 = "full_access";
 const name8 = "monthly";
-const name9 = "full_access";
+const name9 = "chatbot.ai.lifetime";
 //const name9 = "chatbot.ai.lifetime";
 const appid = "com.palligroup.gpt3.yearlyyy";
 
