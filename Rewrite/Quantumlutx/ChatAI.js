@@ -11,5 +11,6 @@ var body = $response.body;
     obj.data.ai_subscription_active = 1;
     obj.data.ai_subscription_end_time = "4100731932000";
     obj.data.free_type = 3 ;
+    obj.data.free_expired_time ="4100731932000";
     body = JSON.stringify(obj);
 $done({ body, status: 'HTTP/1.1 200 OK' });
