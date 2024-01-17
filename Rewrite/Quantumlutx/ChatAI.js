@@ -1,5 +1,5 @@
 /*
-[rewrite local]
+[rewrite_local]
 ^https?:\/\/api\.chataiassistant\.com\/api\/(users\/login-register-user|ai\/get-active-subscription-data) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/ChatAI.js
 [mitm]
 hostname = api.chataiassistant.com
