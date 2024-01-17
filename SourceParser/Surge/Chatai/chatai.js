@@ -222,13 +222,13 @@ if (typeof $response == "undefined") {
       };
     const data10 = {
         "original_purchase_date": "2024-01-17T15:12:44Z",
-        "expires_date": "2024-01-24T15:12:43Z",
+        "expires_date": "2099-09-09T09:09:09Z",
         "is_sandbox": false,
         "refunded_at": null,
         "store_transaction_id": "570001421558857",
         "unsubscribe_detected_at": null,
         "grace_period_expires_date": null,
-        "period_type": "trial",
+        "period_type": "annual",
         "purchase_date": "2024-01-17T15:12:43Z",
         "billing_issues_detected_at": null,
         "ownership_type": "PURCHASED",
@@ -237,8 +237,8 @@ if (typeof $response == "undefined") {
       };
     const data101 = {
         "grace_period_expires_date": null,
-        "purchase_date": "2024-01-17T15:12:43Z",
-        "product_identifier": "com.stayfitapps.chatai.monthlyb",
+        "purchase_date": "2099-09-09T09:09:09Z",
+        "product_identifier": "com.stayfitapps.chatai.yearlya",
         "expires_date": "2024-01-24T15:12:43Z"
       };
   
