@@ -2,7 +2,7 @@
 ### apple\堆糖\拦截100屏蔽\talkatone\电信(首页净化，消息框不可用)###
 
 ################################################################################################
-
+DOMAIN,lb-iad-01.tktn.be
 ###
 URL-REGEX,^https:\/\/member\.aliyundrive\.com\/v2\/activity\/sign_in_luckyBottle\?_rx-s=mobile$
 DOMAIN,ocsp.pki.goog 
