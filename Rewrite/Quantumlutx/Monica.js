@@ -37,7 +37,8 @@ if (url.indexOf('vip/get_vip_status') != -1) {
     item.plan_period = "forever";
 });
 
-console.log(JSON.stringify(data));
+
+body = console.log(JSON.stringify(data));
 
 }
 
