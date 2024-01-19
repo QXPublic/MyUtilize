@@ -262,7 +262,7 @@ if (typeof $response == "undefined") {
         "grace_period_expires_date": null,
         "purchase_date": "2024-01-19T16:42:16Z",
         "product_identifier": "AIDA_7999_LIFETIME",
-        "expires_date": "2099-09-09T09:09:09Z
+        "expires_date": "2099-09-09T09:09:09Z"
       };
   
   delete chxm1024.subscriber.subscriptions[("AIDA_4999_1y_1wk")];
