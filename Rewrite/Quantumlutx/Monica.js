@@ -32,8 +32,9 @@ if (url.indexOf('vip/get_vip_status') != -1) {
   var obj = JSON.parse(body);
   var data = ojb.data
 
-data.forEach(function(item) {
-    item.is_pro_feature = true;
+   data.forEach(function(item) {
+    item.plan_total = 999999;
+    item.plan_period = "forever";
 });
 
 console.log(JSON.stringify(data));
