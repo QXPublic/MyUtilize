@@ -20,6 +20,8 @@ const name9 = "product_monthly_1999";
 const name91 = "premium";
 const name10 = "com.stayfitapps.chatai.yearlya";
 const name101 = "Full Access";
+const namea =  "AIDA_7999_LIFETIME";
+const nameaa =  "Toucan Pro";
 
 const appid = "com.palligroup.gpt3.yearlyyy";
 
@@ -241,7 +243,30 @@ if (typeof $response == "undefined") {
         "product_identifier": "com.stayfitapps.chatai.yearlya",
         "expires_date": "2024-01-24T15:12:43Z"
       };
+  const dataa = {
+        "original_purchase_date": "2024-01-19T16:42:17Z",
+        "expires_date": "2099-09-09T09:09:09Z",
+        "is_sandbox": false,
+        "refunded_at": null,
+        "store_transaction_id": "570001423538526",
+        "unsubscribe_detected_at": null,
+        "grace_period_expires_date": null,
+        "period_type": "lifetime",
+        "purchase_date": "2024-01-19T16:42:16Z",
+        "billing_issues_detected_at": null,
+        "ownership_type": "PURCHASED",
+        "store": "app_store",
+        "auto_resume_date": null
+      };
+  const dataaa = {
+        "grace_period_expires_date": null,
+        "purchase_date": "2024-01-19T16:42:16Z",
+        "product_identifier": "AIDA_7999_LIFETIME",
+        "expires_date": "2099-09-09T09:09:09Z
+      };
   
+  delete chxm1024.subscriber.subscriptions[("AIDA_4999_1y_1wk")];
+  delete chxm1024.subscriber.entitlements[("Toucan Pro")];
   delete chxm1024.subscriber.subscriptions[("com.stayfitapps.chatai.monthlyb")];
   delete chxm1024.subscriber.entitlements[("Full Access")];
   delete chxm1024.subscriber.subscriptions[("product_monthly_1999")];
@@ -256,6 +281,8 @@ if (typeof $response == "undefined") {
   delete chxm1024.subscriber.subscriptions[("weeklyIncludesTrial")];
   delete chxm1024.subscriber.subscriptions[("com.curiouscreatorsco.ChatLLM.pro.1year.3daytrial.49_99")];
   
+  chxm1024.subscriber.subscriptions[(namea)] = (dataa);
+  chxm1024.subscriber.entitlements[(nameaa)] = (dataaa);
   chxm1024.subscriber.subscriptions[(name10)] = (data10);
   chxm1024.subscriber.entitlements[(name101)] = (data101);
   chxm1024.subscriber.subscriptions[(name9)] = (data9);
