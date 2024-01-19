@@ -10,7 +10,7 @@ hostname = 24.199.66.203
 var body = $response.body;
 var url = $request.url;
 //会员
-if (url.indexOf('get-profile\?user_id=\d+') != -1) {
+if (url.indexOf('get-profile/?user_id=\d+') != -1) {
     var obj = JSON.parse(body);
     obj.body.subscription_type = "1";
     obj.body.account_type = 1;
