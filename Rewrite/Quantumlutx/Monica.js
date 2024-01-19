@@ -21,11 +21,6 @@ var body = $response.body;
   obj.vip_status.interval_at_period_end = "year";
   obj.vip_status.total_point = 999999;
   obj.vip_status.interval = "year";
-  obj.vip_status.interval_at_period_end =
-  obj.vip_status.interval_at_period_end =
-  obj.vip_status.interval_at_period_end =
-  obj.vip_status.interval_at_period_end =
-  obj.vip_status.interval_at_period_end =
   body = JSON.stringify(obj);
   
   $done({ body });
