@@ -29,11 +29,16 @@ if (url.indexOf('vip/get_vip_status') != -1) {
   obj.vip_status.interval_at_period_end =
   body = JSON.stringify(obj);
   }else if (url.indexOf('usage/get_multi_module_usage') != -1) {
-  
   var obj = JSON.parse(body);
-     obj.data.is_pro_feature = true;
-    body = JSON.stringify(obj);
-    }
+  var data = ojb.data
+
+data.forEach(function(item) {
+    item.is_pro_feature = true;
+});
+
+console.log(JSON.stringify(data));
+
+}
 
 $done({ body });
 
