@@ -30,24 +30,244 @@ if (url.indexOf('vip/get_vip_status') != -1) {
   body = JSON.stringify(obj);
   }else if (url.indexOf('usage/get_multi_module_usage') != -1) {
   var obj = JSON.parse(body);
-  var data = ojb.data
-
-   data.forEach(function(item) {
-    item.plan_total = 999999;
-    item.plan_period = "forever";
-});
-
-body = console.log(JSON.stringify(data));
-
+  var data = {
+  "msg" : "ok",
+  "data" : [
+    {
+      "module" : "basic_query",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 40,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "genius_bot",
+      "rewarded_total" : 0,
+      "plan_total" : 999999,
+      "plan_remaining" : 0,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "artist_bot",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 0,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "web_search",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 5,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "reading_pdf",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 10,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "claude_100k",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 0,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "claude2",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 0,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "reading",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 2,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "{
+  "msg" : "ok",
+  "data" : [
+    {
+      "module" : "basic_query",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 40,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "genius_bot",
+      "rewarded_total" : 0,
+      "plan_total" : 999999,
+      "plan_remaining" : 0,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "artist_bot",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 0,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "web_search",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 5,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "reading_pdf",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 10,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "claude_100k",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 0,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "claude2",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 0,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "reading",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 2,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    },
+    {
+      "module" : "youtube_summarize",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 2,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    }
+  ],
+  "code" : 0
+}"
+    },
+    {
+      "module" : "youtube_summarize",
+      "rewarded_total" : 0,
+      "plan_total" : 99999,
+      "plan_remaining" : 2,
+      "is_trial" : false,
+      "rewarded_remaining" : 0,
+      "plan_period" : "forever"
+    }
+  ],
+  "code" : 0
+}
+body = JSON.stringify(obj);
 }else if (url.indexOf('usage/get_mobile_usage_info') != -1) {
   var obj = JSON.parse(body);
-  var data = ojb.data
-  data.forEach(function(item) {
-    item.is_pro_feature = true;
-    
-});
+  var obj = {
+  "msg" : "ok",
+  "data" : [
+    {
+      "is_pro_feature" : true,
+      "icon" : "https://assets.monica.im/assets/icon/mobile/basic_queries.png",
+      "title" : "Queries",
+      "usage_model" : "basic_query"
+    },
+    {
+      "is_pro_feature" : true,
+      "icon" : "https://assets.monica.im/assets/icon/mobile/gpt4.png",
+      "title" : "GPT-4",
+      "usage_model" : "genius_bot"
+    },
+    {
+      "is_pro_feature" : true,
+      "icon" : "https://assets.monica.im/assets/icon/mobile/images.png",
+      "title" : "Images",
+      "usage_model" : "artist_bot"
+    },
+    {
+      "is_pro_feature" : true,
+      "icon" : "https://assets.monica.im/assets/icon/mobile/web_search.png",
+      "title" : "Web Search",
+      "usage_model" : "web_search"
+    },
+    {
+      "is_pro_feature" : true,
+      "icon" : "https://assets.monica.im/assets/icon/mobile/pdf.png",
+      "title" : "ChatPDF",
+      "usage_model" : "reading_pdf"
+    },
+    {
+      "is_pro_feature" : true,
+      "icon" : "https://assets.monica.im/assets/icon/mobile/claude.png",
+      "title" : "Claude-100K",
+      "usage_model" : "claude_100k"
+    },
+    {
+      "is_pro_feature" : true,
+      "icon" : "",
+      "title" : "Claude-2",
+      "usage_model" : "claude2"
+    },
+    {
+      "is_pro_feature" : true,
+      "icon" : "",
+      "title" : "Web Summary",
+      "usage_model" : "reading"
+    },
+    {
+      "is_pro_feature" : true,
+      "icon" : "",
+      "title" : "Youtube Summarize",
+      "usage_model" : "youtube_summarize"
+    }
+  ],
+  "code" : 0
+}
 
-body = console.log(JSON.stringify(data));
+body = JSON.stringify(obj);
   }
 
 $done({ body });
