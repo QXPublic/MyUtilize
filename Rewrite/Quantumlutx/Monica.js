@@ -3,7 +3,7 @@
 
 [rewrite_local]
 
-^https?:\/\/monica\.im\/api\/(vip\/get_vip_status|usage\/get_multi_module_usage) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Monica.js
+^https?:\/\/monica\.im\/api\/(vip\/get_vip_status|usage\/get_multi_module_usage|usage\/get_mobile_usage_info) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Monica.js
 
 [mitm]
 hostname = monica.im
@@ -37,10 +37,18 @@ if (url.indexOf('vip/get_vip_status') != -1) {
     item.plan_period = "forever";
 });
 
-
 body = console.log(JSON.stringify(data));
 
-}
+}else if (url.indexOf('usage/get_mobile_usage_info') != -1) {
+  var obj = JSON.parse(body);
+  var data = ojb.data
+  data.forEach(function(item) {
+    item.is_pro_feature = true;
+    
+});
+
+body = console.log(JSON.stringify(data));
+  }
 
 $done({ body });
 
