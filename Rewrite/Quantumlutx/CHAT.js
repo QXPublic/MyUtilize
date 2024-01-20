@@ -9,8 +9,8 @@ hostname = api.chatapp.dev
 */
 
 var obj = JSON.parse($response.body);
-obj.user.subscription_valid = true;
-obj.user.is_plus = true;
-obj.user.valid_until = "4072603667";
+    obj.user.subscription_valid = true;
+    obj.user.is_plus = true;
+    obj.user.valid_until = "4072603667";
 
 $done({body : JSON.stringify(obj)});
