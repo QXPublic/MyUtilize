@@ -16,8 +16,8 @@ const name61 = "pro";
 const name7 = "impact.69.99.1y";
 const name71 = "full_access";
 const name8 = "monthly";
-//const name9 = "product_monthly_1999";
-//const name91 = "premium";
+const name9 = "product_monthly_1999";
+const name91 = "premium";
 const name10 = "com.stayfitapps.chatai.yearlya";
 const name101 = "Full Access";
 const namea =  "AIDA_7999_LIFETIME";
@@ -201,7 +201,7 @@ if (typeof $response == "undefined") {
         "store": "app_store",
         "auto_resume_date": null
       };
-    /*
+    
      const data9 = {
         "original_purchase_date": "2024-01-17T11:24:12Z",
         "expires_date": "2099-09-09T09:09:09Z",
@@ -217,12 +217,12 @@ if (typeof $response == "undefined") {
         "store": "app_store",
         "auto_resume_date": null
       };
-    //const data91 = {
+    const data91 = {
         "grace_period_expires_date": null,
         "purchase_date": "2024-01-17T11:24:11Z",
         "product_identifier": "product_monthly_1999",
         "expires_date": "2099-09-09T09:09:09Z"
-      }; */
+      }; 
     const data10 = {
         "original_purchase_date": "2024-01-17T15:12:44Z",
         "expires_date": "2099-09-09T09:09:09Z",
@@ -270,8 +270,8 @@ if (typeof $response == "undefined") {
   delete chxm1024.subscriber.entitlements[("Toucan Pro")];
   delete chxm1024.subscriber.subscriptions[("com.stayfitapps.chatai.monthlyb")];
   delete chxm1024.subscriber.entitlements[("Full Access")];
-  //delete chxm1024.subscriber.subscriptions[("product_monthly_1999")];
-  //delete chxm1024.subscriber.entitlements[("premium")];
+  delete chxm1024.subscriber.subscriptions[("product_monthly_1999")];
+  delete chxm1024.subscriber.entitlements[("premium")];
   delete chxm1024.subscriber.subscriptions[("weekly")];
   delete chxm1024.subscriber.subscriptions[("impact.69.99.1w")];
   delete chxm1024.subscriber.subscriptions[("impact.69.99.1y")];
@@ -286,8 +286,8 @@ if (typeof $response == "undefined") {
   chxm1024.subscriber.entitlements[(nameaa)] = (dataaa);
   chxm1024.subscriber.subscriptions[(name10)] = (data10);
   chxm1024.subscriber.entitlements[(name101)] = (data101);
-  //chxm1024.subscriber.subscriptions[(name9)] = (data9);
-  //chxm1024.subscriber.entitlements[(name91)] = (data91);
+  chxm1024.subscriber.subscriptions[(name9)] = (data9);
+  chxm1024.subscriber.entitlements[(name91)] = (data91);
   chxm1024.subscriber.subscriptions[(name8)] = (data8);
   chxm1024.subscriber.entitlements[(name71)] = (data71);
   chxm1024.subscriber.subscriptions[(name7)] = (data7);
