@@ -272,8 +272,8 @@ DOMAIN-SUFFIX,ad.smaato.net,REJECT // Added for: sdk.ad.smaato.net:443
 DOMAIN-SUFFIX,amazon-adsystem.com,REJECT // Added for: aax-dtb-mobile-geo.amazon-adsystem.com:443
 DOMAIN-SUFFIX,op-mobile.opera.com,REJECT // Added for: t-odx.op-mobile.opera.com:443
 DOMAIN,i.sng.link,REJECT // Added for: i.sng.link:443
-DOMAIN,mfx.mobilefuse.com
-DOMAIN,face.t.sinajs.cn
+//DOMAIN,mfx.mobilefuse.com
+//DOMAIN,face.t.sinajs.cn
 
 # > 电信(首页净化，消息框不可用)
 DOMAIN-SUFFIX,appgoad.189.cn
