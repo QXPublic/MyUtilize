@@ -251,6 +251,24 @@ DOMAIN, sdk.e.qq.com
 DOMAIN-SUFFIX,ntb.lanjie100.com
 
 #talkatone
+DOMAIN-SUFFIX,doubleclick.net,REJECT // Added for: googleads.g.doubleclick.net:443
+DOMAIN-SUFFIX,api.tappx.com,REJECT // Added for: ssp.api.tappx.com:443
+DOMAIN-SUFFIX,pghub.io,REJECT // Added for: feed.pghub.io:443
+DOMAIN-SUFFIX,googletagservices.com,REJECT // Added for: www.googletagservices.com:443
+DOMAIN,bidder.criteo.com,REJECT // Added for: bidder.criteo.com:443
+DOMAIN,gum.criteo.com,REJECT // Added for: gum.criteo.com:443
+DOMAIN-SUFFIX,pubmatic.com,REJECT // Added for: ow.pubmatic.com:443
+DOMAIN-SUFFIX,googleadsserving.cn,REJECT // Added for: lh3.googleadsserving.cn:443
+DOMAIN-SUFFIX,smartadserver.com,REJECT // Added for: s.ads.smartadserver.com:443
+DOMAIN-SUFFIX,inmobi.com,REJECT // Added for: telemetry.sdk.inmobi.com:443
+DOMAIN-SUFFIX,pubnative.net,REJECT // Added for: got.iad3rs0zone1.pubnative.net:443
+DOMAIN-SUFFIX,inner-active.mobi,REJECT // Added for: http://cdn2.inner-active.mobi/mnt/InnerActive/Resources/Empty/120x20_empty.gif
+DOMAIN-SUFFIX,googlesyndication.com,REJECT // Added for: ade.googlesyndication.com:443
+DOMAIN-SUFFIX,moatads.com,REJECT // Added for: z.moatads.com:443
+DOMAIN-SUFFIX,googleadservices.com,REJECT // Added for: pagead2.googleadservices.com:443
+DOMAIN-SUFFIX,ad.smaato.net,REJECT // Added for: sdk.ad.smaato.net:443
+DOMAIN-SUFFIX,amazon-adsystem.com,REJECT // Added for: aax-dtb-mobile-geo.amazon-adsystem.com:443
+
 
 # > 电信(首页净化，消息框不可用)
 DOMAIN-SUFFIX,appgoad.189.cn
