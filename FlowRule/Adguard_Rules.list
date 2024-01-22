@@ -253,7 +253,7 @@ DOMAIN, sdk.e.qq.com
 DOMAIN-SUFFIX,ntb.lanjie100.com
 
 #talkatone
-DOMAIN-SUFFIX,doubleclick.net,REJECT // Added for: googleads.g.doubleclick.net:443
+DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,api.tappx.com,REJECT // Added for: ssp.api.tappx.com:443
 DOMAIN-SUFFIX,pghub.io,REJECT // Added for: feed.pghub.io:443
 DOMAIN-SUFFIX,googletagservices.com,REJECT // Added for: www.googletagservices.com:443
