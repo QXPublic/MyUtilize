@@ -13,6 +13,8 @@ DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,boldwin.live
 DOMAIN,mfx.mobilefuse.com
 IP-CIDR,205.164.56.27/32
+DOMAIN,firebaselogging-pa.googleapis.com
+
 # > viki
 DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
 DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
