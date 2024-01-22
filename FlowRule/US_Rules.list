@@ -11,7 +11,7 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-KEYWORD,tktn
 DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,boldwin.live
-//DOMAIN,mfx.mobilefuse.com
+DOMAIN,mfx.mobilefuse.com
 IP-CIDR,205.164.56.27/32
 # > viki
 DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
