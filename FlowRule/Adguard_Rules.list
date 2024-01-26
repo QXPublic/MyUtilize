@@ -3,6 +3,7 @@
 
 ################################################################################################
 
+DOMAIN,f.video.weibocdn.com
 DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN-SUFFIX,unity3dusercontent.com
 DOMAIN,amdc.m.taobao.com,REJECT // Added for: http://amdc.m.taobao.com/amdc/mobileDispatch?appkey=21380790&v=6.1&appVersion=10.30.20&cv=1
