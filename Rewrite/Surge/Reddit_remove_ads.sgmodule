@@ -1,6 +1,7 @@
 #!name = Reddit去广告
 #!desc = 过滤应用内推广,阻止NSFW提示
-
+#!system=ios
+#!category=MyUtilize
 
 [Script]
 
