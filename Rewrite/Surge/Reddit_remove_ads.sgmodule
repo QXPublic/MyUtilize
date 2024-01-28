@@ -1,0 +1,10 @@
+#!name = Reddit去广告
+#!desc = 过滤应用内推广,阻止NSFW提示
+
+
+[Script]
+
+Reddit_remove_ads = type=http-response, pattern=
+^https?:\/\/gql(-fed)?\.redditl.com, script-path= https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Reddit_ads/Reddit_remove_ads.js, requ ires-body=true
+[Mitm]
+hostname = %APPEND% gql.reddit.com, gql-fed.reddit.com
