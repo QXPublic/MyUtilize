@@ -1,7 +1,7 @@
 /*
 [rewrite_local]
 
-^http:\/\/24\.199\.66\.203\:\d+\/apis\/(get-profile\?user_id=\d+|loginWithDevice) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/Jarvis.js
+^http:\/\/24\.199\.66\.203\:\d+\/apis\/(get-profile\?user_id=\d+|loginWithDevice) url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Jarvis.js
 
 [mitm]
 hostname = 24.199.66.203
