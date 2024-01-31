@@ -1,5 +1,11 @@
 /*
 脚本引用 @xream
+# Reddit
+[mitm]
+hostname = gql.reddit.com, gql-fed.reddit.com
+# 过滤推广 关NSFW提示 感谢【xream】分享
+[rewrite_local]
+^https?:\/\/gql(-fed)?\.reddit\.com url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Reddit_remove_ads.js
 */
 let body;
 try {
