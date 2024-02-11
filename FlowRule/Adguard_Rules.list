@@ -2,7 +2,9 @@
 ### apple更新\堆糖\拦截100屏蔽\talkatone\电信(首页净化，消息框不可用)###
 
 ################################################################################################
-
+URL-REGEX,^http:\/\/d\.image\.i4\.cn\/adInfo\/image\/original\/\d+\/\d+\/\d+\/\d+\/\d+_\d+\.jpg$ // 爱思助手开屏广告
+DOMAIN,dp.im.weibo.cn// 微博广告
+DOMAIN-SUFFIX,adukwai.com
 DOMAIN,ad.21cn.com
 DOMAIN,adashx.m.taobao.com
 DOMAIN-SUFFIX,unityads.unity3d.com
