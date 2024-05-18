@@ -8,15 +8,13 @@ DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 
 # > talkatone
-DOMAIN-KEYWORD,tktn
-DOMAIN-SUFFIX,yahoo.com
-DOMAIN-SUFFIX,boldwin.live
-DOMAIN,mfx.mobilefuse.com
-IP-CIDR,205.164.56.27/32
-IP-CIDR,205.164.56.30/32
-DOMAIN,firebaselogging-pa.googleapis.com
-IP-CIDR,69.46.75.83/32,no-resolve 
-IP-CIDR,69.46.75.86/32,no-resolve 
+DOMAIN-SUFFIX,tktn.be
+DOMAIN-SUFFIX,talkatone.com
+DOMAIN-SUFFIX,mobilefuse.com
+IP-CIDR,205.164.56.0/24,no-resolve
+IP-CIDR,69.46.75.0/24,no-resolve
+IP-CIDR,205.164.56.0/24,no-resolve
+IP-CIDR,50.117.27.0/24,no-resolve
 
 # > viki
 DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
