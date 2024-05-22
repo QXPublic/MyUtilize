@@ -2,6 +2,17 @@
 ### apple更新\堆糖\拦截100屏蔽\talkatone\电信(首页净化，消息框不可用)###
 
 ################################################################################################
+
+#EDIFIER Connect去开屏广告(无法登陆)
+DOMAIN,ios.bugly.qq.com 
+DOMAIN,dxp.baidu.com 
+DOMAIN,app-statistics.edifier.com 
+URL-REGEX,^https:\/\/app-statistics\.edifier\.com\/api\/v1\/app_marquee_statistics$ 
+DOMAIN,admin-app.edifier.com 
+DOMAIN,hmma.baidu.com 
+DOMAIN,ulogs.umengcloud.com 
+DOMAIN,bgg.baidu.com
+#
 URL-REGEX,^http:\/\/d\.image\.i4\.cn\/adInfo\/image\/original\/\d+\/\d+\/\d+\/\d+\/\d+_\d+\.jpg$ // 爱思助手开屏广告
 DOMAIN,dp.im.weibo.cn// 微博广告
 DOMAIN-SUFFIX,adukwai.com
