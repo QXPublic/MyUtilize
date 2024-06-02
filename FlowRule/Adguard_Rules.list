@@ -3,6 +3,12 @@
 
 ################################################################################################
 
+#暗影格斗（移除弹窗广告）
+DOMAIN,init.supersonicads.com,REJECT
+DOMAIN,ws.tapjoyads.com,REJECT
+DOMAIN-SUFFIX,appsflyer.com,REJECT
+DOMAIN-SUFFIX,appsflyersdk.com,REJECT
+
 #EDIFIER Connect去开屏广告(无法登陆)
 DOMAIN,ios.bugly.qq.com 
 DOMAIN,dxp.baidu.com 
