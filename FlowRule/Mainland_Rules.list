@@ -5,7 +5,7 @@
 #apple addition
 DOMAIN,sandbox.itunes.apple.com
 DOMAIN-SUFFIX,apple.com
-DOMAIN,entitlements.itunes.apple.com
+DOMAIN-SUFFIX,itunes.apple.com
 
 IP-CIDR,198.24.161.181/32,no-resolve
 IP-CIDR,23.47.4.27/32,no-resolve
