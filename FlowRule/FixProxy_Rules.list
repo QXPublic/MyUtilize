@@ -1,4 +1,5 @@
 #遗漏代理规则补充#
+DOMAIN-SUFFIX,googlevideo.com
 #ip123.in
 DOMAIN-SUFFIX,ip123.in
 DOMAIN-SUFFIX,travel-eye.org
