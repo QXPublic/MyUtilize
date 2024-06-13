@@ -1,7 +1,7 @@
 
 # 【大陆地区—直连-默认】
 
-
+DOMAIN-SUFFIX,alipay.hk
 #apple addition
 DOMAIN,sandbox.itunes.apple.com
 DOMAIN-SUFFIX,apple.com
