@@ -1,5 +1,8 @@
 
+
 # 【大陆地区—直连-默认】
+#Surge相关
+DOMAIN-SUFFIX,nssurge.com
 
 DOMAIN-SUFFIX,alipay.hk
 #apple addition
