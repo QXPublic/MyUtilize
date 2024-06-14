@@ -3,6 +3,9 @@
 
 ################################################################################################
 
+
+#雪球开屏广告
+DOMAIN,xavatar.imedao.com
 #暗影格斗（移除弹窗广告）
 DOMAIN,init.supersonicads.com,REJECT
 DOMAIN,ws.tapjoyads.com,REJECT
