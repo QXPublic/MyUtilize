@@ -1,9 +1,10 @@
 
 
 # 【大陆地区—直连-默认】
+#1password
+DOMAIN-KEYWORD,1password
 #Surge相关
 DOMAIN-SUFFIX,nssurge.com
-
 DOMAIN-SUFFIX,alipay.hk
 #apple addition
 DOMAIN,sandbox.itunes.apple.com
