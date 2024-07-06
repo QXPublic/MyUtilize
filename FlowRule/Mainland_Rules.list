@@ -11,6 +11,7 @@ DOMAIN-SUFFIX,abchina.com
 DOMAIN-SUFFIX,ccb.com
 DOMAIN-SUFFIX,ccb.com.cn
 DOMAIN-KEYWORD,alipay
+DOMAIN-KEYWORD,icloud
 
 
 IP-CIDR,198.24.161.181/32,no-resolve
