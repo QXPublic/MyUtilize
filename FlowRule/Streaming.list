@@ -1,4 +1,18 @@
-# > Youtube&music\Apple music\Hulu\Amazon Prime Video\HBO NOW & Max\Paramount+\HBO Asia\Netflix\Disney+
+# > viki\kocowacon\Youtube&music\Apple music\Hulu\Amazon Prime Video\HBO NOW & Max\Paramount+\HBO Asia\Netflix\Disney+
+
+# > viki
+DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
+DOMAIN-SUFFIX,viki.com
+DOMAIN-SUFFIX,viki.io
+DOMAIN-SUFFIX,viki.net
+DOMAIN-SUFFIX,vikidash.akamaized.net
+DOMAIN-SUFFIX,vikiplatform.com
+
+# > kocowacon
+DOMAIN-SUFFIX,middleware.record.kocowacon.com
+DOMAIN-SUFFIX,prod.fims.kocowacon.com
+DOMAIN-SUFFIX,prod-geo.kocowacon.com
+DOMAIN-SUFFIX,prod-Sgw.kocowacon.com
 
 # > Youtube&music
 DOMAIN-SUFFIX,ggpht.cn
