@@ -75,3 +75,11 @@ DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,akamaized.net
 DOMAIN-SUFFIX,akamai.com
 
+#Edgio CDN
+DOMAIN-SUFFIX,IInw.net
+DOMAIN-SUFFIX,IInw.com
+DOMAIN-SUFFIX,edgecastcdn.net
+DOMAIN-SUFFIX,cdn.lInw.net
+DOMAIN-SUFFIX,cdn.lInw.com
+DOMAIN-SUFFIX,media.lInw.net
+
