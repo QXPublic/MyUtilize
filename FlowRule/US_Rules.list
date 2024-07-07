@@ -16,29 +16,7 @@ IP-CIDR,69.46.75.0/24,no-resolve
 IP-CIDR,205.164.56.0/24,no-resolve
 IP-CIDR,50.117.27.0/24,no-resolve
 
-# > viki
-DOMAIN-SUFFIX,kalhlspd-a.akamaihd.net
-DOMAIN-SUFFIX,m-content-viki.s.llnwi.net
-DOMAIN-SUFFIX,twemoji.maxcdn.com
-DOMAIN-SUFFIX,viki.com
-DOMAIN-SUFFIX,viki.io
-DOMAIN-SUFFIX,viki.net
-DOMAIN-SUFFIX,vikidash.akamaized.net
-DOMAIN-SUFFIX,vikiplatform.com
 
-# > kocowacon
-DOMAIN-SUFFIX,launches.appsflyer.com
-DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
-DOMAIN-SUFFIX,middleware.record.kocowacon.com
-DOMAIN-SUFFIX,api.da.kcpglob.com
-DOMAIN-SUFFIX,prod.fims.kocowacon.com
-DOMAIN-SUFFIX,playback.brightcovecdn.com
-DOMAIN-SUFFIX,metrics.brightcove.com
-DOMAIN-SUFFIX,prod-geo.kocowacon.com
-DOMAIN-SUFFIX,prod-Sgw.kocowacon.com
-DOMAIN-SUFFIX,smp-device-content.apple.com
-DOMAIN-SUFFIX,manifest.prod.boltdns.net
-#######DOMAIN-SUFFIX,api.ipify.org
 
 # > Google
 DOMAIN,sessions.bugsnag.com
