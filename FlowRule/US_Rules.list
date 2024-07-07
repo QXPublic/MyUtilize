@@ -40,7 +40,8 @@ DOMAIN-SUFFIX,smp-device-content.apple.com
 DOMAIN-SUFFIX,manifest.prod.boltdns.net
 #######DOMAIN-SUFFIX,api.ipify.org
 
-# > Google Voice
+# > Google
+DOMAIN,sessions.bugsnag.com
 DOMAIN,voice.telephony.google
 DOMAIN,voice.google.com
 DOMAIN,lens.l.google.com
