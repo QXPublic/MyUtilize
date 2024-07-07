@@ -5,7 +5,7 @@ DOMAIN-KEYWORD,apple
 DOMAIN-KEYWORD,itunes
 DOMAIN-KEYWORD,icloud
 DOMAIN-KEYWORD,1password
-
+DOMAIN-KEYWORD,meituan.net
 #Cloudflare
 DOMAIN-SUFFIX,cf-ipfs.com
 DOMAIN-SUFFIX,cloudflare-dns.com
