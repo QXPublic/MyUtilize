@@ -1,11 +1,6 @@
 #遗漏代理规则补充#
-DOMAIN-SUFFIX,googlevideo.com
-#ip123.in
 DOMAIN-SUFFIX,ip123.in
-DOMAIN-SUFFIX,travel-eye.org
-#google
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,google-analytics.com
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,cloud.cupronickel.goog
+DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,dpdfsd.com,extended-matching
+
+
