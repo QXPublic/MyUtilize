@@ -1,6 +1,6 @@
 #遗漏代理规则补充#
 DOMAIN-SUFFIX,ip123.in
 DOMAIN-SUFFIX,nssurge.com
-DOMAIN-SUFFIX,dpdfsd.com,extended-matching
+DOMAIN-SUFFIX,dpdfsd.com
 
 
