@@ -7,16 +7,6 @@ DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 
-# > talkatone
-DOMAIN-SUFFIX,tktn.be
-DOMAIN-SUFFIX,talkatone.com
-DOMAIN-SUFFIX,mobilefuse.com
-IP-CIDR,205.164.56.0/24,no-resolve
-IP-CIDR,69.46.75.0/24,no-resolve
-IP-CIDR,205.164.56.0/24,no-resolve
-IP-CIDR,50.117.27.0/24,no-resolve
-
-
 
 # > Google
 DOMAIN,sessions.bugsnag.com
