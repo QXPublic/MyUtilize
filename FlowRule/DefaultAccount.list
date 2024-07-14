@@ -3,6 +3,11 @@
 # > talkatone
 DOMAIN-SUFFIX,tktn.be
 DOMAIN-SUFFIX,talkatone.com
+DOMAIN,mfx.mobilefuse.com
+IP-CIDR,69.46.75.84/32,no-resolve 
+IP-CIDR,69.46.75.83/32,o-resolve 
+IP-CIDR,205.164.56.30/32,no-resolve 
+IP-CIDR,205.164.56.26/32,no-resolve 
 
 # > Reddit
 DOMAIN-SUFFIX,redd.it
