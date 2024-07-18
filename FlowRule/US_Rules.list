@@ -1,13 +1,15 @@
 ###  Claude\talkatone\viki\kocowacon\Google\openai
 
 
+
+
+
+DOMAIN-SUFFIX,straighttalk.com
 DOMAIN-SUFFIX,coze.com
 # > Claude
 DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
-
-
 # > Google
 DOMAIN,sessions.bugsnag.com
 DOMAIN-KEYWORD,google
