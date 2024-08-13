@@ -228,7 +228,7 @@ if wget -O hysteria-linux-$arch https://download.hysteria.network/app/latest/hys
   else
     echo "无法从任何网站下载文件"
     exit 1
-  fi
+
 fi
 
 nohup ./hysteria-linux-$arch server &
