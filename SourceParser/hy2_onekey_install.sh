@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 # 检测当前用户是否为 root 用户
 if [ "$EUID" -ne 0 ]; then
@@ -47,27 +47,27 @@ install_request_commands() {
 set_architecture() {
   case "$(uname -m)" in
     'i386' | 'i686')
-     
+
       arch='386'
       ;;
     'amd64' | 'x86_64')
-    
+
       arch='amd64'
       ;;
     'armv5tel' | 'armv6l' | 'armv7' | 'armv7l')
-      
+
       arch='arm'
       ;;
     'armv8' | 'aarch64')
-   
+
       arch='arm64'
       ;;
     'mips' | 'mipsle' | 'mips64' | 'mips64le')
-      
+
       arch='mipsle'
       ;;
     's390x')
-      
+
       arch='s390x'
       ;;
     *)
@@ -126,7 +126,7 @@ read -p "输入操作数字 (1/2/3/4/5): " choice
 
 case $choice in
    1)
-     
+
      ;;
 
    2)
@@ -184,7 +184,7 @@ exit
      ;;
 
    5)
-     
+
      exit
      ;;
    3)
@@ -204,7 +204,7 @@ cat /root/hy2/clash-mate.yaml
 echo "$(random_color '>>>>>>>>>>>>>>>>>>>>')"
     exit
     ;;
-    
+
    4)
 updatehy2 () {
 process_name="hysteria-linux-$arch"
@@ -225,10 +225,13 @@ rm -r hysteria-linux-$arch
 
 if wget -O hysteria-linux-$arch https://download.hysteria.network/app/latest/hysteria-linux-$arch; then
   chmod +x hysteria-linux-$arch
+else
+  if wget -O hysteria-linux-$arch https://github.com/apernet/hysteria/releases/download/app/v2.2.2/hysteria-linux-$arch; then
+    chmod +x hysteria-linux-$arch
   else
     echo "无法从任何网站下载文件"
     exit 1
-
+  fi
 fi
 
 nohup ./hysteria-linux-$arch server &
@@ -267,6 +270,9 @@ mkdir -p ~/hy2
 cd ~/hy2
 if wget -O hysteria-linux-$arch https://download.hysteria.network/app/latest/hysteria-linux-$arch; then
    chmod +x hysteria-linux-$arch
+else
+  if wget -O hysteria-linux-$arch https://github.com/apernet/hysteria/releases/download/app/v2.2.2/hysteria-linux-$arch; then
+    chmod +x hysteria-linux-$arch
   else
     echo "无法从任何网站下载文件"
     exit 1
@@ -280,11 +286,9 @@ installhy2 > /dev/null 2>&1
 # 就是写一个配置文件，你可以自己修改，安装hysteria2文档修改
 cat <<EOL > config.yaml
 listen: :443
-
 auth:
   type: password
   password: Se7RAuFZ8Lzg
-
 masquerade:
   type: proxy
   file:
@@ -298,15 +302,11 @@ masquerade:
       content-type: text/plain
       custom-stuff: ice cream so good
     statusCode: 200 
-
 bandwidth:
   up: 0 gbps
   down: 0 gbps
-
 udpIdleTimeout: 90s
-
 ignoreClientBandwidth: false
-
 quic:
   initStreamReceiveWindow: 8388608 
   maxStreamReceiveWindow: 8388608 
@@ -320,7 +320,7 @@ EOL
 while true; do 
     echo "请输入端口号（留空默认443，输入0随机2000-60000，你可以输入1-65630指定端口号）"
     read -p "" port 
-  
+
     if [ -z "$port" ]; then 
       port=443 
     elif [ "$port" -eq 0 ]; then 
@@ -329,19 +329,19 @@ while true; do
       echo "$(random_color '请输入数字，请重新输入端口号：')" 
       continue 
     fi 
-  
+
     while netstat -tuln | grep -q ":$port "; do 
       echo "$(random_color '端口已被占用，请重新输入端口号：')" 
       read -p "" port 
     done 
-  
+
     if sed -i "s/443/$port/" config.yaml; then 
       echo "$(random_color '端口号已设置为：')" "$port" 
     else 
       echo "$(random_color '替换端口号失败，退出脚本。')" 
       exit 1 
     fi 
-  
+
 
 generate_certificate() {
     read -p "请输入要用于自签名证书的域名（默认为 bing.com）: " user_domain
@@ -376,10 +376,10 @@ if [ "$cert_choice" == "2" ]; then
     ovokk="insecure=1&"
     choice1="true"
     echo -e "已将证书和密钥信息写入 /root/hy2/config.yaml 文件。"
-    
+
 get_ipv4_info() {
   ip_address=$(wget -4 -qO- --no-check-certificate --user-agent=Mozilla --tries=2 --timeout=3 http://ip-api.com/json/) &&
-  
+
   ispck=$(expr "$ip_address" : '.*isp\":[ ]*\"\([^"]*\).*') 
 
   if echo "$ispck" | grep -qi "cloudflare"; then
@@ -393,7 +393,7 @@ get_ipv4_info() {
 
 get_ipv6_info() {
   ip_address=$(wget -6 -qO- --no-check-certificate --user-agent=Mozilla --tries=2 --timeout=3 https://api.ip.sb/geoip) &&
-  
+
   ispck=$(expr "$ip_address" : '.*isp\":[ ]*\"\([^"]*\).*') 
 
   if echo "$ispck" | grep -qi "cloudflare"; then
@@ -443,9 +443,9 @@ fi
 if [ -f "/root/hy2/ca" ]; then
   echo "$(random_color '/root/hy2/ 文件夹中已存在名为 ca 的文件。跳过添加操作。')"
 else
-  
+
   check_domain(){
-    
+
     echo "请键入解析到本机VPS IP的域名:"
     read domain
     real_addr=`ping ${domain} -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
@@ -497,36 +497,36 @@ else
   exit 1
 fi
 
-echo "请输入伪装网址（默认https://www.apple.com/）"
+echo "请输入伪装网址（默认https://news.ycombinator.com/）"
 read -p "" masquerade_url
 
 if [ -z "$masquerade_url" ]; then
-  masquerade_url="https://www.apple.com/"
+  masquerade_url="https://news.ycombinator.com/"
 fi
 
-if sed -i "s|https://www.apple.com/|$masquerade_url|" config.yaml; then
+if sed -i "s|https://news.ycombinator.com/|$masquerade_url|" config.yaml; then
   echo "$(random_color '伪装域名已设置为：')" $masquerade_url
 else
   echo "$(random_color '替换伪装域名失败，退出脚本。')"
   exit 1
 fi
-   
+
     echo "是否要开启端口跳跃功能？（回车默认不开启，输入1开启）"
     read -p "" port_jump
-  
+
     if [ -z "$port_jump" ]; then 
-      
+
       break 
     elif [ "$port_jump" -eq 1 ]; then 
-    
+
       echo "请输入起始端口号(起始端口必须小于末尾端口): "
       read -p "" start_port 
-  
+
       echo "请输入末尾端口号(末尾端口必须大于起始端口): "
       read -p "" end_port 
-  
+
       if [ "$start_port" -lt "$end_port" ]; then 
-        
+
 "$ipta" -t nat -A PREROUTING -i eth0 -p udp --dport "$start_port":"$end_port" -j DNAT --to-destination :"$port" 
         echo "$(random_color '端口跳跃功能已开启，将范围重定向到主端口：')" "$port" 
         break 
@@ -542,10 +542,10 @@ done
 if [ -n "$port_jump" ] && [ "$port_jump" -eq 1 ]; then
   echo "#!/bin/bash" > /root/hy2/ipppp.sh 
   echo "$ipta -t nat -A PREROUTING -i eth0 -p udp --dport $start_port:$end_port -j DNAT --to-destination :$port" >> /root/hy2/ipppp.sh 
-  
- 
+
+
   chmod +x /root/hy2/ipppp.sh 
-  
+
   echo "[Unit]" > /etc/systemd/system/ipppp.service 
   echo "Description=IP Port Redirect" >> /etc/systemd/system/ipppp.service 
   echo "" >> /etc/systemd/system/ipppp.service 
@@ -554,13 +554,13 @@ if [ -n "$port_jump" ] && [ "$port_jump" -eq 1 ]; then
   echo "" >> /etc/systemd/system/ipppp.service 
   echo "[Install]" >> /etc/systemd/system/ipppp.service 
   echo "WantedBy=multi-user.target" >> /etc/systemd/system/ipppp.service 
-  
+
   # 启用开机自启动服务 
   systemctl enable ipppp.service 
-  
+
   # 启动服务 
   systemctl start ipppp.service 
-  
+
   echo "$(random_color '已创建/ipppp.sh脚本文件并设置开机自启动。')"
 fi
 
@@ -640,13 +640,11 @@ create_and_configure_service() {
     cat > "$hysteria_service_file" <<EOF
 [Unit]
 Description=My Hysteria Server
-
 [Service]
 Type=simple
 WorkingDirectory=$hysteria_directory
 ExecStart=$hysteria_executable server
 Restart=always
-
 [Install]
 WantedBy=multi-user.target
 EOF
@@ -690,15 +688,15 @@ echo "$(random_color '>>>>>>>>>>>>>>>>>>>>')"
 if [ -n "$start_port" ] && [ -n "$end_port" ]; then
 
   echo -e "$(random_color '这是你的Hysteria2节点链接信息，请注意保存哦: ')\nhysteria2://$password@$ipwan$domain:$port/?${ovokk}mport=$port,$start_port-$end_port&sni=$domain$domain_name#Hysteria2"
-  
+
   echo "hysteria2://$password@$ipwan$domain:$port/?${ovokk}mport=$port,$start_port-$end_port&sni=$domain$domain_name#Hysteria2" > neko.txt
-  
+
 else
 
   echo -e "$(random_color '这是你的Hysteria2节点链接信息，请注意保存: ')\nhysteria2://$password@$ipwan$domain:$port/?${ovokk}sni=$domain$domain_name#Hysteria2"
-  
+
   echo "hysteria2://$password@$ipwan$domain:$port/?${ovokk}sni=$domain$domain_name#Hysteria2" > neko.txt
-  
+
 fi
 
 echo -e "$(random_color 'Hysteria2安装成功！')"
