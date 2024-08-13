@@ -225,9 +225,6 @@ rm -r hysteria-linux-$arch
 
 if wget -O hysteria-linux-$arch https://download.hysteria.network/app/latest/hysteria-linux-$arch; then
   chmod +x hysteria-linux-$arch
-else
-  if wget -O hysteria-linux-$arch https://github.com/apernet/hysteria/releases/download/app/v2.2.2/hysteria-linux-$arch; then
-    chmod +x hysteria-linux-$arch
   else
     echo "无法从任何网站下载文件"
     exit 1
@@ -270,9 +267,6 @@ mkdir -p ~/hy2
 cd ~/hy2
 if wget -O hysteria-linux-$arch https://download.hysteria.network/app/latest/hysteria-linux-$arch; then
    chmod +x hysteria-linux-$arch
-else
-  if wget -O hysteria-linux-$arch https://github.com/apernet/hysteria/releases/download/app/v2.2.2/hysteria-linux-$arch; then
-    chmod +x hysteria-linux-$arch
   else
     echo "无法从任何网站下载文件"
     exit 1
@@ -503,14 +497,14 @@ else
   exit 1
 fi
 
-echo "请输入伪装网址（默认https://news.ycombinator.com/）"
+echo "请输入伪装网址（默认https://www.apple.com/）"
 read -p "" masquerade_url
 
 if [ -z "$masquerade_url" ]; then
-  masquerade_url="https://news.ycombinator.com/"
+  masquerade_url="https://www.apple.com/"
 fi
 
-if sed -i "s|https://news.ycombinator.com/|$masquerade_url|" config.yaml; then
+if sed -i "s|https://www.apple.com/|$masquerade_url|" config.yaml; then
   echo "$(random_color '伪装域名已设置为：')" $masquerade_url
 else
   echo "$(random_color '替换伪装域名失败，退出脚本。')"
