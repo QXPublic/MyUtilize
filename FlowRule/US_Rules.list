@@ -2,7 +2,10 @@
 
 
 
-
+DOMAIN,aichat.magicmoon.work
+DOMAIN,api.aiplusapp.com
+DOMAIN-SUFFIX,workers.dev
+DOMAIN,chataiv2.aritek.app
 DOMAIN-SUFFIX,aiplusapp.com
 DOMAIN-SUFFIX,straighttalk.com
 DOMAIN-SUFFIX,coze.com
