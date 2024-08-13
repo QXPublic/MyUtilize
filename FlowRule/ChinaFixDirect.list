@@ -7,6 +7,11 @@ DOMAIN-KEYWORD,itunes
 DOMAIN-KEYWORD,icloud
 DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,apple.cn
+DOMAIN-SUFFIX,netease.com
+DOMAIN-SUFFIX,mi.com
 
 #1password
 DOMAIN-KEYWORD,1password
