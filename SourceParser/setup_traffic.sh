@@ -39,44 +39,76 @@ cat <<'EOF' >/root/traffic.sh
 #!/bin/sh
 
 if [ "$1" == "--help" ];then
-  cat << HELP
+  cat << EOF
 $0 网卡名称
 --help 打印帮助菜单
-HELP
+EOF
 fi
 
 if [ -z "$1" ];then
-  interface="eth0"
+  if ip a ; then
+  interface=$(ip a | grep mtu | awk -F ':' '{print $2}' | head -n 2 | tail -n +2 | awk -F ' ' '{print $1}')
+  else
+  interface=eth0
+  fi
 else
   interface=$1
 fi
 
 if [ "$(cat /proc/uptime | awk '{print $1}' | sed 's/\..*//g')" -lt "120" ]; then
-  [ -n "$(cat ./all)" ] && expr "$(cat ./all)" + "$(cat ./all-now)" > ./all || echo "1" > ./all
-  [ -n "$(cat ./tx)" ] && expr "$(cat ./tx)" + "$(cat ./tx-now)" > ./tx || echo "1" > ./tx
-  [ -n "$(cat ./rx)" ] && expr "$(cat ./rx)" + "$(cat ./rx-now)" > ./rx || echo "1" > ./rx
+  if [ -n "$(cat ./all)" ]; then
+	expr "$(cat ./all)" + "$(cat ./all-now)" > ./all
+  else
+	echo "1" > ./all
+  fi
+  if [ -n "$(cat ./tx)" ]; then
+	expr "$(cat ./tx)" + "$(cat ./tx-now)" > ./tx
+  else
+	echo "1" > ./tx
+  fi
+  if [ -n "$(cat ./rx)" ]; then
+	expr "$(cat ./rx)" + "$(cat ./rx-now)" > ./rx
+  else
+	echo "1" > ./rx
+  fi
 else
-  [ -z "$(cat ./all)" ] && echo "1" > ./all
-  [ -z "$(cat ./tx)" ] && echo "1" > ./tx
-  [ -z "$(cat ./rx)" ] && echo "1" > ./rx
+  if [ -z "$(cat ./all)" ]; then
+	echo "1" > ./all
+  fi
+  if [ -z "$(cat ./tx)" ]; then
+	echo "1" > ./tx
+  fi
+  if [ -z "$(cat ./rx)" ]; then
+	echo "1" > ./rx
+  fi
 fi
 
 nohup caddy file-server --browse --listen :49155 &
 
 calculate() {
-  str=`expr $str + 2`
-  str=`expr $str / 4`
-  value="$info"B
-  [ $str = 1 ] && value=`expr $info / 1024`KB
-  [ $str = 2 ] && value=`expr $info / 1024 / 1024`MB
-  [ $str = 3 ] && value=`expr $info / 1024 / 1024 / 1024`GB
-  [ $str = 4 ] && value=`expr $info / 1024 / 1024 / 1024 / 1024`TB
-  [ $str = 5 ] && value=`expr $info / 1024 / 1024 / 1024 / 1024 / 1024`PB
+  value="$info bytes"
+  
+  if [ "$info" -ge "1024" ]; then
+    value=`expr $info / 1024`" KB"
+  fi
+  
+  if [ "$info" -ge "1048576" ]; then
+    value=`expr $info / 1024 / 1024`" MB"
+  fi
+  
+  if [ "$info" -ge "1073741824" ]; then
+    value=`expr $info / 1024 / 1024 / 1024`" GB"
+  fi
+  
+  if [ "$info" -ge "1099511627776" ]; then
+    value=`expr $info / 1024 / 1024 / 1024 / 1024`" TB"
+  fi
 }
 
 START_TIME=$(date +%s)
 
 while true; do
+  # 记录执行时间
   CURRENT_TIME=$(date +%s)
   TIME_PASSED=$((CURRENT_TIME - START_TIME))
 
@@ -86,14 +118,15 @@ while true; do
   echo ${NIC} > ./all-now
   echo ${NIC_TX} > ./tx-now
   echo ${NIC_RX} > ./rx-now
-
+  
   rx=$(cat ./rx)
   tx=$(cat ./tx)
   all=$(cat ./all)
+  
   NIC_RX_ALL=$(expr ${NIC_RX} + ${rx})
   NIC_TX_ALL=$(expr ${NIC_TX} + ${tx})
   NIC_ALL=$(expr ${NIC} + ${all})
-
+  
   str=${#NIC_RX_ALL} && info=${NIC_RX_ALL} && calculate && NIC_RX_ALL=$value
   str=${#NIC_TX_ALL} && info=${NIC_TX_ALL} && calculate && NIC_TX_ALL=$value
   str=${#NIC_ALL} && info=${NIC_ALL} && calculate && NIC_ALL=$value
@@ -113,7 +146,7 @@ while true; do
   echo "发送: ${NIC_TX_ALL}  接收: ${NIC_RX_ALL}  总流量: ${NIC_ALL}"
   echo "CPU使用率:${CPU}%  内存使用率: ${MEM}%"
   echo "{" > ./traffic
-  echo "  \"in\": \"${NIC_RX_ALL}\"," >> ./traffic
+  echo "  \"in\": \"${NIC_RX_ALL}\","  >> ./traffic
   echo "  \"out\": \"${NIC_TX_ALL}\"," >> ./traffic
   echo "  \"all\": \"${NIC_ALL}\"," >> ./traffic
   echo "  \"cpu\": \"${CPU}%\"," >> ./traffic
@@ -121,8 +154,10 @@ while true; do
   echo "  \"last_exec_time\": \"$(date '+%Y-%m-%d %H:%M:%S')\"" >> ./traffic
   echo "}" >> ./traffic
 
+  # 休眠 10 秒钟
   sleep 10
 done
+
 EOF
 
 # 设置脚本权限
