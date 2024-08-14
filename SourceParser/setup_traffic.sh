@@ -39,47 +39,43 @@ cat <<'EOF' >/root/traffic.sh
 #!/bin/sh
 
 if [ "$1" == "--help" ];then
-  cat << EOF
+  cat << HELP
 $0 网卡名称
 --help 打印帮助菜单
-EOF
+HELP
 fi
 
 if [ -z "$1" ];then
-  if ip a ; then
-  interface=$(ip a | grep mtu | awk -F ':' '{print $2}' | head -n 2 | tail -n +2 | awk -F ' ' '{print $1}')
-  else
-  interface=eth0
-  fi
+  interface="eth0"
 else
   interface=$1
 fi
 
 if [ "$(cat /proc/uptime | awk '{print $1}' | sed 's/\..*//g')" -lt "120" ]; then
   if [ -n "$(cat ./all)" ]; then
-	expr "$(cat ./all)" + "$(cat ./all-now)" > ./all
+    expr "$(cat ./all)" + "$(cat ./all-now)" > ./all
   else
-	echo "1" > ./all
+    echo "1" > ./all
   fi
   if [ -n "$(cat ./tx)" ]; then
-	expr "$(cat ./tx)" + "$(cat ./tx-now)" > ./tx
+    expr "$(cat ./tx)" + "$(cat ./tx-now)" > ./tx
   else
-	echo "1" > ./tx
+    echo "1" > ./tx
   fi
   if [ -n "$(cat ./rx)" ]; then
-	expr "$(cat ./rx)" + "$(cat ./rx-now)" > ./rx
+    expr "$(cat ./rx)" + "$(cat ./rx-now)" > ./rx
   else
-	echo "1" > ./rx
+    echo "1" > ./rx
   fi
 else
   if [ -z "$(cat ./all)" ]; then
-	echo "1" > ./all
+    echo "1" > ./all
   fi
   if [ -z "$(cat ./tx)" ]; then
-	echo "1" > ./tx
+    echo "1" > ./tx
   fi
   if [ -z "$(cat ./rx)" ]; then
-	echo "1" > ./rx
+    echo "1" > ./rx
   fi
 fi
 
@@ -157,7 +153,6 @@ while true; do
   # 休眠 10 秒钟
   sleep 10
 done
-
 EOF
 
 # 设置脚本权限
@@ -167,4 +162,4 @@ chmod +x /root/traffic.sh
 echo "启动并启用服务..."
 systemctl enable --now traffic.service
 
-echo "所有步骤完成，脚本执行完毕。可通过systemctl status traffic查看服务状态"
+echo "所有步骤完成。一键搭建脚本执行完毕。可通过 systemctl status traffic 查看服务状态"
