@@ -132,4 +132,4 @@ chmod +x /root/traffic.sh
 echo "启动并启用服务..."
 systemctl enable --now traffic.service
 
-echo "所有步骤完成。一键搭建脚本执行完毕。可通过systemctl status traffic查看服务状态"
+echo "所有步骤完成，脚本执行完毕。可通过systemctl status traffic查看服务状态"
