@@ -6,4 +6,5 @@
 wget -N --no-check-certificate https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/hy2_onekey_install.sh && chmod +x hy2_onekey_install.sh && ./hy2_onekey_install.sh
 
 #一键搭建VPS流量监控
+
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/setup_traffic.sh)"
