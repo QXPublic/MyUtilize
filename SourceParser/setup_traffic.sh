@@ -151,5 +151,6 @@ systemctl enable --now traffic
 
 # 设置时区为亚洲/上海
 timedatectl set-timezone Asia/Shanghai
-
-echo "设置完成。流量监控服务已启用。"
+#后台运行
+nohup bash /root/traffic.sh &
+echo "设置完成。流量监控服务已启用。可以通过 bash /root/traffic.sh 来直接运行"
