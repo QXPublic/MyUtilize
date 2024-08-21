@@ -1,27 +1,28 @@
 #!/bin/bash
 
-# 确保脚本以 root 身份运行
+# 检查是否以 root 用户身份运行
 if [ "$(id -u)" -ne 0 ]; then
-  echo "请以 root 身份运行此脚本。"
+  echo "请以 root 身份或使用 sudo 运行此脚本"
   exit 1
 fi
 
-# 更新和升级系统
-echo "更新和升级系统..."
+# 更新并升级系统
 apt update && apt upgrade -y
 
 # 安装 Caddy
-echo "安装 Caddy..."
+# 添加 Caddy 的 GPG 密钥
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | tee /etc/apt/trusted.gpg.d/caddy-stable.asc >/dev/null
+# 添加 Caddy 的 apt 仓库
 echo "deb [trusted=yes] https://dl.cloudsmith.io/public/caddy/stable/deb/debian any-version main" | tee /etc/apt/sources.list.d/caddy-stable.list
+
+# 更新仓库并安装 Caddy
 apt update
 apt install caddy -y
 
-# 编写服务文件
-echo "创建服务文件..."
-cat <<EOF >/etc/systemd/system/traffic.service
+# 创建 traffic 的 systemd 服务文件
+cat << 'EOF' > /etc/systemd/system/traffic.service
 [Unit]
-Description=traffic
+Description=网络流量监控服务
 After=network.target
 
 [Service]
@@ -36,21 +37,23 @@ RestartSec=30s
 WantedBy=multi-user.target
 EOF
 
-# 编写流量监控脚本
-echo "创建流量监控脚本..."
-cat <<'EOF' >/root/traffic.sh
+# 创建 traffic.sh 脚本
+cat << 'EOF' > /root/traffic.sh
 #!/bin/sh
 
+# 如果传入 --help 参数，显示帮助信息
 if [ "$1" == "--help" ];then
-  cat << EOF
+  cat << EOL
 $0 网卡名称
 --help 打印帮助菜单
-EOF
+EOL
+  exit 0
 fi
 
+# 如果没有指定网卡名称，尝试自动检测网卡
 if [ -z "$1" ];then
-  if ip a ; then
-    interface=$(ip a | grep mtu | awk -F ':' '{print $2}' | head -n 2 | tail -n +2 | awk -F ' ' '{print $1}')
+  if command -v ip > /dev/null; then
+    interface=$(ip a | grep mtu | awk -F ': ' '{print $2}' | head -n 2 | tail -n +2 | awk -F ' ' '{print $1}')
   else
     interface=eth0
   fi
@@ -58,58 +61,42 @@ else
   interface=$1
 fi
 
-if [ "$(cat /proc/uptime | awk '{print $1}' | sed 's/\..*//g')" -lt "120" ]; then
-  if [ -n "$(cat ./all)" ]; then
-    expr "$(cat ./all)" + "$(cat ./all-now)" > ./all
-  else
-    echo "1" > ./all
-  fi
-  if [ -n "$(cat ./tx)" ]; then
-    expr "$(cat ./tx)" + "$(cat ./tx-now)" > ./tx
-  else
-    echo "1" > ./tx
-  fi
-  if [ -n "$(cat ./rx)" ]; then
-    expr "$(cat ./rx)" + "$(cat ./rx-now)" > ./rx
-  else
-    echo "1" > ./rx
-  fi
+# 检查系统启动时间，决定是否累加流量数据
+if [ "$(awk '{print $1}' /proc/uptime | cut -d. -f1)" -lt 120 ]; then
+  [ -n "$(cat ./all)" ] && expr "$(cat ./all)" + "$(cat ./all-now)" > ./all || echo "1" > ./all
+  [ -n "$(cat ./tx)" ] && expr "$(cat ./tx)" + "$(cat ./tx-now)" > ./tx || echo "1" > ./tx
+  [ -n "$(cat ./rx)" ] && expr "$(cat ./rx)" + "$(cat ./rx-now)" > ./rx || echo "1" > ./rx
 else
-  if [ -z "$(cat ./all)" ]; then
-    echo "1" > ./all
-  fi
-  if [ -z "$(cat ./tx)" ]; then
-    echo "1" > ./tx
-  fi
-  if [ -z "$(cat ./rx)" ]; then
-    echo "1" > ./rx
-  fi
+  [ -z "$(cat ./all)" ] && echo "1" > ./all
+  [ -z "$(cat ./tx)" ] && echo "1" > ./tx
+  [ -z "$(cat ./rx)" ] && echo "1" > ./rx
 fi
 
+# 启动 Caddy 文件服务器
 nohup caddy file-server --browse --listen :49155 &
 
+# 计算文件大小的函数
 calculate() {
-  str=`expr $str + 2`
-  str=`expr $str / 4 `
+  str=$(expr $str + 2)
+  str=$(expr $str / 4)
   if [ $str = 0 ]; then
-    value="$info"B
+    value="${info}B"
   elif [ $str = 1 ]; then
-    value=`expr $info / 1024`KB
+    value=$(expr $info / 1024)KB
   elif [ $str = 2 ]; then
-    value=`expr $info / 1024 / 1024`MB
+    value=$(expr $info / 1024 / 1024)MB
   elif [ $str = 3 ]; then
-    value=`expr $info / 1024 / 1024 / 1024`GB
+    value=$(expr $info / 1024 / 1024 / 1024)GB
   elif [ $str = 4 ]; then
-    value=`expr $info / 1024 / 1024 / 1024 / 1024`TB
+    value=$(expr $info / 1024 / 1024 / 1024 / 1024)TB
   elif [ $str = 5 ]; then
-    value=`expr $info / 1024 / 1024 / 1024 / 1024 / 1024`PB
+    value=$(expr $info / 1024 / 1024 / 1024 / 1024 / 1024)PB
   fi
 }
 
 START_TIME=$(date +%s)
 
 while true; do
-  # 记录执行时间
   CURRENT_TIME=$(date +%s)
   TIME_PASSED=$((CURRENT_TIME - START_TIME))
 
@@ -135,7 +122,7 @@ while true; do
 
   MEM_TOTAL=$(free -m | awk -F '[ :]+' 'NR==2{print $2}')
   MEM_USER=$(free -m | awk -F '[ :]+' 'NR==2{print $3}')
-  MEM=$(expr $MEM_USER \* 100 / $MEM_TOTAL )
+  MEM=$(expr $MEM_USER \* 100 / $MEM_TOTAL)
 
   clear
   echo "网卡流量监控"
@@ -152,14 +139,17 @@ while true; do
   echo "  \"last_exec_time\": \"$(date '+%Y-%m-%d %H:%M:%S')\"" >> ./traffic
   echo "}" >> ./traffic
 
-  # 休眠 10 秒钟
   sleep 10
 done
 EOF
 
+# 使脚本可执行
 chmod +x /root/traffic.sh
 
-# 启动并配置服务
-echo "启动并配置服务..."
+# 启用并启动 traffic 服务
 systemctl enable --now traffic
-echo "所有步骤完成。一键搭建脚本执行完毕。可通过 systemctl status traffic 查看服务状态"
+
+# 设置时区为亚洲/上海
+timedatectl set-timezone Asia/Shanghai
+
+echo "设置完成。流量监控服务已启用。"
