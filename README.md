@@ -7,4 +7,5 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/QXPublic/MyUtil
 
 #一键搭建VPS流量监控
 
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/setup_traffic.sh)"
+wget -N --no-check-certificate https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/setup_traffic.sh && chmod +x setup_traffic_monitor.sh && ./setup_traffic_monitor.sh
+
