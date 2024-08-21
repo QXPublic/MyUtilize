@@ -21,6 +21,6 @@ Surge模块安装
 Cat VPS = script-name=CatVPS
 
 [Script]
-CatVPS = type=generic,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/script/CatVPS.js, argument = url=http://127.0.0.1:49155/traffic&title=Cat VPS&icon=bolt.horizontal.icloud.fill&low=#06D6A0&mid=#FFD166&high=#EF476F&ddl=2100-01-01&total=10TB
+CatVPS = type=generic,script-path=https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/Surge/CatVPS/CatVPS.js, argument = url=http://127.0.0.1:49155/traffic&title=Cat VPS&icon=bolt.horizontal.icloud.fill&low=#06D6A0&mid=#FFD166&high=#EF476F&ddl=2100-01-01&total=10TB
 
 #####----------------------------------------------------------------------------------------------------------------------
