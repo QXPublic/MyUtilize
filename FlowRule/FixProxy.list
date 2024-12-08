@@ -1,4 +1,6 @@
 #遗漏代理规则补充#
+
+DOMAIN-SUFFIX,hetushu.com
 DOMAIN-SUFFIX,ip123.in
 DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,dpdfsd.com
@@ -13,3 +15,10 @@ DOMAIN-SUFFIX,bestvm.cloud
 DOMAIN,103361.xyz
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,lovoo.com
+DOMAIN,vpnsplit.com
+DOMAIN,cdn.ipregistry.co
+DOMAIN-SUFFIX,oyunfor.com
+DOMAIN,faka.su
+DOMAIN-SUFFIX,freecat.cloud
+DOMAIN-SUFFIX,vpnstart.uk
+
