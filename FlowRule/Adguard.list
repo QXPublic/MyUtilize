@@ -15,10 +15,10 @@ DOMAIN-SUFFIX,toponadss.com
 #雪球开屏广告
 DOMAIN,xavatar.imedao.com
 #暗影格斗（移除弹窗广告）
-DOMAIN,init.supersonicads.com,REJECT
-DOMAIN,ws.tapjoyads.com,REJECT
-DOMAIN-SUFFIX,appsflyer.com,REJECT
-DOMAIN-SUFFIX,appsflyersdk.com,REJECT
+DOMAIN,init.supersonicads.com
+DOMAIN,ws.tapjoyads.com
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,appsflyersdk.com
 
 #EDIFIER Connect去开屏广告(无法登陆)
 DOMAIN,ios.bugly.qq.com 
