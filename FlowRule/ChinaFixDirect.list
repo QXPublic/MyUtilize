@@ -14,7 +14,9 @@ DOMAIN-SUFFIX,mi.com
 DOMAIN-SUFFIX,mail.me.com
 DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,taobao.com
-
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,aliapp.org
+DOMAIN-SUFFIX,alibabausercontent.com
 
 #1password
 DOMAIN-KEYWORD,1password
