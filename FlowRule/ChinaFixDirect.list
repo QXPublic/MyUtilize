@@ -1,6 +1,4 @@
 
-
-DOMAIN-SUFFIX,mail.me.com
 #For China 
 DOMAIN-SUFFIX,nssurge.com
 DOMAIN-KEYWORD,apple
@@ -13,6 +11,10 @@ DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,apple.cn
 DOMAIN-SUFFIX,netease.com
 DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,mail.me.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,taobao.com
+
 
 #1password
 DOMAIN-KEYWORD,1password
