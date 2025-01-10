@@ -1,4 +1,19 @@
-#遗漏代理规则补充#
+#FixProxy Add#
+IP-CIDR,104.20.2.154/32,no-resolve
+DOMAIN-SUFFIX,nordcdn.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN,speedtest.dukekunshan.edu.cn
+DOMAIN-SUFFIX,shunicomtest.com
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN,edge-115.hkhkg2.icloud-content.com
+DOMAIN,aichat.magicmoon.work
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,elongpt.workers.dev
+DOMAIN-SUFFIX,softwarexdev.workers.dev
+DOMAIN,proxy.888005.xyz
+DOMAIN,api.aiplusapp.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN,cardmaster.club
 
 DOMAIN-SUFFIX,hetushu.com
 DOMAIN-SUFFIX,ip123.in
