@@ -1,4 +1,15 @@
 
+DOMAIN-SUFFIX,ads.pubmatic.com
+DOMAIN-SUFFIX,pagead2.googlesyndication.com
+DOMAIN-SUFFIX,ads.inmobi.com
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,amazon-adsystem.com
+DOMAIN,sessions.bugsnag.com
+DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
+DOMAIN-SUFFIX,gromore.pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,adashx.m.taobao.com
+DOMAIN-SUFFIX,h-adashx.ut.taobao.com
+IP-CIDR,59.82.113.252/32
 DOMAIN-SUFFIX,mobads-pre-config.cdn.bcebos.com
 DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,ad.shunchangzhixing.com
