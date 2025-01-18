@@ -1,4 +1,6 @@
 #FixProxy Add#
+
+DOMAIN-SUFFIX,myfitnesspal.com
 IP-CIDR,104.20.2.154/32,no-resolve
 DOMAIN-SUFFIX,nordcdn.com
 DOMAIN-SUFFIX,googleapis.com
