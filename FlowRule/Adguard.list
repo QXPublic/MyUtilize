@@ -1,4 +1,11 @@
 
+DOMAIN-SUFFIX,googleadsserving.cn
+DOMAIN-SUFFIX,ads.vungle.com
+DOMAIN-SUFFIX,ad.10010.com
+DOMAIN-SUFFIX,smartad.10010.com
+DOMAIN,token.safebrowsing.apple
+DOMAIN-SUFFIX,ad.smaato.net
+DOMAIN,mfx.mobilefuse.com
 DOMAIN-SUFFIX,ads.pubmatic.com
 DOMAIN-SUFFIX,pagead2.googlesyndication.com
 DOMAIN-SUFFIX,ads.inmobi.com
