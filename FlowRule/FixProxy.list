@@ -1,5 +1,11 @@
-#FixProxy Add#
 
+DOMAIN-SUFFIX,mgidstore.com
+DOMAIN-SUFFIX,ling-app.com
+DOMAIN-SUFFIX,dsxys.pro
+DOMAIN-SUFFIX,twimg.com
+IP-CIDR,104.20.1.154/32,no-resolve
+DOMAIN,api.windscribe.com
+DOMAIN-SUFFIX,flyv.tv
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,brainly.lat
 DOMAIN-SUFFIX,myfitnesspal.com
