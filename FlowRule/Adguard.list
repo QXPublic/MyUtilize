@@ -1,5 +1,18 @@
 
 
+
+DOMAIN, sdk.e.qq.com
+DOMAIN, cdn3.magicacid.cn
+DOMAIN-SUFFIX, adx.hubcloud.com.cn
+DOMAIN-SUFFIX, yfanads.com
+URL-REGEX, ^http:\/\/honeycomb\.wps\.cn\/api\/v2\/project\/88\/ver$
+DOMAIN-SUFFIX, safebrowsing.googleapis.com
+DOMAIN-SUFFIX, ad.doubleclick.netDOMAIN-SUFFIX, googletagmanager.com
+DOMAIN-SUFFIX, ads.inmobi.com
+DOMAIN-SUFFIX, adsappier.com
+DOMAIN, ocsp.digicert.com
+DOMAIN-SUFFIX, googleadservices.com
+
 DOMAIN-SUFFIX,prreqcroab.icu
 DOMAIN,firebaseremoteconfig.googleapis.com
 DOMAIN-SUFFIX,ad.gt
