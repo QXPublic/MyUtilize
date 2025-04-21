@@ -1,6 +1,14 @@
 
 
 
+
+
+
+
+DOMAIN-SUFFIX,newadserver.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,ads.inmobi.com
+DOMAIN-SUFFIX,adsmoloco.com
 DOMAIN, sdk.e.qq.com
 DOMAIN, cdn3.magicacid.cn
 DOMAIN-SUFFIX, adx.hubcloud.com.cn
