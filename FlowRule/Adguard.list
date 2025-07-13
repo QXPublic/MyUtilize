@@ -1,3 +1,6 @@
+
+DOMAIN-SUFFIX,digicert.cn
+DOMAIN,api.ipify.org
 DOMAIN,amdc.m.taobao.com
 DOMAIN,axxd.xmseeyouyima.com
 URL-REGEX,^https:\/\/ossgw\.alicdn\.com\/creatives-assets\/prod\/feupload\/user\/\w+\/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}\.jpg$
