@@ -1,3 +1,52 @@
+DOMAIN-SUFFIX, view.adjust.com
+DOMAIN-SUFFIX, pok.mintegral.net
+DOMAIN-SUFFIX, applovin.com
+DOMAIN-SUFFIX, img.marketing.kocowa.com
+DOMAIN-SUFFIX, inner-active.mobi
+DOMAIN-SUFFIX, thecas.xyz
+DOMAIN-SUFFIX, api.antibanads.com
+DOMAIN, amdc.alipay.com
+IP-CIDR, 106.11.25.25/32 no-resolve
+DOMAIN-SUFFIX, sdk.beizi.biz
+IP-CIDR, 139.95.4.98/32 no-resolve
+IP-CIDR, 59.82.113.219/32 no-resolve
+IP-CIDR, 106.11.25.120/32 no-resolve
+IP-CIDR, 106.11.25.170/32 no-resolve
+IP-CIDR, 106.11.25.169/32 no-resolve
+DOMAIN, sync.teads.tv
+DOMAIN-SUFFIX, ad.holmesmind.com
+DOMAIN-SUFFIX, ad.360yield.com
+IP-CIDR 106.11.25.240/32 no-resolve
+DOMAIN-SUFFIX, v16-ad.byteoversea.com
+DOMAIN-SUFFIX, sdk-events.inner-active.mobi
+DOMAIN-SUFFIX, umengcloud.com
+DOMAIN, apm.zhihu.com
+DOMAIN-SUFFIX, cnlogs.umeng.com
+DOMAIN-SUFFIX, sv.cdn.n1q.cn
+DOMAIN-SUFFIX, pd.ads.cn.miaozhen.com
+DOMAIN-SUFFIX, volceapplog.com
+DOMAIN-SUFFIX, api.qttunion.com
+
+DOMAIN-SUFFIX, sdk-open-phone.getui.com
+DOMAIN-SUFFIX, optimus-ads-ykx.amap.com
+DOMAIN-SUFFIX, app-ads-services.com
+DOMAIN-SUFFIX, adx-os.bridgeoos.com
+DOMAIN-SUFFIX, mobads-logs.baidu.com
+DOMAIN-SUFFIX, log-api.pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX, ossgw.alicdn.com
+DOMAIN-SUFFIX, liftoff-creatives.io
+DOMAIN-SUFFIX, smadex.com
+DOMAIN-SUFFIX, 4dvertible.com
+DOMAIN-SUFFIX, cached-ad-a.fyber.com
+DOMAIN, cached-ad-b.fyber.com
+DOMAIN, pageviewp.icbc.com.cn
+DOMAIN-SUFFIX, adashx.ut.amap.com
+DOMAIN-SUFFIX, optimus-ads.amap.com
+DOMAIN-SUFFIX, v26-dcar-ad.dcarvod.com
+DOMAIN-SUFFIX, ad.track.66mobi.com
+DOMAIN-SUFFIX, ads.inmobi.com
+DOMAIN-SUFFIX, tapestry.tapad.com
+DOMAIN, app-analytics-services.com
 
 DOMAIN,msmp.abchina.com.cn
 DOMAIN-SUFFIX,digicert.cn
