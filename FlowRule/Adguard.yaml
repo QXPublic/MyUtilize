@@ -101,7 +101,7 @@ DOMAIN, ocsp.digicert.com
 DOMAIN-SUFFIX, googleadservices.com
 
 DOMAIN-SUFFIX,prreqcroab.icu
-DOMAIN,firebaseremoteconfig.googleapis.com
+
 DOMAIN-SUFFIX,ad.gt
 DOMAIN-SUFFIX,safeframe.googlesyndication.com
 DOMAIN-SUFFIX,securepubads.g.doubleclick.net
