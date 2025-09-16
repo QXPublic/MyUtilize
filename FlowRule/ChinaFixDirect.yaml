@@ -1,5 +1,7 @@
 GEOIP,CN,DIRECT
 
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,meituan.net
 DOMAIN,3xuix.yolozu.pp.ua
 DOMAIN-SUFFIX,bestpay.cn
