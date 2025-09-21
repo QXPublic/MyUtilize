@@ -1,0 +1,182 @@
+#!name=AdBlockAds
+#!desc=通用去广告&屏蔽更新
+#!category=AdBlockAds
+
+
+
+[MITM]
+
+hostname = %APPEND% mapi-app.bestpay.com.cn,apiwz.midureader.com,emdcadvertise.eastmoney.com,xxyx-client-api.xiaoxiaoyouxuan.com,i2.hdslb.com,api.cloud.189.cn,res.yunbusiness.ccb.com,yunbusiness.ccb.com,app4.i4.cn,images.pinduoduo.com,pic*.zhuanstatic.com,cdn.1rtb.com,s3plus.meituan.net,ime-store-cdn.gtimg.com,get.shouji.sogou.com,*.zhuanstatic.com,w.189.cn,img.app.coc.10086.cn,res.app.coc.10086.cn,app.zhuanzhuan.com,crystalidea.com,download.itoolab.com,pcfg.wps.cn,www.tunabellysoftware.com,downloads.imazing.com,g.alicdn.com,xxyx-client-api.xiaoxiaoyouxuan.com,app.10099.com.cn,d.image.i4.cn,list-app-m.i4.cn,p*.meituan.net,file2.speedtest.cn,forge.speedtest.cn,iyes.youku.com,sugar.zhihu.com,pic*.zhimg.com,ossgw.alicdn.com,*.360buyimg.com,forge.speedtest.cn,api.xqe4cxu.com,api.dzjxekd.com,api.qxutcee.com,i1.hdslb.com,cdn.mtspark.com,api.kghyyygk.com,mdn.alipayobjects.com,img.meituan.net,y.qq.com,pan.baidu.com,f.pan.wo.cn,staticsns.cdn.bcebos.com
+
+[Rule]
+
+URL-REGEX,^https:\/\/staticsns\.cdn\.bcebos\.com\/amis\/\w+-\d+\/\w+\/%E7%BD%91%E7%9B%98%E5%BC%80%E5%B1%8F\.jpg$,REJECT
+
+URL-REGEX,^https:\/\/f\.pan\.wo\.cn\/upload\/files\/banner,REJECT
+
+URL-REGEX,^https:\/\/pan\.baidu\.com\/api\/analytics,REJECT
+
+URL-REGEX,^https:\/\/pan\.baidu\.com\/rest\/\d+\.\d+\/pcs\/adv
+URL-REGEX,^https:\/\/pan\.baidu\.com\/buy\/ad,REJECT
+URL-REGEX,^https:\/\/pan\.baidu\.com\/api\/abroad\/config,REJECT
+
+URL-REGEX,^https:\/\/y\.qq\.com\/music\/common\/upload\/ocs\/\w+\.jpg$,REJECT
+
+URL-REGEX,^https:\/\/mdn\.alipayobjects\.com\/ad_mgr\/afts\/file\/A\*\w+$,REJECT 
+
+#美团外卖开屏
+URL-REGEX,^https:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\w+\.jpg\.webp$,REJECT 
+URL-REGEX,^https:\/\/p\d+\.meituan\.net\/bizad\/bizad_\w+_\w+\.jpg\.webp@\w+_\w+$,REJECT 
+URL-REGEX,^https:\/\/img\.meituan\.net\/bizad\/\w+_\w+_\w+\.jpg\.webp@\w+_\w+$,REJECT 
+
+#瓜子影视
+URL-REGEX,^https:\/\/api\.kghyyygk\.com\/App\/Ad\/\w+$,REJECT
+
+#知乎
+URL-REGEX,"^https:\/\/img2\.360buyimg\.com\/tgx\/jfs\/t1\/\d+\/\d+\/\d+\/\d+\/\w+\/\w+\.jpg\?filtered=pread$",REJECT
+URL-REGEX,^https:\/\/img2\.360buyimg\.com\/tgx\/jfs\/t1\/\d+\/\d+\/\d+\/\d+\/\w+\/\w+\.jpg$,REJECT
+
+URL-REGEX,^https:\/\/p\d+\.meituan\.net\/bizad\/giga_\w+_\w+\.jpg$,REJECT
+
+URL-REGEX, ^https:\/\/cdn\.mtspark\.com\/ndsp\/creative\/\d+\/\w+\.jpg$,REJECT
+URL-REGEX, ^https:\/\/p\d+\.meituan\.net\/bizad\/giga_\w+_\w+\.jpg@720w_1280h_1e_1c$,REJECT
+URL-REGEX, ^https:\/\/i1\.hdslb\.com\/bfs\/sycp\/creative_img\/\d+\/\w+\.\w+$,REJECT
+
+#瓜子影视开屏
+
+URL-REGEX,^https:\/\/api\.dzjxekd\.com\/App\/Ad\/\w+$,REJECT
+URL-REGEX,^https:\/\/api\.qxutcee\.com\/App\/Ad\/\w+$,REJECT
+URL-REGEX,"^https:\/\/api\.xqe4cxu\.com\/App\/Ad\/splashInfo$",REJECT 
+
+##
+URL-REGEX,"^https:\/\/forge\.speedtest\.cn\/api\/v2\/showpic\/position\?type=ios&version=\d\.\d\.\d&position=launch$",REJECT
+
+#知乎开屏
+URL-REGEX,"^https:\/\/img1\.360buyimg\.com\/pop\/jfs\/t1\/\d+\/\d+\/\d+\/\d+\/\w+\/\w+\.jpg$",REJECT
+URL-REGEX,"^https:\/\/p\d+\.meituan\.net\/bizad\/giga_(\d+)_([a-f0-9]{32})$\.\w+@(\d+)w_(\d+)h_(\d+)e_(\d+)c$",REJECT 
+
+URL-REGEX,"^https:\/\/p\d+\.meituan\.net\/bizad\/giga_(\d+)_([a-f0-9]{32})\.jpg@(\d+)w_(\d+)h_(\d+)e_(\d+)c\?filtered=pread&filtered=pread$",REJECT 
+
+URL-REGEX,"^https:\/\/pic\d+\.zhimg\.com\/100\/v2-\w+_1440w\.webp\?source=\w+&filtered=pread&filtered=pread$",REJECT 
+
+URL-REGEX,"^https:\/\/pic\d+\.zhimg\.com\/100\/v2-\w+_1440w\.webp\?source=\w+$",REJECT 
+
+#爱思去开屏
+URL-REGEX,"http:\/\/d\.image\.i4\.cn\/adInfo\/image\/original\/\d{4}\/\d{2}\/\d{2}\/\d{2}\/(\d+_\d+)\.jpg$",REJECT
+
+#建行生活去开屏
+URL-REGEX,"^https:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A\w+$",REJECT
+
+#移动去开屏
+URL-REGEX,"^https:\/\/img\.app\.coc\.10086\.cn\/qwhdcdn_cmcc-cs_cn\/prd-mgcenter\/\w+\.jpg\?fmt=webp$",REJECT
+
+URL-REGEX,"^https:\/\/img\.app\.coc\.10086\.cn\/qwhdcdn_cmcc-cs_cn\/prd-mgcenter\/\w+\.jpg\?width=\d+\.\d+&height=\d+\.\d+&fmt=webp$",REJECT
+
+URL-REGEX,"^https:\/\/res\.app\.coc\.10086\.cn\/qwhdcdn_cmcc-cs_cn\/prd-mgcenter\/\w+\.jpg\?fmt=webp$",REJECT
+
+URL-REGEX,"^https:\/\/res\.app\.coc\.10086\.cn\/qwhdcdn_cmcc-cs_cn\/prd-mgcenter\/[a-f0-9]{32}\.jpg\?width=\d+\.\d+&height=\d+\.\d+&fmt=webp$",REJECT
+
+#电信去开屏 
+URL-REGEX,"^https:\/\/w\.189\.cn\/bigdata\/\d+\/\d+\/\d+\/\d+\.Png$",REJECT
+
+#转转去开屏
+URL-REGEX,"^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzlogic\/getOpenScreen$",REJECT
+
+URL-REGEX,"^https:\/\/pic[0-9]\.zhuanstatic\.com\/zhuanzh\/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12} \.png\?t=\w+&qa=\w+$",REJECT
+
+#搜狗输入法
+URL-REGEX,"^https:\/\/ime-store-cdn\.gtimg\.com\/activity_distribute\/\w+\.png$",REJECT
+
+#URL-REGEX,"^https:\/\/get\.shouji\.sogou\.com\/\w+$",REJECT
+
+#晓晓优选
+URL-REGEX,"^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/agent_ad\?lat=\d+\.\d+&lng=\d+\.\d+&platform=ios$",REJECT
+
+URL-REGEX,"^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/nebulafile\/\w+$",REJECT
+
+
+#东方财富去开屏
+URL-REGEX,^https:\/\/emdcadvertise\.eastmoney\.com\/infoService\/v2$,REJECT
+
+#米读极速版去开屏
+URL-REGEX,^https:\/\/apiwz\.midureader\.com\/config\/getAds$,REJECT 
+URL-REGEX,^https:\/\/apiwz\.midureader\.com\/advert\/getPopup$,REJECT
+
+###
+URL-REGEX,^https:\/\/mapi-app\.bestpay\.com\.cn\/gapi\/appClient\/noEnc\/queryMallOpenAds$,REJECT
+
+#广电
+URL-REGEX,^https:\/\/app\.10099\.com\.cn\/contact-web\/api\/busi\/ashIndex$,REJECT 
+URL-REGEX,^https:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/selectAppVersion$,REJECT 
+#晓晓优选
+URL-REGEX,^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/update_version\?platform=ios&version=\d+$,REJECT
+#阿里云盘
+URL-REGEX,^https:\/\/g\.alicdn\.com\/aliyun-drive-fe\/aliyun-drive-desktop-version\/\d+\.\d+\.\d+\/darwin\/x\d+\/latest-mac\.yml\?noCache=\w+$,REJECT
+URL-REGEX,^https:\/\/g\.alicdn\.com\/aliyun-drive-fe\/aliyun-drive-desktop-version\/\d+\.\d+\.\d+\/updateLog\.json$,REJECT
+
+#苹果系统更新
+DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,swcdn.apple.com,REJECT
+#1password
+DOMAIN,app-updates.agilebits.com,REJECT
+#todesk
+DOMAIN,update.todesk.com,REJECT
+
+
+#microsoft edge
+DOMAIN,edge.microsoft.com,REJECT
+
+#google chrome
+DOMAIN,update.googleapis.com,REJECT
+DOMAIN,edgedl.me.gvt1.com,REJECT
+
+#CleanMyMac_X
+DOMAIN,updates.devmate.com,REJECT
+
+#cloudflare
+DOMAIN,in.appcenter.ms,REJECT
+
+#Downie 4
+DOMAIN,software.charliemonroe.net,REJECT
+
+#App Cleaner & Uninstaller
+DOMAIN,download.nektony.com,REJECT
+
+#Parallels
+DOMAIN,update.parallels.com,REJECT
+DOMAIN,reportus.parallels.com,REJECT
+
+[URL Rewrite]
+
+#macs fan control
+^https?:\/\/crystalidea\.com\/update\/fancontrol\.xml\.gz - reject
+
+
+#wps
+^http?:\/\/pcfg\.wps\.cn\/config\/mac\/list\?_template_type=prometheus_update_application&_app_version=[0-9]\.[0-9]\.[0-9]&_channel=[0-9]{1,}\.\d+ - reject
+
+#TG pro
+^https?:\/\/www\.tunabellysoftware\.com\/resources\/sparkle\/tgpro\.xml - reject
+
+#imazing
+^https?:\/\/downloads\.imazing\.com\/mac\/iMazing\/[0-9]\.[1-9][0-9]*\.[1-9][0-9]*\.\d+\/release-notes\.html - reject
+^https?:\/\/downloads\.imazing\.com\/com\.DigiDNA\.iMazing2Mac\.xml - reject
+
+
+[Map Local]
+
+^https:\/\/pan\.baidu\.com\/buy\/ad\/get\ data=" "
+
+^https?:\/\/download\.itoolab\.com\/updateinfo\/anygo_update_mac\.json data="https://raw.githubusercontent.com/QXPublic/MyUtilize/main/TaskList/Surge/reject-dict.json"
+
+^https:\/\/pan\.baidu\.com\/buy\/ad\/analytics\ data=" "
+
+#网速管家开屏
+^https?:\/\/forge\.speedtest\.cn\/api\/v2\/showpic\/position data=" "
+
+^https:\/\/sugar\.zhihu\.com\/ad-track\/zplus_log data=" "
+
+^https:\/\/api\.zhihu\.com\/commercial_api\/launch_v2 data=" "
+
+
+
