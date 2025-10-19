@@ -1,5 +1,10 @@
 GEOIP,CN,DIRECT
 
+
+
+
+DOMAIN-SUFFIX,vip.dytt-cinema.com
+DOMAIN-SUFFIX,cnspeedtest.cn
 DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,meituan.net
