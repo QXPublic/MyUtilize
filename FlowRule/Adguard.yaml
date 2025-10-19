@@ -1,3 +1,13 @@
+
+
+DOMAIN,app-analytics-services.com
+IP-CIDR,203.119.211.219/32,no-resolve
+IP-CIDR,203.209.243.114/32,no-resolve
+IP-CIDR,203.209.230.39/32,no-resolve
+IP-CIDR,47.246.110.84/32,no-resolve
+DOMAIN-SUFFIX,bm-ads.io,REJECT
+DOMAIN-SUFFIX,cdn-adn-https-new.mtgglobals.com
+DOMAIN-SUFFIX,digicert.com
 DOMAIN,umdc.alibabachengdun.com
 DOMAIN-SUFFIX,amdc-thirdparty.alipay.com
 DOMAIN-SUFFIX,sdk.open.talk.getui.com
