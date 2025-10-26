@@ -1,6 +1,6 @@
 从零开始“Cloudflare API Token 申请 + DDNS 更新”详细步骤，跟着做就能跑起来
 
-项目需求： AWS lightsail 重启 ip 更改 同步 cf dns 更改
+项目需求： AWS lightsail 重启 ip 更改 同步 cf dns 以及tg通知
 
 # 一、前提检查
 
