@@ -259,6 +259,35 @@ def lambda_handler(event, context):
 创建新的策略：
 ![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2018%3A57%3A41.jpg)
 
+选择JSON，粘贴数据，保存:
+![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2019%3A00%3A16.jpg)
+
+JSON数据：
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "lightsail:GetInstance",
+                "lightsail:GetInstanceMetricData",
+                "lightsail:GetInstances",
+                "lightsail:StopInstance"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
+```
+策略创建完成后关闭IAM权限页面，回到Lambda函数页面，测试是否成功：
+![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2019%3A03%3A44.jpg)
+
+4. 创建定时任务触发Lambda函数
+在Lambda函数页面点击添加触发器：选择EventBridge，增加定时任务，保存：
+
+表达式：```cron(0/10 * * * ? *)```
+![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2019%3A03%3A46.jpg)
 
 
 
