@@ -1,0 +1,10 @@
+【教程】使用AWS Lambda 监控 AWLightsail 流量，超额自动关机，每日流量通知
+
+免责声明：该教程由亚马逊官方博客链接https://aws.amazon.com/cn/blogs/china/monitor-amazon-lightsail-data-traffic-using-lambda/，记录了下自己搭建并改造的过程，并不保证该方式100%可以解决问题，需要自行验证。
+
+1、利用 Lightsail 的 API 接口：get_instance，获取账号下在当前区域里的所有 Lightsail 实例。
+2、根据 Lightsail 实例的类型，获取每个实例每个月的网络流量配额。
+3、根据实例的创建时间，计算出每个实例在当前这个计费周期内的流量配额。
+4、通过 API 接口：get_instance_metric_data，获取每个实例已经使用的入站和出站流量总量。
+5、如果流量超出当前计费周期的配额的95%，并关闭对应的 Lightsail 实例。
+6、通过 EventBridge 以 cron job 的方式定时触发 Lambda，运行此检查逻辑。
