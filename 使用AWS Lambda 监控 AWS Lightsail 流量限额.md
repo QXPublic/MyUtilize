@@ -11,7 +11,7 @@
 二、过程
 1. 创建Lambda函数
 在AWS控制台进入Lambda函数页面，创建新函数：
-![I](/assets/IMAGE 2025-10-26 18:32:52.jpg)
+![](assets/IMAGE 2025-10-26 18:32:52.jpg)
 
 
 
