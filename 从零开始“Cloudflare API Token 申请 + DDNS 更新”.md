@@ -237,23 +237,22 @@ log "====== DDNS 更新任务执行完毕 ======"
 bash /usr/local/bin/cf-ddns.sh
 ```
 
-# 六、定时任务（cron）
-
-每 5 分钟执行一次：
-```bash
-crontab -e
+# 六、ip更换后自动更改
 ```
-加入一行：
-```bash
-*/5 * * * * /usr/local/bin/cf-ddns.sh >> /var/log/cf-ddns.log 2>&1
-```
+sudo vim /etc/systemd/system/cloudflare-ddns.service
 
-# 七、验证与排错
+[Unit]
+Description=Cloudflare DDNS Updater
+After=network-online.target
+Wants=network-online.target
 
-- 查 DNS：
-```bash
-dig +short A app.example.com @1.1.1.1
-dig +short AAAA app.example.com @1.1.1.1
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/cf-ddns.sh
+
+[Install]
+WantedBy=multi-user.target
+
 ```
 
 - 常见问题：
