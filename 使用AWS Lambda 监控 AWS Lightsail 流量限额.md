@@ -284,10 +284,45 @@ JSON数据：
 ![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2019%3A03%3A44.jpg)
 
 4. 创建定时任务触发Lambda函数
-在Lambda函数页面点击添加触发器：选择EventBridge，增加定时任务，保存：
+在Lambda函数页面点击配置触发器 1：选择EventBridge，增加定时任务，保存：
 
 表达式：```cron(0/10 * * * ? *)```
 ![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2019%3A03%3A46.jpg)
+
+配置触发器 2：每日tg定时发送流量报告：
+这是用来在每天固定时间发送总结报告的触发器。
+
+再次点击 Add trigger (添加触发器)。
+1、选择 EventBridge (CloudWatch Events)。
+2、选择 Create a new rule (创建新规则)。
+3、Rule name (规则名称): Lightsail_Daily_Report
+4、Rule type (规则类型): 选择 Schedule expression (计划表达式)。
+Schedule expression (计划表达式):
+这里需要使用 Cron 表达式。注意：AWS 的 Cron 表达式使用 UTC 时间。
+如果想在北京时间每天 23:58 发送，那么对应的 UTC 时间是 15:58。表达式为：```cron(58 15 * * ? *)```
+
+向下滚动到 Target input (目标输入) 或 Configure input 部分。
+选择 Constant (JSON text)。
+在下方的文本框中，输入以下内容：
+```{
+  "report_type": "daily_report"
+}```
+
+5. 查看历史执行记录
+在Lambda函数页面，选择监控，点击查看CloudWatch Logs跳转至日志页面。
+![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2019%3A07%3A15.jpg)
+
+选择日志就可以看到日志的详细信息以及历史执行结果：
+![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2019%3A07%3A19.jpg)
+
+
+四、参考资料
+[【教程】使用AWS Lambda 监控 AWS Lightsail 流量限额，超额自动关机](https://www.nodeseek.com/post-73756-1)
+
+
+
+
+
 
 
 
