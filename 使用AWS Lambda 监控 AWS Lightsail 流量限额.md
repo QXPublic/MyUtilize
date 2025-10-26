@@ -244,7 +244,13 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Lambda function executed successfully!')
     }
-``` 
+```
+2. 修改函数运行配置
+在之前创建的Lambda函数页面，进入配置——常规配置——编辑：
+[ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2018%3A53%3A29.jpg)
+
+调大内存和超时时间：
+[ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2018%3A53%3A33.jpg)
 
 
 
