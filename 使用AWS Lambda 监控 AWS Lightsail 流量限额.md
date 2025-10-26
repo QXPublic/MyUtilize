@@ -1,3 +1,5 @@
+使用AWS Lambda 监控 AWS Lightsail 流量限额以及 tg通知
+
 一、主要实现方式如下：
 利用Amazon的Lambda函数计算（每月100W次以内免费），配合Amazon提供的官方Lightsail API，设置定时任务，每10分钟获取当前流量限额和已使用流量，进行对比，如果达到限额的95%，则关闭Lightsail实例：
 
