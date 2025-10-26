@@ -106,7 +106,7 @@ set -euo pipefail
 # ---==============[ 必填配置 ]==============---
 
 # Cloudflare API 令牌 (Zone:DNS:Edit 权限)
-CF_TOKEN="loudflare API"
+CF_TOKEN="Cloudflare API"
 
 # 你的域名 Zone ID
 ZONE_ID="Zone ID"
