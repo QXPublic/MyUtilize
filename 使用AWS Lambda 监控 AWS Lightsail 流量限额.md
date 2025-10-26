@@ -304,9 +304,11 @@ Schedule expression (计划表达式):
 向下滚动到 Target input (目标输入) 或 Configure input 部分。
 选择 Constant (JSON text)。
 在下方的文本框中，输入以下内容：
-```{
+```
+{
   "report_type": "daily_report"
-}```
+}
+```
 
 5. 查看历史执行记录
 在Lambda函数页面，选择监控，点击查看CloudWatch Logs跳转至日志页面。
