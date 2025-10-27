@@ -1,6 +1,6 @@
 #surge 5搭配 vps 监控流量
 
-wget -N --no-check-certificate https://raw.githubusercontent.com/QXPublic/MyUtilize/main/SourceParser/setup_traffic.sh && chmod +x setup_traffic.sh && ./setup_traffic.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/QXPublic/MyUtilize/main/VPS/setup_traffic.sh && chmod +x setup_traffic.sh && ./setup_traffic.sh
 
 Surge模块安装
 
