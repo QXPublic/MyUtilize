@@ -31,7 +31,7 @@ from datetime import datetime, date, time, timedelta
 
 # --- 配置区域 ---
 # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# 请在这里手动填入您的 Telegram Bot Token 和 Chat ID
+# 请在这里手动填入你的 Telegram Bot Token 和 Chat ID
 TELEGRAM_BOT_TOKEN = 'Telegram Bot Token'  # 例如: '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'
 TELEGRAM_CHAT_ID = 'Chat ID' # 例如: '123456789' 或 '@your_channel_name'
 
@@ -287,6 +287,71 @@ JSON数据：
     ]
 }
 ```
+
+
+
+
+###使用 Lambda 层 (Layers) 添加 `requests` 库
+
+Lambda 层 (Layers) 是 AWS 推荐的管理依赖项的方式。你可以创建一个包含 `requests` 库的层，然后将这个层附加到您的 Lambda 函数上。这样做的好处是，您可以让多个函数共享同一个层，并且代码和依赖项是分开的，非常清晰。
+
+下面是详细的操作步骤：
+
+#### 步骤 1：在本地电脑上创建并打包 `requests` 库
+
+需要在本地电脑上（最好是 Linux 或 macOS 环境，Windows 也可以但步骤略有不同）执行以下命令来创建一个符合 Lambda 要求的 zip 包。
+
+1.  **创建一个工作目录**，并进入该目录。
+
+    ```bash
+    mkdir lambda_layer_requests
+    cd lambda_layer_requests
+    ```
+
+2.  **创建 Lambda Layer 的标准目录结构**。Lambda 要求 Python 库必须放在 `python/lib/python<版本号>/site-packages` 目录下。请将下面的 `python3.12` 替换为您在 Lambda 函数中使用的 Python 版本（例如 `python3.9`, `python3.10` 等）。
+
+    ```bash
+    mkdir -p python/lib/python3.12/site-packages
+    ```
+
+3.  **使用 pip 将 `requests` 库安装到指定目录**。
+
+    ```bash
+    pip install requests -t python/lib/python3.12/site-packages/
+    ```
+
+4.  **将 `python` 文件夹打包成 zip 文件**。
+
+    ```bash
+    zip -r requests_layer.zip python
+    ```
+
+    执行完毕后，您的 `lambda_layer_requests` 文件夹里会有一个名为 `requests_layer.zip` 的文件。这就是我们需要的层。
+
+#### 步骤 2：在 AWS 控制台创建并上传 Lambda Layer
+
+1.  登录 AWS 管理控制台，进入 **Lambda** 服务。
+2.  在左侧导航栏中，选择 **Layers (层)**。
+3.  点击右上角的 **Create layer (创建层)**。
+4.  填写表单：
+    *   **Name (名称)**: `requests-layer` (或者您喜欢的任何名字)
+    *   **Description (描述)**: `Contains the requests library for Python`
+    *   **Code entry type (代码条目类型)**: 选择 **Upload a .zip file (上传 .zip 文件)**。
+    *   **Upload (上传)**: 点击按钮，选择您刚刚创建的 `requests_layer.zip` 文件。
+    *   **Compatible runtimes (兼容的运行时)**: 选择您 Lambda 函数正在使用的 Python 版本，例如 `Python 3.12`。**这一步很重要！**
+    *   点击 **Create (创建)**。
+
+#### 步骤 3：将新创建的 Layer 附加到您的 Lambda 函数
+
+1.  返回到您的 Lambda 函数的管理页面。
+2.  向下滚动，找到 **Function overview (函数概述)** 面板下方的 **Layers (层)** 部分。
+3.  点击 **Add a layer (添加层)**。
+4.  选择 **Custom layers (自定义层)**。
+5.  在下拉列表中，选择您刚刚创建的 `requests-layer`。
+6.  在 **Version (版本)** 下拉列表中，选择最新的版本（通常是 1）。
+7.  点击 **Add (添加)**。
+---
+
 策略创建完成后关闭IAM权限页面，回到Lambda函数页面，测试是否成功：
 ![ ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.assets/IMAGE%202025-10-26%2019%3A03%3A44.jpg)
 
