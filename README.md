@@ -1,4 +1,4 @@
 # MyUtilize_Public
--x- Everything is collected from public online sources or some by mine. I can not confirm its right and useful.All script-rules belong its authors'. Best Wish for you ervrything!
+-X- Everything is collected from public online sources or some be edit by mine.Original content belongs to its author. Best Wish for you ervrything!
 
 
