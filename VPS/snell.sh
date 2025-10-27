@@ -8,9 +8,6 @@ set -o pipefail
 #=================================================
 #	System Required: CentOS/Debian/Ubuntu
 #	Description: Snell Server 管理脚本 (优化版)
-#	Author: 翠花
-#	WebSite: https://about.nange.cn
-#	Refactor: Your AI Assistant
 #=================================================
 
 # --- 全局变量和配置 ---
