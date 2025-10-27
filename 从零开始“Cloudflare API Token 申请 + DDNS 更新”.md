@@ -238,9 +238,12 @@ bash /usr/local/bin/cf-ddns.sh
 ```
 
 # 六、ip更换后自动更改
+
+创建一个新的服务文件：
 ```
 sudo vim /etc/systemd/system/cloudflare-ddns.service
 ```
+将以下内容粘贴到文件中：
 ```
 [Unit]
 Description=Cloudflare DDNS Updater
@@ -255,6 +258,10 @@ ExecStart=/usr/local/bin/cf-ddns.sh
 WantedBy=multi-user.target
 
 ```
+重新加载 systemd 配置：sudo systemctl daemon-reload 
+设置服务开机自启：sudo systemctl enable cloudflare-ddns.service
+立即手动运行:sudo systemctl start cloudflare-ddns.service
+
 
 - 常见问题：
   - 403/Authentication error：检查 Token 是否是 “API Token”（不是 Global API Key），且权限与 Zone 范围正确。
