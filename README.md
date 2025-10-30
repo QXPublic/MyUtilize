@@ -11,3 +11,4 @@
 ](https://github.com/QXPublic/MyUtilize/blob/main/%E4%BD%BF%E7%94%A8AWS%20Lambda%20%E7%9B%91%E6%8E%A7%20AWS%20Lightsail%20%E6%B5%81%E9%87%8F%E9%99%90%E9%A2%9D.md)
 
 ![一键搭建 snell 协议](https://github.com/QXPublic/MyUtilize/blob/main/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%20snell%20%E5%8D%8F%E8%AE%AE.md)
+![Sub-Store 搭建教程宝塔面板](https://github.com/QXPublic/MyUtilize/blob/main/Sub-Store%20搭建教程宝塔面板.md)
