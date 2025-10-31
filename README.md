@@ -13,3 +13,5 @@
 ![一键搭建 snell 协议](https://github.com/QXPublic/MyUtilize/blob/main/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%20snell%20%E5%8D%8F%E8%AE%AE.md)
 
 ![Sub-Store 搭建教程宝塔面板](https://github.com/QXPublic/MyUtilize/blob/main/Sub-Store%20搭建教程宝塔面板.md)
+
+![ 3xui面板搭建&面板定时重启](https://raw.githubusercontent.com/QXPublic/MyUtilize/refs/heads/main/3xui%E9%9D%A2%E6%9D%BF%E6%90%AD%E5%BB%BA%26%E9%9D%A2%E6%9D%BF%E5%AE%9A%E6%97%B6%E9%87%8D%E5%90%AF.md)
