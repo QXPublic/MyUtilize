@@ -81,7 +81,9 @@ docker-compose up -d
 ```
 检查服务是否在运行：
 
-```docker ps```
+```
+docker ps
+```
 
 进行最终测试：
 用 curl 命令，通过刚刚创建的本地 SOCKS5 代理去访问一个能显示我们出口 IP 的网站。
