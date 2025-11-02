@@ -1,284 +1,57 @@
-
-
-DOMAIN,app-analytics-services.com
-IP-CIDR,203.119.211.219/32,no-resolve
-IP-CIDR,203.209.243.114/32,no-resolve
-IP-CIDR,203.209.230.39/32,no-resolve
-IP-CIDR,47.246.110.84/32,no-resolve
 DOMAIN-SUFFIX,bm-ads.io,REJECT
-DOMAIN-SUFFIX,cdn-adn-https-new.mtgglobals.com
-DOMAIN-SUFFIX,digicert.com
-DOMAIN,umdc.alibabachengdun.com
-DOMAIN-SUFFIX,amdc-thirdparty.alipay.com
-DOMAIN-SUFFIX,sdk.open.talk.getui.com
-
-DOMAIN-SUFFIX,beizi.biz
-
-DOMAIN,afd.baidu.com
-DOMAIN-SUFFIX,promotion-partner.kuaishou.com
-
-DOMAIN-SUFFIX,tracelog-debug.aiclk.com
-DOMAIN,huiduapi.nuomi.com
-
-DOMAIN-SUFFIX,httpdnsmultiapi.meituan.com
-DOMAIN-SUFFIX,httpdns.meituan.com
-IP-CIDR,59.82.43.77/32
-IP-CIDR,203.119.204.222/32
-IP-CIDR,203.119.238.51/32
 DOMAIN-SUFFIX,trrs-adp.2345.com
-DOMAIN-SUFFIX,bidex.cn
-DOMAIN-SUFFIX,dss0.bdstatic.com
 DOMAIN-SUFFIX,adx-cfg-u1.ubixioe.com
 DOMAIN-SUFFIX,adx.adwangmai.com
 DOMAIN-SUFFIX,bid-adx2.vlion.cn
 DOMAIN-SUFFIX,advlion.com
 DOMAIN-SUFFIX,logrcv.aiclk.com
-DOMAIN-SUFFIX,feed-image.baidu.com
-DOMAIN-SUFFIX,hz.oss.vlion.cn
-DOMAIN-SUFFIX,appnew.ly.com
-
 DOMAIN-SUFFIX,adstats.tencentmusic.com
 DOMAIN-SUFFIX,adsmind.gdtimg.com
 DOMAIN-SUFFIX,adcdn6.tencentmusic.com
-
-DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,ads.privacy.qq.com
-DOMAIN-SUFFIX,tmead.y.qq.com
-DOMAIN-SUFFIX,tmeadquic.y.qq.com
-DOMAIN-SUFFIX,httpdns.kg.qq.com
 DOMAIN-SUFFIX,ad.tencentmusic.com
 DOMAIN-SUFFIX,h-adashx.ut.cainiao.com
-DOMAIN,hwulive.chinaunicomvideo.cn
 DOMAIN-SUFFIX,resource.ad-scope.com.cn
-DOMAIN-SUFFIX,magicacid.cn
-IP-CIDR,47.246.182.16/32
-DOMAIN,app-analytics-services.com
-DOMAIN-SUFFIX,hubcloud.com.cn
-
-IP-CIDR,47.246.38.141/32
-DOMAIN-SUFFIX,magsrv.com
-DOMAIN-SUFFIX,glum-mortgage.com
-DOMAIN-SUFFIX,elderly-fail.pro
-DOMAIN-SUFFIX,afcdn.net
-DOMAIN-SUFFIX,ogads-pa.clients6.google.com
-DOMAIN-SUFFIX,magicacid.cn
-DOMAIN-SUFFIX,api.htp.hubcloud.com.cn
-DOMAIN-SUFFIX,ms.vipstatic.com
-IP-CIDR,103.41.167.237/32
-DOMAIN-SUFFIX,vt.bidex.cn
-DOMAIN-SUFFIX,assets.bidex.cn
-DOMAIN-SUFFIX,dualstack.log.aliyuncs.com
-DOMAIN-SUFFIX,amdc-sibling.alipay.com.cn
-DOMAIN-SUFFIX,resource.ad-scope.com.cn
-DOMAIN-SUFFIX,mercury-gateway.ixiaochuan.cn
 DOMAIN-SUFFIX,adx-data-u1.ubixioe.com
-DOMAIN-SUFFIX,admin-oss-xlvip.a.88cdn.com
 DOMAIN-SUFFIX,adapi.izuiyou.com
 DOMAIN-SUFFIX,dsp-creative.ubixioe.com
-DOMAIN-SUFFIX,static.66mobi.com
-IP-CIDR,47.246.103.10/32
-DOMAIN-SUFFIX,adx.sogaha.cn
-DOMAIN,tracker.tianmu.mobi
-IP-CIDR,47.246.103.9/32
-IP-CIDR,139.95.0.151/32
-IP-CIDR,59.82.113.10/32
-IP-CIDR,106.11.25.34/32
 DOMAIN,admonitor-feedback.cn-hangzhou.log.aliyuncs.com
-DOMAIN-SUFFIX,open.kwaizt.com
-
-DOMAIN-SUFFIX,amdc.m.taobao.com
-DOMAIN,idfa2.shuzilm.cn
-DOMAIN-SUFFIX,httpdns.kwd.inkuai.com
-DOMAIN-SUFFIX,resolve.umeng.com
-DOMAIN-SUFFIX,httpdns.pro
-DOMAIN-SUFFIX,vzuu.com
-DOMAIN-SUFFIX,sugar.zhihu.com
-DOMAIN-SUFFIX,h-adashx.ut.lazada.com
-DOMAIN-SUFFIX,adsafeprotected.com
-IP-CIDR,47.246.103.10/32
 DOMAIN-SUFFIX,adui.tg.meitu.com
-DOMAIN-SUFFIX,skadsdkless.appsflyersdk.com
-IP-CIDR,203.119.206.64/32
-DOMAIN-SUFFIX,httpdns.alicdn.com
-DOMAIN-SUFFIX,httpdns.c.cdnhwc2.com
-DOMAIN-SUFFIX,inmobi.com
-DOMAIN-SUFFIX,vg-ali-ad-track-sdk.mtgglobals.com
-DOMAIN-SUFFIX,ads.assemblyexchange.com
+DOMAIN-SUFFIX,adsafeprotected.com
 DOMAIN-SUFFIX,ad.360yield.com
 DOMAIN-SUFFIX,ads.servenobid.com
-DOMAIN-SUFFIX,pangle.io
-DOMAIN-SUFFIX,applvn.com
-IP-CIDR,47.246.103.9/32
-IP-CIDR,59.82.113.10/32
-IP-CIDR,139.95.0.151/32
-IP-CIDR,106.11.25.34/32
-IP-CIDR,106.11.25.240/32
-DOMAIN-SUFFIX,sdk.beizi.biz
-
-DOMAIN-SUFFIX, view.adjust.com
-DOMAIN-SUFFIX, pok.mintegral.net
-DOMAIN-SUFFIX, applovin.com
-DOMAIN-SUFFIX, img.marketing.kocowa.com
-DOMAIN-SUFFIX, inner-active.mobi
-DOMAIN-SUFFIX, thecas.xyz
-DOMAIN-SUFFIX, api.antibanads.com
-DOMAIN, amdc.alipay.com
-IP-CIDR, 106.11.25.25/32
-DOMAIN-SUFFIX, sdk.beizi.biz
-IP-CIDR, 139.95.4.98/32
-IP-CIDR, 59.82.113.219/32
-IP-CIDR, 106.11.25.120/32
-IP-CIDR, 106.11.25.170/32
-IP-CIDR, 106.11.25.169/32
-DOMAIN, sync.teads.tv
-DOMAIN-SUFFIX, ad.holmesmind.com
-DOMAIN-SUFFIX, ad.360yield.com
-IP-CIDR, 106.11.25.240/32
-DOMAIN-SUFFIX, v16-ad.byteoversea.com
-DOMAIN-SUFFIX, sdk-events.inner-active.mobi
-DOMAIN-SUFFIX, umengcloud.com
-DOMAIN, apm.zhihu.com
-DOMAIN-SUFFIX, cnlogs.umeng.com
-DOMAIN-SUFFIX, sv.cdn.n1q.cn
-DOMAIN-SUFFIX, pd.ads.cn.miaozhen.com
-DOMAIN-SUFFIX, volceapplog.com
-DOMAIN-SUFFIX, api.qttunion.com
-
-DOMAIN-SUFFIX, sdk-open-phone.getui.com
-DOMAIN-SUFFIX, optimus-ads-ykx.amap.com
-DOMAIN-SUFFIX, app-ads-services.com
-DOMAIN-SUFFIX, adx-os.bridgeoos.com
-DOMAIN-SUFFIX, mobads-logs.baidu.com
-DOMAIN-SUFFIX, log-api.pangolin-sdk-toutiao.com
-DOMAIN-SUFFIX, ossgw.alicdn.com
-DOMAIN-SUFFIX, liftoff-creatives.io
-DOMAIN-SUFFIX, smadex.com
-DOMAIN-SUFFIX, 4dvertible.com
-DOMAIN-SUFFIX, cached-ad-a.fyber.com
-DOMAIN, cached-ad-b.fyber.com
-DOMAIN, pageviewp.icbc.com.cn
-DOMAIN-SUFFIX, adashx.ut.amap.com
-DOMAIN-SUFFIX, optimus-ads.amap.com
-DOMAIN-SUFFIX, v26-dcar-ad.dcarvod.com
-DOMAIN-SUFFIX, ad.track.66mobi.com
-DOMAIN-SUFFIX, ads.inmobi.com
-DOMAIN-SUFFIX, tapestry.tapad.com
-
-DOMAIN,msmp.abchina.com.cn
-DOMAIN,api.ipify.org
-DOMAIN,amdc.m.taobao.com
-DOMAIN,axxd.xmseeyouyima.com
-DOMAIN-SUFFIX,ad.seeyouyima.com
-DOMAIN-SUFFIX,h-adashx4bc.ut.taobao.com
-DOMAIN,sessions.bugsnag.com
-DOMAIN-SUFFIX,g.doubleclick.net
-DOMAIN-SUFFIX,smartadserver.com
-DOMAIN-SUFFIX,securepubads.g.doubleclick.net
-DOMAIN-SUFFIX,ads.pubmatic.com
-DOMAIN-SUFFIX,ads.linkedin.com
-DOMAIN-SUFFIX,adsrvr.org
-DOMAIN-SUFFIX,ssbsync-global.smartadserver.com
-DOMAIN-SUFFIX,ib.adnxs.com
-DOMAIN-SUFFIX,pagead2.googlesyndication.com
-DOMAIN-SUFFIX,ads.stickyadstv.com
-DOMAIN-SUFFIX,adform.net
-DOMAIN-SUFFIX,adprime.com
-DOMAIN-SUFFIX,adserver.wenxuecity.com
-DOMAIN-SUFFIX,amazon-adsystem.com
-DOMAIN-SUFFIX,pubads.g.doubleclick.net
-DOMAIN-SUFFIX,ads.yieldmo.com
-DOMAIN-SUFFIX,ad.smaato.net
-DOMAIN-SUFFIX,ads.as.criteo.com
-DOMAIN-SUFFIX,admanmedia.com
 DOMAIN-SUFFIX,ads.inmobi.com
-DOMAIN-SUFFIX,api-adservices.apple.com
+DOMAIN-SUFFIX,ad.holmesmind.com
+DOMAIN-SUFFIX,v16-ad.byteoversea.com
+DOMAIN-SUFFIX,adsmoloco.com
 DOMAIN-SUFFIX,adexp.chinaliftoff.io
 DOMAIN-SUFFIX,tradplusad.com
-DOMAIN-SUFFIX,ads.vungle.com
 DOMAIN-SUFFIX,ads-vp5.xhscdn.com
-DOMAIN,proxy.safebrowsing.apple
-DOMAIN-SUFFIX,yandexadexchange.net
-DOMAIN-SUFFIX,unityads.unitychina.cn
-DOMAIN-SUFFIX,iads.unity3d.com
-
-DOMAIN-SUFFIX,newadserver.com
-DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,adserver.wenxuecity.com
+DOMAIN-SUFFIX,ads.yieldmo.com
+DOMAIN-SUFFIX,ad.smaato.net
+DOMAIN-SUFFIX,admanmedia.com
 DOMAIN-SUFFIX,ads.inmobi.com
-DOMAIN-SUFFIX,adsmoloco.com
-DOMAIN, sdk.e.qq.com
-DOMAIN, cdn3.magicacid.cn
-DOMAIN-SUFFIX, adx.hubcloud.com.cn
-DOMAIN-SUFFIX, yfanads.com
-DOMAIN-SUFFIX, safebrowsing.googleapis.com
-DOMAIN-SUFFIX, ad.doubleclick.net
-DOMAIN-SUFFIX, googletagmanager.com
-DOMAIN-SUFFIX, ads.inmobi.com
-DOMAIN-SUFFIX, adsappier.com
-DOMAIN, ocsp.digicert.com
-DOMAIN-SUFFIX, googleadservices.com
-
-DOMAIN-SUFFIX,prreqcroab.icu
-
+DOMAIN-SUFFIX,adsappier.com
+DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,ad.gt
-DOMAIN-SUFFIX,safeframe.googlesyndication.com
-DOMAIN-SUFFIX,securepubads.g.doubleclick.net
 DOMAIN-SUFFIX,adtrafficquality.google
-DOMAIN-SUFFIX,ad.360yield.com
 DOMAIN-SUFFIX,ep2.adtrafficquality.google
 DOMAIN-SUFFIX,adnxs.com
-DOMAIN,download1.vzuu.com
-DOMAIN-SUFFIX,uyunad.com
-DOMAIN-SUFFIX,open.kuaishouzt.com
 DOMAIN,ad.12306.cn
-DOMAIN-SUFFIX,googleadsserving.cn
-DOMAIN-SUFFIX,ads.vungle.com
 DOMAIN-SUFFIX,ad.10010.com
 DOMAIN-SUFFIX,smartad.10010.com
-DOMAIN,token.safebrowsing.apple
 DOMAIN-SUFFIX,ad.smaato.net
-DOMAIN,mfx.mobilefuse.com
-DOMAIN-SUFFIX,ads.pubmatic.com
-DOMAIN-SUFFIX,pagead2.googlesyndication.com
-DOMAIN-SUFFIX,ads.inmobi.com
-DOMAIN-SUFFIX,googleads.g.doubleclick.net
-DOMAIN-SUFFIX,amazon-adsystem.com
-DOMAIN,sessions.bugsnag.com
-DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
-DOMAIN-SUFFIX,gromore.pangolin-sdk-toutiao.com
-DOMAIN-SUFFIX,adashx.m.taobao.com
-DOMAIN-SUFFIX,h-adashx.ut.taobao.com
-IP-CIDR,59.82.113.252/32
 DOMAIN-SUFFIX,mobads-pre-config.cdn.bcebos.com
-DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,ad.shunchangzhixing.com
 DOMAIN-SUFFIX,ad.sfys365.com
-DOMAIN,pc.suishenyun.net
-DOMAIN-SUFFIX,gdt.qq.com
-DOMAIN,beizi.biz
-DOMAIN,pic6.zhuanstatic.com
-DOMAIN,ads.weilitoutiao.net
-DOMAIN,sdk.1rtb.net
-DOMAIN,qh-material.taobao.com
-DOMAIN,qh-material.taobao.com
-DOMAIN,wcp.taobao.com
 DOMAIN-SUFFIX,ad.gameley.com
-DOMAIN-SUFFIX,anythinktech.com
-DOMAIN,sdk.e.qq.com
-DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com
-DOMAIN,token.safebrowsing.apple
 DOMAIN-SUFFIX,adsmind.ugdtimg.com
 DOMAIN-SUFFIX,mobads.baidu.com
-DOMAIN,tk.anythinktech.com
-DOMAIN,pgdt.ugdtimg.com
-DOMAIN-SUFFIX,pglstatp-toutiao.com
-
-DOMAIN,api-access.pangolin-sdk-toutiao.com
-DOMAIN,open.e.kuaishou.cn
-DOMAIN,api-access.pangolin-sdk-toutiao1.com
-DOMAIN,open.e.kuaishou.com
-DOMAIN,ad.12306.cn
 DOMAIN-SUFFIX,adkwai.com
 DOMAIN-SUFFIX,adx.xlqeai.com
 DOMAIN-SUFFIX,adyuedong.com
 DOMAIN-SUFFIX,admobile.top
 DOMAIN,ad.mcloud.139.com
+
+
