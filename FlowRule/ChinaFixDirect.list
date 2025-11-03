@@ -1,5 +1,3 @@
-
-
 DOMAIN-SUFFIX,apple.com
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
@@ -3708,7 +3706,6 @@ DOMAIN-KEYWORD,beplay
 DOMAIN-KEYWORD,microsoft
 DOMAIN-KEYWORD,officecdn
 DOMAIN-KEYWORD,taobao
-
 IP-CIDR,1.0.1.0/24
 IP-CIDR,1.0.2.0/23
 IP-CIDR,1.0.32.0/19
