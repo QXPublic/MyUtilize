@@ -27,7 +27,7 @@ DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,dns.quad9.net
 DOMAIN-SUFFIX,doubleclick.net
 
-DOMAIN-SUFFIX,bm-ads.io,REJECT
+DOMAIN-SUFFIX,bm-ads.io
 DOMAIN-SUFFIX,trrs-adp.2345.com
 DOMAIN-SUFFIX,adx-cfg-u1.ubixioe.com
 DOMAIN-SUFFIX,adx.adwangmai.com
