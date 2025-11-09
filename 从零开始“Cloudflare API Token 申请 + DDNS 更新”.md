@@ -187,10 +187,8 @@ fi
 record_count=$(echo "$record_data" | jq '.result | length')
 
 if [ "$record_count" -eq 0 ]; then
-  log "[A] DNS 记录不存在, 准备创建..."
-  # 创建新记录的逻辑 (这里简化, 假设记录已存在, 如有需要可补充 create_record 函数)
-  log "[错误] 记录不存在的功能尚未实现, 请先在 Cloudflare 手动创建一条 A 记录。"
-  send_tg_notification "⚠️ **DDNS 更新警告** ⚠️%0A%0A域名: \`$RECORD_NAME\`%0A原因: DNS 记录不存在，请先手动创建。"
+  log "[错误] DNS 记录不存在, 请手动创建记录。"
+  send_tg_notification "⚠️ **DDNS 更新警告** ⚠️%0A%0A域名: \`$RECORD_NAME\`%0A原因: DNS 记录不存在，请手动创建。"
   exit 1
 else
   old_ip=$(echo "$record_data" | jq -r '.result[0].content')
@@ -215,13 +213,11 @@ else
 
     if echo "$update_response" | jq -e '.success' > /dev/null; then
       log "[成功] DNS 记录已成功更新为: $new_ip"
-      # 构建并发送成功通知
       tg_message="✅ **DDNS 更新成功** ✅%0A%0A域名: \`$RECORD_NAME\`%0A旧 IP: \`$old_ip\`%0A新 IP: \`$new_ip\`"
       send_tg_notification "$tg_message"
     else
       error_msg=$(echo "$update_response" | jq -r '.errors[0].message')
       log "[错误] DNS 记录更新失败: $error_msg"
-      # 构建并发送失败通知
       tg_message="🚨 **DDNS 更新失败** 🚨%0A%0A域名: \`$RECORD_NAME\`%0A尝试更新到: \`$new_ip\`%0A原因: $error_msg"
       send_tg_notification "$tg_message"
     fi
@@ -229,6 +225,7 @@ else
 fi
 
 log "====== DDNS 更新任务执行完毕 ======"
+
 
 ```
 
