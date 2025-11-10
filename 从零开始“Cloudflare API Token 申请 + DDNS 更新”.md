@@ -236,28 +236,16 @@ bash /usr/local/bin/cf-ddns.sh
 
 # 六、ip更换后自动更改
 
-创建一个新的服务文件：
+创建一个新的Crontab：
 ```
-sudo vim /etc/systemd/system/cloudflare-ddns.service
+crontab -e
+
 ```
 将以下内容粘贴到文件中：
 ```
-[Unit]
-Description=Cloudflare DDNS Updater
-After=network-online.target
-Wants=network-online.target
-
-[Service]
-Type=oneshot
-ExecStart=/usr/local/bin/cf-ddns.sh
-
-[Install]
-WantedBy=multi-user.target
+@reboot sleep 15 && /usr/local/bin/cf-ddns.sh 
 
 ```
-重新加载 systemd 配置：sudo systemctl daemon-reload 
-设置服务开机自启：sudo systemctl enable cloudflare-ddns.service
-立即手动运行:sudo systemctl start cloudflare-ddns.service
 
 
 - 常见问题：
