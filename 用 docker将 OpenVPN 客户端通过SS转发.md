@@ -48,11 +48,11 @@ services:
 ```
 停止现有服务：如果之前的容器仍在运行，请先停止并移除它们。
 ```
-docker-compose down
+docker compose down
 ```
 应用新配置：使用上面修改后的 docker-compose.yml 文件，重新启动服务。
 ```
-docker-compose up -d
+docker compose up -d
 ```
 实例配置(本地访问）
 ```
