@@ -11,7 +11,7 @@ mkdir openvpn-ss-gateway && cd openvpn-ss-gateway
 ```
 vim docker-compose.yml
 ```
-将以下配置粘贴到文件中：（./client.ovpn为 ovpn 配置的实际路径）
+将以下配置粘贴到文件中：（./client.ovpn默认为同目录配置，也可改为 ovpn 配置的实际路径）
 ```
 version: '3.8'
 
