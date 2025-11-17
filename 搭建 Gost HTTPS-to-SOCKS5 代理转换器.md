@@ -31,7 +31,6 @@ cd gost-proxy
 2. 创建 docker-compose.yml 配置文件：
 ```
 vim docker-compose.yml
-vim .env
 ```
 4. 粘贴并修改配置内容：
 执行上面的命令后，会打开一个空的编辑器界面。请完整复制下面的所有内容，然后粘贴到编辑器里。
@@ -66,18 +65,12 @@ services:
     command: "-L socks5://:1088 -F https://${HTTPS_PROXY_USER}:${HTTPS_PROXY_PASS}@${HTTPS_PROXY_HOST}:${HTTPS_PROXY_PORT}"
 
 ```
-.env文件里的内容：
-```
-HTTPS_PROXY_HOST=xxxxx
-HTTPS_PROXY_PORT=xxxxx
-HTTPS_PROXY_USER=xxxxx
-HTTPS_PROXY_PASS=xxxxx
-```
+
 **启动运行都要与docker-compose.yml处于同一个文件夹下**
 
 3、启动并测试服务
 ```
-docker-compose up -d
+docker compose up -d
 ```
 检查服务是否在运行：
 
