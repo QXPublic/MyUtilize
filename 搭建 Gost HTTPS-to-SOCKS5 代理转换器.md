@@ -36,7 +36,6 @@ vim docker-compose.yml
 执行上面的命令后，会打开一个空的编辑器界面。请完整复制下面的所有内容，然后粘贴到编辑器里。
 docker-compose.yml文件里的内容：
 ```
-# docker-compose.yml for HTTPS proxy WITH authentication
 version: '3.8'
 
 services:
@@ -44,25 +43,26 @@ services:
     image: ginuerzh/gost
     container_name: https-to-socks5
     restart: always
+    # 映射本地 1088 端口 (仅允许本机访问，更安全)
     ports:
       - "127.0.0.1:1088:1088"
+    
     environment:
-      # --- ❗ 在这里修改为你自己的代理信息 ❗ ---
-      # 外部 HTTPS 代理的地址 (强烈建议使用域名)
-      - HTTPS_PROXY_HOST=xxxxx
-      
-      # 外部 HTTPS 代理的端口
-      - HTTPS_PROXY_PORT=xxxx
-      
-      # 外部 HTTPS 代理的用户名 (如果包含特殊字符，请保持 URL 编码格式)
-      - HTTPS_PROXY_USER=xxxxxx
-      
-      # 外部 HTTPS 代理的密码
+      # --- ✅ 配置区域 ---
+      - HTTPS_PROXY_HOST=xxxx
+      - HTTPS_PROXY_PORT=xxxxx
+      # 用户名 (这里必须填 URL 编码后的版本: &->%26, @->%40)
+      - HTTPS_PROXY_USER=xxxxx
       - HTTPS_PROXY_PASS=xxxxx
-      # -------------------------------------------
+      # ------------------
 
-    # 下面这行命令会自动使用上面的环境变量，无需修改
-    command: "-L socks5://:1088 -F https://${HTTPS_PROXY_USER}:${HTTPS_PROXY_PASS}@${HTTPS_PROXY_HOST}:${HTTPS_PROXY_PORT}"
+    # 覆盖默认入口点，使用 sh 来解析环境变量
+    entrypoint: ["/bin/sh", "-c"]
+    
+    # ❗变量前使用了 $$，这是为了告诉 Docker "去容器里找这个变量，不要在宿主机找"
+    command: 
+      - "gost -L socks5://:1088 -F https://$$HTTPS_PROXY_USER:$$HTTPS_PROXY_PASS@$$HTTPS_PROXY_HOST:$$HTTPS_PROXY_PORT"
+
 
 ```
 
