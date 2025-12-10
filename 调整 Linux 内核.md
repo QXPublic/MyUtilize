@@ -13,3 +13,7 @@ net.core.default_qdisc = fq
 net.ipv4.tcp_congestion_control = bbr
 
 ```
+执行生效
+```
+sysctl -p
+```
