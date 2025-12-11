@@ -19,9 +19,9 @@ crontab -e
 添加定时任务规则
 
 每2小时重启一次
-在 crontab 文件中添加下面这行（假设 x-ui 的路径是 /usr/local/bin/x-ui）：
+在 crontab 文件中添加下面这行（假设 x-ui 的路径是 /usr/bin/x-ui）：
 ```
-0 */2 * * * /usr/local/bin/x-ui restart
+0 */2 * * * /usr/bin/x-ui restart
 
 ```
 
