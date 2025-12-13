@@ -17,3 +17,15 @@ net.ipv4.tcp_congestion_control = bbr
 ```
 sysctl -p
 ```
+编辑系统限制配置文件：
+```
+vim /etc/security/limits.conf
+```
+在文件末尾添加以下内容（复制进去即可）：
+```
+* soft nofile 65535
+* hard nofile 65535
+root soft nofile 65535
+root hard nofile 65535
+
+```
