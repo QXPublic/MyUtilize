@@ -1,34 +1,61 @@
 调整 Linux 内核
 
-编辑 /etc/sysctl.conf 文件：
+安装 XanMod 内核：
+
+1、安装必要的基础工具
 ```
-# 缩短 TCP 连接存活时间，防止死连接堆积
-net.ipv4.tcp_keepalive_time = 600
-net.ipv4.tcp_keepalive_intvl = 15
-net.ipv4.tcp_keepalive_probes = 2
-net.ipv4.tcp_fin_timeout = 15
+apt update && apt upgrade -y
+apt install wget curl gnupg git -y
+```
+2、手动导入密钥
+```
+# 1. 从公钥服务器拉取指定密钥
+gpg --keyserver keyserver.ubuntu.com --recv-keys 86F7D09EE734E623
+
+# 2. 将密钥导出到 apt 需要的路径
+gpg --export 86F7D09EE734E623 | tee /usr/share/keyrings/xanmod-archive-keyring.gpg > /dev/null
+
+# 3. 再次更新软件源
+apt update
+```
+3、安装内核
+```
+apt install linux-xanmod-x64v3 -y
+```
+重启验证
+```
+reboot
+uname -r
+```
+开启 BBR 及网络栈优化
+```
+cat > /etc/sysctl.conf << EOF
+# 系统文件描述符限制
+fs.file-max = 1000000
+fs.inotify.max_user_instances = 8192
 
 # 开启 BBR
 net.core.default_qdisc = fq
 net.ipv4.tcp_congestion_control = bbr
 
-```
-执行生效
-```
-sysctl -p
-```
-编辑系统限制配置文件：
-```
-vim /etc/security/limits.conf
-```
-在文件末尾添加以下内容（复制进去即可）：
+# TCP 窗口与缓冲区优化
+net.ipv4.tcp_window_scaling = 1
+net.ipv4.tcp_fastopen = 3
+net.ipv4.tcp_rmem = 4096 87380 67108864
+net.ipv4.tcp_wmem = 4096 65536 67108864
+net.ipv4.tcp_mtu_probing = 1
 
-保存退出后，重启服务器生效 (reboot)
-```
-* soft nofile 65535
-* hard nofile 65535
-root soft nofile 65535
-root hard nofile 65535
+# 减少 TIME_WAIT，加快连接回收
+net.ipv4.tcp_tw_reuse = 1
+net.ipv4.tcp_fin_timeout = 30
 
+# 防御与连接保持
+net.ipv4.tcp_keepalive_time = 1200
+net.ipv4.ip_local_port_range = 10000 65000
+EOF
 ```
+应用配置```sysctl -p ```
+
+
+
 
