@@ -56,7 +56,9 @@ EOF
 ```
 应用配置
 
-```sysctl -p
+```
+sysctl -p
+
 ```
 
 
