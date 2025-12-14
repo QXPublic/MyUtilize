@@ -54,7 +54,10 @@ net.ipv4.tcp_keepalive_time = 1200
 net.ipv4.ip_local_port_range = 10000 65000
 EOF
 ```
-应用配置```sysctl -p ```
+应用配置
+
+```sysctl -p
+```
 
 
 
