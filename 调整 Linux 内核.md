@@ -58,7 +58,6 @@ EOF
 
 ```
 sysctl -p
-
 ```
 
 
