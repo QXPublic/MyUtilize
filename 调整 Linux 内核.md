@@ -23,7 +23,7 @@ vim /etc/security/limits.conf
 ```
 在文件末尾添加以下内容（复制进去即可）：
 
-保存退出后，重启服务器生效 (reboot)。重启后输入 ulimit -n 查看，如果显示 65535 就成功了
+保存退出后，重启服务器生效 (reboot)
 ```
 * soft nofile 65535
 * hard nofile 65535
