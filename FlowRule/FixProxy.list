@@ -78,7 +78,7 @@ DOMAIN-SUFFIX,myfitnesspal.com
 IP-CIDR,104.20.2.154/32,no-resolve
 DOMAIN-SUFFIX,nordcdn.com
 DOMAIN-SUFFIX,googleapis.com
-DOMAIN,speedtest.dukekunshan.edu.cn
+
 DOMAIN-SUFFIX,shunicomtest.com
 DOMAIN-SUFFIX,speedtest.net
 DOMAIN,edge-115.hkhkg2.icloud-content.com
