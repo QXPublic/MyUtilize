@@ -2474,26 +2474,13 @@ class BaseWidget {
       <div class="list" style="display:${!isChildLevel ? '' : 'none'}">
         <div class="list__header">通用设置</div>
         <form class="list__body" action="javascript:void(0);">
-        <label id="use_github" class="form-item form-item--link" class="form-item form-item--link">
-            <div class="form-label">
-              <img class="form-label-img" src="${warehouseIco}"/>
-              <div class="form-label-title">使用GitHub仓库</div>
-            </div>
-            <input name="use_github" type="checkbox" role="switch" />
-          </label>
+        
           <label id="notify" class="form-item form-item--link" class="form-item form-item--link">
             <div class="form-label">
               <img class="form-label-img" src="${notifyIco}"/>
               <div class="form-label-title">组件通知</div>
             </div>
             <input name="notify" type="checkbox" role="switch" />
-          </label>
-          <label id="location" class="form-item form-item--link" style="display:${needLocation ? '' : 'none'}">
-            <div class="form-label">
-              <img class="form-label-img" src="${locationIco}"/>
-              <div class="form-label-title">自动定位</div>
-            </div>
-            <input name="location" type="checkbox" role="switch" />
           </label>
           <label id="refreshTime" class="form-item form-item--link">
             <div class="form-label">
@@ -2504,13 +2491,6 @@ class BaseWidget {
               <div id="refreshInterval" class="form-item-right-desc">${widgetSetting.refreshInterval} min</div>
               <i class="iconfont icon-arrow-right"></i>
             </div>
-          </label>
-          <label id="widgetUpdate" class="form-item form-item--link">
-            <div class="form-label">
-              <img class="form-label-img" src="${widgetUpdateIco}"/>
-              <div class="form-label-title">组件更新</div>
-            </div>
-            <i class="iconfont icon-arrow-right"></i>
           </label>
           <label id="cleanData" class="form-item form-item--link">
             <div class="form-label">
