@@ -2428,21 +2428,6 @@ class BaseWidget {
         <style>${style}</style>
       </head>
       <body>
-      <!--头部个人信息-->  
-      <div class="list" style="display:${!isChildLevel ? '' : 'none'}">
-        <form class="list__body" action="javascript:void(0);">
-          <label id="author" class="form-item-auth form-item--link">
-            <div class="form-label">
-              <img class="form-label-author-avatar" src="${authorAvatar}"/>
-              <div>
-                <div class="form-item-auth-name">${authorName}</div>
-                <div class="form-item-auth-desc">${authorDesc}</div>
-              </div>
-            </div>
-            <i class="iconfont icon-arrow-right"></i>
-          </label>
-        </form>
-      </div>
       <!--组件预览-->
       <div class="list" style="display:${!isChildLevel ? '' : 'none'}">
         <div class="list__header">组件预览</div>
