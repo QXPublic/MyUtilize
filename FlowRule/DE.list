@@ -6,4 +6,10 @@ DOMAIN-SUFFIX,braze.eu
 DOMAIN-SUFFIX,prodregistryv2.org
 DOMAIN-SUFFIX,assetsconfigcdn.org
 DOMAIN-SUFFIX,n26.com
+#skrill
+DOMAIN-SUFFIX,skrill.com
+DOMAIN-SUFFIX,oraclersys.com
+DOMAIN-SUFFIX,eum-appdynamics.com
+DOMAIN-SUFFIX,optimizely.com
+DOMAIN-SUFFIX,online-metrix.net
 
