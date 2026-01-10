@@ -12,4 +12,6 @@ DOMAIN-SUFFIX,oraclersys.com
 DOMAIN-SUFFIX,eum-appdynamics.com
 DOMAIN-SUFFIX,optimizely.com
 DOMAIN-SUFFIX,online-metrix.net
-
+#Trading212
+DOMAIN-SUFFIX,trading212.com
+DOMAIN-SUFFIX,eu1.clevertap-prod.com
