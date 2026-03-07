@@ -31,4 +31,7 @@ DOMAIN-SUFFIX,eu.sardine.ai
 DOMAIN-SUFFIX,bunq.com
 #kraken
 DOMAIN-SUFFIX,kraken.com
+#wise
+DOMAIN-SUFFIX,wise.com
+
 
