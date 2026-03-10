@@ -29,11 +29,14 @@ DOMAIN-SUFFIX,lemfi.com
 DOMAIN-SUFFIX,bunq.me
 DOMAIN-SUFFIX,eu.sardine.ai
 DOMAIN-SUFFIX,bunq.com
+DOMAIN-SUFFIX,ota.lokalise.com
+
 #kraken
 DOMAIN-SUFFIX,kraken.com
 #wise
 DOMAIN-SUFFIX,wise.com
 #myfin
 DOMAIN-SUFFIX,myfin.bg
+
 
 
