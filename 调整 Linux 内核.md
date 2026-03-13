@@ -25,8 +25,10 @@ echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.
 ```
 
 # 3. 再次更新软件源
+```
 apt update
 ```
+
 3、安装内核
 ```
 apt install linux-xanmod-x64v3 -y
