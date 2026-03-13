@@ -10,12 +10,18 @@ apt install wget curl gnupg git -y
 2、手动导入密钥
 
 # 1. 从公钥服务器拉取指定密钥
-```gpg --keyserver keyserver.ubuntu.com --recv-keys 86F7D09EE734E623```
+```
+gpg --keyserver keyserver.ubuntu.com --recv-keys 86F7D09EE734E623
+```
 
 # 2. 将密钥导出到 apt 需要的路径
-```gpg --export 86F7D09EE734E623 | tee /usr/share/keyrings/xanmod-archive-keyring.gpg > /dev/null```
+```
+gpg --export 86F7D09EE734E623 | tee /usr/share/keyrings/xanmod-archive-keyring.gpg > /dev/null
+```
 # 添加 XanMod 软件源仓库
-```echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | tee /etc/apt/sources.list.d/xanmod-archive.list
+```
+echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | tee /etc/apt/sources.list.d/xanmod-archive.list
+
 ```
 
 # 3. 再次更新软件源
