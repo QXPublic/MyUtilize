@@ -33,6 +33,7 @@ DOMAIN-SUFFIX,ota.lokalise.com
 
 #kraken
 DOMAIN-SUFFIX,kraken.com
+DOMAIN-KEYWORD,kraken
 #wise
 DOMAIN-SUFFIX,wise.com
 #myfin
